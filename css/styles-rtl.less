@@ -1,0 +1,97 @@
+//variables, sizes, colors, etc.
+@import 'variables/main.less';
+
+//mixins
+@import 'mixins/utilities.less';
+
+.navbar-abraa{
+  .navbar-header{
+    .navbar-toggle{
+      float: right;
+    }
+    .navbar-brand{
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        padding-right: 10px;
+        padding-left: 0;
+      }
+      @media screen and (max-width: @screen-xs-max) {
+        margin-right: -57px;
+      }
+    }
+  }
+
+  .navbar-search{
+    .selectBox{
+      .selectBox-label, .selectBox-arrow{
+        .border-radiuses (5px, 5px, 0, 0);
+      }
+      .selectBox-arrow{
+
+        &:after{
+          margin-right: 2px;
+        }
+      }
+      &.selectBox-menuShowing{
+        .selectBox-label{
+          .border-radiuses (0, 0, 0, 5px);
+        }
+      }
+    }
+    .navbar_search_input{
+      padding-right: 110px;
+      padding-left: 60px;
+    }
+    .navbar-search-btn{
+      right: auto;
+      left: 20%;
+      margin-left: 20px;
+    }
+
+  }
+  .new_rfq_btn{
+    right: auto;
+    left: 0;
+    margin-left: 20px;
+    img{
+      margin-left: 5px;
+    }
+  }
+  .navbar_dropdowns_area{
+    text-align: left;
+    a{
+      margin-left: 0;
+      margin-right: 10px;
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+        margin-right: 0;
+      }
+      .no-underline-on-hover;
+      .glyphicon{
+        font-size: 10px;
+        margin-left: 0;
+        margin-right: 6px;
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+          margin-right: 3px;
+        }
+      }
+    }
+    .user_profile_box{
+      @media screen and (max-width: @screen-xs-max) {
+        right: auto;
+        left: 0;
+      }
+    }
+
+
+    .lang_selection_box{
+      .dropdown-menu{
+        margin-left: 0;
+        margin-right: 10px;
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+          margin-right: 0;
+        }
+      }
+    }
+
+  }
+
+}
