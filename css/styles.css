@@ -193,7 +193,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-abraa .navbar-header .navbar-logo {
-    padding-left: 10px;
+    padding-left: 0;
     padding-right: 0;
   }
 }

@@ -1,6 +1,5 @@
 //variables, sizes, colors, etc.
 @import 'variables/main.less';
-
 //mixins
 @import 'mixins/utilities.less';
 
@@ -9,11 +8,7 @@
     .navbar-toggle{
       float: right;
     }
-    .navbar-brand{
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-        padding-right: 10px;
-        padding-left: 0;
-      }
+    .navbar-logo{
       @media screen and (max-width: @screen-xs-max) {
         margin-right: -57px;
       }
@@ -56,7 +51,7 @@
       margin-left: 5px;
     }
   }
-  .navbar_dropdowns_area{
+  .navbar_right{
     text-align: left;
     a{
       margin-left: 0;
