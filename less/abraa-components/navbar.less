@@ -35,39 +35,6 @@
     margin: 0;
     padding: 14px 0 14px 0;
     width: 80%;
-    .selectBox{
-      .no-border;
-      .no-outline;
-      position: absolute;
-      min-width: 100px;
-      //overwriting vendor drop down style
-      .selectBox-label, .selectBox-arrow{
-        .no-border;
-        color: @white;
-        background-color: @abraa-blue;
-        height: @navbar_search_height;
-        padding: 7px 14px;
-        .border-radiuses (0, 0, 5px, 5px);
-      }
-      .selectBox-arrow{
-        padding: 0;
-        .glyphicon-block;
-        .glyphicon-block-triangle-down;
-        position: absolute;
-        margin-top: -1px;
-        &:before{
-          margin-top: 12px;
-          display: inline-block;
-          font-size: 10px;
-          margin-left: 2px;
-        }
-      }
-      &.selectBox-menuShowing{
-        .selectBox-label{
-          .border-radiuses (0, 0, 0, 5px);
-        }
-      }
-    }
     .navbar_search_input{
       padding-left: 110px;
       padding-right: 60px;
@@ -152,77 +119,8 @@
       }
     }
 
-
-    .lang_selection_box{
-      .lang_switch_btn{
-        width: 74px;
-        padding: 5px 0;
-        text-align: center;
-        .current_lang{
-          font-size: 16px;
-        }
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-          width: 42px;
-        }
-      }
-      .dropdown-menu{
-        margin-left: 10px;
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
-          margin-left: 0;
-        }
-        min-width: 74px;
-        border-top: 0;
-        border-radius: 0;
-        margin-top: -1px;
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-          min-width: 42px;
-        }
-      }
-      //open is added by bootstrap when the drop down opens
-      &.open{
-        .lang_switch_btn{
-          border: 1px solid @dark-gray;
-          border-bottom: 0;
-          .border-radiuses (5px, 0, 0, 5px);
-          .no-box-shadow;
-        }
-        .dropdown-menu{
-          border: 1px solid @dark-gray;
-          border-top: 0;
-          .border-radiuses (0, 5px, 5px, 0);
-          padding: 0;
-          li{
-            a{
-              border-top: 1px solid @light-gray;
-              display: block;
-              margin: 0;
-              padding: 5px;
-              text-align: center;
-            }
-          }
-        }
-      }
-    }
-
-  }
-
-}
-
-//the actual drop down is supposed to be outside the navbar so code is placed here. 
-//overwriting the vendor one
-.selectBox-options{
-  .no-border;
-  background-color: @abraa-blue;
-  li{
-    a{
-      color: @white;
-      padding: 7px 14px;
-    }
-    &.selectBox-hover, &.selectBox-selected{
-      a{
-        .no-underline-on-hover;
-        background-color: @abraa-dark-blue;
-      }
+    .navbar-lang-form{
+      .no-margin;
     }
   }
 }
