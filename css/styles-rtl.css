@@ -8,6 +8,12 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
 .no-underline-on-hover:hover {
   text-decoration: none;
 }
@@ -115,12 +121,14 @@
     left: 0;
   }
 }
-.navbar-abraa .navbar_right .lang_selection_box .dropdown-menu {
-  margin-left: 0;
-  margin-right: 10px;
+.selectBox .selectBox-label {
+  float: right;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .navbar-abraa .navbar_right .lang_selection_box .dropdown-menu {
-    margin-right: 0;
-  }
+.selectBox .selectBox-arrow {
+  position: absolute;
+  right: auto;
+  left: 0;
+}
+.selectBox .selectBox-arrow:before {
+  margin-left: 6px !important;
 }
