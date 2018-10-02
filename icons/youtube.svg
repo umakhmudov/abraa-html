@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>youtube</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.101849315 0.321232877 24.7592466 0.321232877 24.7592466 25 0.101849315 25"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer-small" transform="translate(-1203.000000, -65.000000)">
+            <g id="Group-7">
+                <g id="youtube" transform="translate(1203.000000, 65.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-15"></g>
+                    <path d="M4.10184932,25.0003082 L20.7593836,25.0003082 C22.9685226,25.0003082 24.7593836,23.2094472 24.7593836,21.0003082 L24.7593836,4.32119863 C24.7593836,2.11205963 22.9685226,0.32119863 20.7593836,0.32119863 L4.10184932,0.32119863 C1.89271032,0.32119863 0.101849315,2.11205963 0.101849315,4.32119863 L0.101849315,21.0003082 C0.101849315,23.2094472 1.89271032,25.0003082 4.10184932,25.0003082 Z" id="Fill-14" fill="#3E4352" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
