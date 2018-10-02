@@ -167,11 +167,42 @@ body {
   padding: 40px 0 0 0;
 }
 .plain_blue_link {
-  color: #4da1ff;
+  color: #4da1ff !important;
 }
 .plain_blue_link:hover {
   text-decoration: none;
-  color: #3d79c5;
+  color: #3d79c5 !important;
+}
+.mb5 {
+  margin-bottom: 5px !important;
+}
+.abraa-btn {
+  border-color: #4da1ff !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.abraa-blue-btn {
+  background-color: #4da1ff;
+  color: #ffffff !important;
+}
+.abraa-blue-btn:hover,
+.abraa-blue-btn:active,
+.abraa-blue-btn:focus {
+  background-color: #ffffff;
+  color: #4da1ff !important;
+}
+.abraa-white-btn {
+  background-color: #ffffff;
+  color: #4da1ff !important;
+}
+.abraa-white-btn:hover,
+.abraa-white-btn:active,
+.abraa-white-btn:focus {
+  background-color: #4da1ff;
+  color: #ffffff !important;
 }
 .selectBox {
   border: none;
@@ -516,15 +547,95 @@ body {
     margin-top: -50px;
   }
 }
-.navbar-abraa .navbar_right .user_profile_box .user_profile_btn img {
+.navbar-abraa .navbar_right .user_profile_box .dropdown .user_profile_btn img {
   width: 40px;
   border-radius: 50%;
   border: 1px solid #efefef;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .navbar-abraa .navbar_right .user_profile_box .user_profile_btn img {
+  .navbar-abraa .navbar_right .user_profile_box .dropdown .user_profile_btn img {
     width: 30px;
   }
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown {
+  width: 180px;
+  padding: 10px;
+  margin-top: -51px;
+  margin-left: -1px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #4da1ff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown {
+    margin-top: -41px;
+    margin-left: -11px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown {
+    margin-left: -101px;
+    margin-top: -45px;
+  }
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown.visitors_dropdown {
+  margin-top: 5px;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-img-section img {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-img-section img {
+    width: 30px;
+  }
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-img-section .glyphicon {
+  float: right;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #6c6c6c;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-info-section {
+  padding-top: 20px;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-info-section p {
+  margin: 0;
+  color: #9c9c9c;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-info-section p.profile-email {
+  color: #4da1ff;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section a {
+  margin: 0;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section ul li {
+  padding: 0;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section ul li a {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section ul li a:hover,
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section ul li a:active {
+  color: #4da1ff;
 }
 .navbar-abraa .navbar_right .navbar-lang-form {
   margin: 0;
@@ -537,4 +648,120 @@ body {
 .navbar-abraa .navbar_right .mobile_search_box .glyphicon {
   font-size: 22px;
   color: #4da1ff;
+}
+.navbar-abraa .navbar_right .user_notifications_box .notifications-count {
+  display: none;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_btn .glyphicon-bell {
+  margin-top: 10px;
+  vertical-align: bottom;
+  font-size: 22px;
+  color: #efefef;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_btn .glyphicon-bell:hover {
+  color: #6c6c6c;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown {
+  padding: 10px;
+  width: 200px;
+  margin-top: -34px;
+  margin-left: 6px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown {
+    margin-top: -33px;
+    margin-left: -8px;
+  }
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .glyphicon-bell {
+  font-size: 22px;
+  color: #efefef;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-header-section {
+  padding-bottom: 10px;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-header-section .glyphicon-triangle-bottom {
+  float: right;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #6c6c6c;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li {
+  padding-left: 30px;
+  border-bottom: 1px solid #efefef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-label {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin-left: -30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-label.label-yellow {
+  background-color: #fffe4e;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-label.label-green {
+  background-color: #008000;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-label.label-red {
+  background-color: #ff0000;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-label.label-black {
+  background-color: #000000;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-text {
+  color: #9c9c9c;
+  font-size: 10px;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-action a {
+  font-size: 10px;
+}
+.navbar-abraa .navbar_right .user_notifications_box.with-notifications .glyphicon-bell {
+  color: #4da1ff;
+}
+.navbar-abraa .navbar_right .user_notifications_box.with-notifications .glyphicon-bell:hover {
+  color: #3d79c5;
+}
+.navbar-abraa .navbar_right .user_notifications_box.with-notifications .notifications-count {
+  display: block;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 0;
+  height: 13px;
+  width: 13px;
+  font-size: 8px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 1px;
+  position: absolute;
+  top: 0;
+  margin-left: 14px;
+  margin-top: 5px;
+}
+.navbar-abraa .visitor_buttons {
+  position: absolute;
+  width: 200px;
+  right: 65px;
+}
+@media screen and (min-width: 1200px) {
+  .navbar-abraa .visitor_buttons {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-abraa .visitor_buttons {
+    right: 0;
+  }
 }

@@ -7,9 +7,38 @@ body{
 
 //General Hyperlinks For Website
 .plain_blue_link{
-  color: @abraa-blue;
+  color: @abraa-blue !important;
   &:hover{
     text-decoration: none;
-    color: @abraa-dark-blue;
+    color: @abraa-dark-blue !important;
+  }
+}
+
+//margins and paddings
+.mb5{
+  margin-bottom: 5px !important;
+}
+
+// BUTTON STYLES
+.abraa-btn{
+  border-color: @abraa-blue !important;
+  .transition;
+}
+
+.abraa-blue-btn{
+  background-color: @abraa-blue;
+  color: @white !important;
+  &:hover, &:active, &:focus{
+    background-color: @white;
+    color: @abraa-blue !important;
+  }
+}
+
+.abraa-white-btn{
+  background-color: @white;
+  color: @abraa-blue !important;
+  &:hover, &:active, &:focus{
+    background-color: @abraa-blue;
+    color: @white !important;
   }
 }

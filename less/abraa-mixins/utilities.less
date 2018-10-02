@@ -67,3 +67,11 @@
 .glyphicon-block-triangle-down{
   &:before { content: "\e252"; }
 }
+
+.transition (@speed: 0.5s) {
+  -webkit-transition: all @speed;
+  -moz-transition: all @speed;
+  -ms-transition: all @speed;
+  -o-transition: all @speed;
+  transition: all @speed;
+}

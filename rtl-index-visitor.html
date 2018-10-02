@@ -1,8 +1,8 @@
-<!doctype html dir="ltr">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ar" dir="rtl"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ar" dir="rtl"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ar" dir="rtl"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ar" dir="rtl"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,11 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Original Bootstrap 3.x -->
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<!-- UNCOMMENT FOR RTL LAYOUT -->
-		<!--<link rel="stylesheet" href="css/bootstrap-rtl.css">-->
+		<link rel="stylesheet" href="css/bootstrap-rtl.css">
         <link rel="stylesheet" href="css/styles.css">
-        <!-- UNCOMMENT FOR RTL LAYOUT -->
-        <!--<link rel="stylesheet" href="css/styles-rtl.css">-->
+        <link rel="stylesheet" href="css/styles-rtl.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -63,10 +61,11 @@
                 </form>
                 <!-- end: header search bar -->
 
+                <!-- RFQ BUTTON HIDDEN ON VISITORS PAGE -->
                 <!-- start: header RFQ button -->
-                <a class="plain_blue_link new_rfq_btn" href="#">
-                  <img src="https://www.omarlist.com/assets2/img/svg_for_sprite/icon-13.svg" alt=""> <span>New RFQ</span>
-                </a>
+                <!--<a class="plain_blue_link new_rfq_btn" href="#">-->
+                  <!--<img src="https://www.omarlist.com/assets2/img/svg_for_sprite/icon-13.svg" alt=""> <span>New RFQ</span>-->
+                <!--</a>-->
                 <!-- end: header RFQ button -->
 
               </div>
@@ -81,38 +80,60 @@
                   </div>
                   <!-- end: mobile search toggle -->
 
-                  <!-- start: user profile dropdown -->
-                  <div class="user_profile_box navbar_dropdown">
-                      <div class="dropdown">
-                          <a class="user_profile_btn expand_navbar_dropdown_btn dropdown-toggle" type="button" data-toggle="dropdown">
-                              <img src="img/default_user_icon.png" alt="">
-                              <i class="glyphicon glyphicon-triangle-bottom"></i>
-                          </a>
-                          <div class="dropdown-menu user_profile_dropdown">
-                              <div class="profile-img-section">
+                  <!-- start: login/signup buttons -->
+                  <div class="navbar_dropdown visitor_buttons">
+                      <a href="#" class="btn btn-sm btn-default abraa-btn abraa-blue-btn hidden-xs">SIGNUP</a>
+                      <a href="#" class="btn btn-sm btn-default abraa-btn abraa-white-btn hidden-xs">LOGIN</a>
+                      <div class="user_profile_box navbar_dropdown visible-xs">
+                          <div class="dropdown">
+                              <a class="user_profile_btn expand_navbar_dropdown_btn dropdown-toggle" type="button" data-toggle="dropdown">
                                   <img src="img/default_user_icon.png" alt="">
                                   <i class="glyphicon glyphicon-triangle-bottom"></i>
-                              </div>
-                              <div class="profile-info-section">
-                                  <p class="profile-name">John Smith</p>
-                                  <p class="profile-email">johnsmith@company.com</p>
-                                  <p class="profile-company">John Smith LLC</p>
-                              </div>
-                              <div class="profile-links-section">
-                                  <hr>
-                                  <ul>
-                                      <li><a href="#">DASHBOARD</a></li>
-                                      <li><a href="#">UPGRADE PLAN</a></li>
-                                      <li><a href="#">VIEW STORE</a></li>
-                                  </ul>
-                                  <hr>
-                                  <a class="plain_blue_link" href="#">
-                                      <i class="glyphicon glyphicon-log-out"></i> Sign out
-                                  </a>
+                              </a>
+                              <div class="dropdown-menu user_profile_dropdown visitors_dropdown">
+                                  <div class="profile-links-section">
+                                      <a href="#" class="btn btn-sm btn-block btn-default abraa-btn abraa-blue-btn mb5">SIGNUP</a>
+                                      <a href="#" class="btn btn-sm btn-block btn-default abraa-btn abraa-white-btn">LOGIN</a>
+                                  </div>
                               </div>
                           </div>
                       </div>
                   </div>
+                  <!-- end: login/signup buttons -->
+
+                  <!-- USER PROFILE DROPDOWN HIDDEN ON VISITORS PAGE -->
+                  <!-- start: user profile dropdown -->
+                  <!--<div class="user_profile_box navbar_dropdown">-->
+                      <!--<div class="dropdown">-->
+                          <!--<a class="user_profile_btn expand_navbar_dropdown_btn dropdown-toggle" type="button" data-toggle="dropdown">-->
+                              <!--<img src="img/default_user_icon.png" alt="">-->
+                              <!--<i class="glyphicon glyphicon-triangle-bottom"></i>-->
+                          <!--</a>-->
+                          <!--<div class="dropdown-menu user_profile_dropdown">-->
+                              <!--<div class="profile-img-section">-->
+                                  <!--<img src="img/default_user_icon.png" alt="">-->
+                                  <!--<i class="glyphicon glyphicon-triangle-bottom"></i>-->
+                              <!--</div>-->
+                              <!--<div class="profile-info-section">-->
+                                  <!--<p class="profile-name">John Smith</p>-->
+                                  <!--<p class="profile-email">johnsmith@company.com</p>-->
+                                  <!--<p class="profile-company">John Smith LLC</p>-->
+                              <!--</div>-->
+                              <!--<div class="profile-links-section">-->
+                                  <!--<hr>-->
+                                  <!--<ul>-->
+                                      <!--<li><a href="#">DASHBOARD</a></li>-->
+                                      <!--<li><a href="#">UPGRADE PLAN</a></li>-->
+                                      <!--<li><a href="#">VIEW STORE</a></li>-->
+                                  <!--</ul>-->
+                                  <!--<hr>-->
+                                  <!--<a class="plain_blue_link" href="#">-->
+                                      <!--<i class="glyphicon glyphicon-log-out"></i> Sign out-->
+                                  <!--</a>-->
+                              <!--</div>-->
+                          <!--</div>-->
+                      <!--</div>-->
+                  <!--</div>-->
                   <!-- end: user profile dropdown -->
 
                   <!-- start: language switch dropdown -->

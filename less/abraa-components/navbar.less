@@ -136,13 +136,87 @@
         right: 0;
         margin-top: -50px;
       }
-      .user_profile_btn{
-        img{
-          width: 40px;
-          border-radius: 50%;
-          border: 1px solid @light-gray;
-          @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
-            width: 30px;
+      .dropdown{
+        .user_profile_btn{
+          img{
+            width: 40px;
+            border-radius: 50%;
+            border: 1px solid @light-gray;
+            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+              width: 30px;
+            }
+          }
+        }
+        &.open{
+          .user_profile_dropdown{
+            width: 180px;
+            padding: 10px;
+            margin-top: -51px;
+            margin-left: -1px;
+            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+              margin-top: -41px;
+              margin-left: -11px;
+            }
+            @media screen and (max-width: @screen-xs-max){
+              margin-left: -101px;
+              margin-top: -45px;
+            }
+            &.visitors_dropdown{
+              margin-top: 5px;
+            }
+            .no-box-shadow;
+            border: 1px solid @abraa-blue;
+            .border-radius;
+            .profile-img-section{
+              img{
+                width: 40px;
+                border-radius: 50%;
+                border: 1px solid @light-gray;
+                @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+                  width: 30px;
+                }
+              }
+              .glyphicon{
+                float: right;
+                margin-top: 10px;
+                font-size: 12px;
+                color: @dark-gray;
+              }
+            }
+            .profile-info-section{
+              padding-top: 20px;
+              p{
+                .no-margin;
+                color: @medium-gray;
+                &.profile-email{
+                  color: @abraa-blue;
+                }
+              }
+            }
+            .profile-links-section{
+              hr{
+                margin-top: 10px;
+                margin-bottom: 10px;
+              }
+              a {
+                .no-margin;
+              }
+              ul{
+                list-style-type: none;
+                .no-padding;
+                li{
+                  .no-padding;
+                  a{
+                    display: block;
+                    width: 100%;
+                    padding: 5px 0px;
+                    &:hover, &:active{
+                      color: @abraa-blue;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -158,6 +232,122 @@
         font-size: 22px;
         color: @abraa-blue;
       }
+    }
+    .user_notifications_box{
+      .notifications-count{
+        display: none;
+      }
+      .user_notifications_btn{
+        .glyphicon-bell{
+          margin-top: 10px;
+          vertical-align: bottom;
+          font-size: 22px;
+          color: @light-gray;
+          &:hover{
+            color: @dark-gray;
+          }
+        }
+      }
+      .user_notifications_dropdown{
+        padding: 10px;
+        width: 200px;
+        margin-top: -34px;
+        margin-left: 6px;
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+          margin-top: -33px;
+          margin-left: -8px;
+        }
+        .glyphicon-bell{
+          font-size: 22px;
+          color: @light-gray;
+        }
+        .notifications-header-section{
+          .glyphicon-triangle-bottom{
+            float: right;
+            margin-top: 5px;
+            font-size: 12px;
+            color: @dark-gray;
+          }
+          padding-bottom: 10px;
+        }
+        .notifications-list{
+          ul{
+            list-style-type: none;
+            .no-padding;
+            li{
+              padding-left: 30px;
+              border-bottom: 1px solid @light-gray;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              .notification-label{
+                position: absolute;
+                display: block;
+                height: 20px;
+                width: 20px;
+                margin-left: -30px;
+                .border-radius;
+                &.label-yellow{
+                  background-color: @yellow;
+                }
+                &.label-green{
+                  background-color: @green;
+                }
+                &.label-red{
+                  background-color: @red;
+                }
+                &.label-black{
+                  background-color: @black;
+                }
+              }
+              .notification-text{
+                color: @medium-gray;
+                font-size: 10px;
+              }
+              .notification-action{
+                a{
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.with-notifications{
+          .glyphicon-bell {
+            color: @abraa-blue;
+            &:hover {
+              color: @abraa-dark-blue;
+            }
+          }
+          .notifications-count{
+            display: block;
+            background-color: @red;
+            color: @white;
+            padding: 0;
+            height: 13px;
+            width: 13px;
+            font-size: 8px;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 1px;
+            position: absolute;
+            top: 0;
+            margin-left: 14px;
+            margin-top: 5px;
+          }
+      }
+    }
+  }
+
+  .visitor_buttons{
+    position: absolute;
+    width: 200px;
+    right: 65px;
+    @media screen and (min-width: @screen-lg-min){
+      margin-top: 5px;
+    }
+    @media screen and (max-width: @screen-xs-max){
+      right: 0;
     }
   }
 }

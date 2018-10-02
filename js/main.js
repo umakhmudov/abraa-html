@@ -1,6 +1,10 @@
 $(document).ready(function(){
-    $('#headerSearchType').selectBox();
-    $('#headerLang').selectBox();
+    $('#headerSearchType').selectBox({
+        mobile: true
+    });
+    $('#headerLang').selectBox({
+        mobile: true
+    });
 
     $('.mobile_search_toggle_btn').click(function(e){
         e.preventDefault();

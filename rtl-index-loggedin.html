@@ -81,10 +81,35 @@
 
                 <!-- start: user profile dropdown -->
                 <div class="user_profile_box navbar_dropdown">
-                    <a class="user_profile_btn expand_navbar_dropdown_btn" href="#">
-                        <img src="img/default_user_icon.png" alt="">
-                        <i class="glyphicon glyphicon-triangle-bottom"></i>
-                    </a>
+                    <div class="dropdown">
+                        <a class="user_profile_btn expand_navbar_dropdown_btn dropdown-toggle" type="button" data-toggle="dropdown">
+                            <img src="img/default_user_icon.png" alt="">
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                        </a>
+                        <div class="dropdown-menu user_profile_dropdown">
+                            <div class="profile-img-section">
+                                <img src="img/default_user_icon.png" alt="">
+                                <i class="glyphicon glyphicon-triangle-bottom"></i>
+                            </div>
+                            <div class="profile-info-section">
+                                <p class="profile-name">John Smith</p>
+                                <p class="profile-email">johnsmith@company.com</p>
+                                <p class="profile-company">John Smith LLC</p>
+                            </div>
+                            <div class="profile-links-section">
+                                <hr>
+                                <ul>
+                                    <li><a href="#">DASHBOARD</a></li>
+                                    <li><a href="#">UPGRADE PLAN</a></li>
+                                    <li><a href="#">VIEW STORE</a></li>
+                                </ul>
+                                <hr>
+                                <a class="plain_blue_link" href="#">
+                                    <i class="glyphicon glyphicon-log-out"></i> Sign out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- end: user profile dropdown -->
 

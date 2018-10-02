@@ -85,6 +85,27 @@
         right: auto;
         left: 0;
       }
+      .dropdown{
+        &.open{
+          .user_profile_dropdown{
+            margin-left: 0;
+            margin-right: -1px;
+            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+              margin-right: -11px;
+              margin-left: 0;
+            }
+            @media screen and (max-width: @screen-xs-max){
+              margin-right: -111px;
+              margin-left: 0;
+            }
+            .profile-img-section{
+              .glyphicon{
+                float: left;
+              }
+            }
+          }
+        }
+      }
     }
 
     .mobile_search_box{
@@ -92,6 +113,58 @@
       left: 85px;
     }
 
+    .user_notifications_box{
+      .user_notifications_dropdown{
+        margin-left: 0px;
+        margin-right: 6px;
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+          margin-right: -8px;
+          margin-left: 0;
+        }
+        .notifications-header-section{
+          .glyphicon-triangle-bottom{
+            float: left;
+          }
+        }
+        .notifications-list{
+          ul{
+            li{
+              padding-left: 0;
+              padding-right: 30px;
+              .notification-label{
+                margin-left: 0;
+                margin-right: -30px;
+              }
+              .notification-action{
+                text-align: left !important;
+              }
+            }
+          }
+        }
+      }
+      &.with-notifications{
+        .glyphicon-bell {
+          color: @abraa-blue;
+        }
+        .notifications-count{
+          margin-left: 0;
+          margin-right: 14px;
+        }
+      }
+    }
+
+  }
+
+  .visitor_buttons{
+    right: auto;
+    left: 65px;
+    @media screen and (min-width: @screen-lg-min){
+      margin-top: 5px;
+    }
+    @media screen and (max-width: @screen-xs-max){
+      right: auto;
+      left: 0;
+    }
   }
 }
 

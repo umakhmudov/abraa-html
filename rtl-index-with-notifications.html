@@ -1,8 +1,8 @@
-<!doctype html dir="ltr">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ar" dir="rtl"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ar" dir="rtl"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ar" dir="rtl"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ar" dir="rtl"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,11 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Original Bootstrap 3.x -->
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<!-- UNCOMMENT FOR RTL LAYOUT -->
-		<!--<link rel="stylesheet" href="css/bootstrap-rtl.css">-->
+		<link rel="stylesheet" href="css/bootstrap-rtl.css">
         <link rel="stylesheet" href="css/styles.css">
-        <!-- UNCOMMENT FOR RTL LAYOUT -->
-        <!--<link rel="stylesheet" href="css/styles-rtl.css">-->
+        <link rel="stylesheet" href="css/styles-rtl.css">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -80,6 +78,57 @@
                       </a>
                   </div>
                   <!-- end: mobile search toggle -->
+
+                  <!-- start: notifications dropdown -->
+                  <div class="hidden-xs hidden-sm user_notifications_box with-notifications navbar_dropdown">
+                      <div class="dropdown">
+                          <a class="user_notifications_btn expand_navbar_dropdown_btn dropdown-toggle" type="button" data-toggle="dropdown">
+                              <i class="glyphicon glyphicon-bell"></i>
+                              <i class="glyphicon glyphicon-triangle-bottom"></i>
+                              <span class="notifications-count">5</span>
+                          </a>
+                          <div class="dropdown-menu user_notifications_dropdown">
+                              <div class="notifications-header-section">
+                                  <i class="glyphicon glyphicon-bell"></i>
+                                  <i class="glyphicon glyphicon-triangle-bottom"></i>
+                                  <span class="notifications-count">5</span>
+                              </div>
+                              <div class="notifications-list">
+                                  <ul>
+                                      <li>
+                                          <span class="notification-label label-yellow"></span>
+                                          <div class="notification-text">Your subscription will be ended after 12 hours, please renew</div>
+                                          <div class="notification-action text-right">
+                                              <a href="#" class="plain_blue_link">RENEW</a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <span class="notification-label label-green"></span>
+                                          <div class="notification-text">Your subscription will be ended after 12 hours, please renew</div>
+                                          <div class="notification-action text-right">
+                                              <a href="#" class="plain_blue_link">DISMISS</a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <span class="notification-label label-red"></span>
+                                          <div class="notification-text">Your subscription will be ended after 12 hours, please renew</div>
+                                          <div class="notification-action text-right">
+                                              <a href="#" class="plain_blue_link">UPGRADE</a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <span class="notification-label label-black"></span>
+                                          <div class="notification-text">Your subscription will be ended after 12 hours, please renew</div>
+                                          <div class="notification-action text-right">
+                                              <a href="#" class="plain_blue_link">UNDO</a>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end: notifications dropdown -->
 
                   <!-- start: user profile dropdown -->
                   <div class="user_profile_box navbar_dropdown">

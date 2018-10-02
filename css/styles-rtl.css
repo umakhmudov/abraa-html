@@ -148,9 +148,74 @@
     left: 0;
   }
 }
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown {
+  margin-left: 0;
+  margin-right: -1px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown {
+    margin-right: -11px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown {
+    margin-right: -111px;
+    margin-left: 0;
+  }
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-img-section .glyphicon {
+  float: left;
+}
 .navbar-abraa .navbar_right .mobile_search_box {
   right: auto;
   left: 85px;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown {
+  margin-left: 0px;
+  margin-right: 6px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown {
+    margin-right: -8px;
+    margin-left: 0;
+  }
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-header-section .glyphicon-triangle-bottom {
+  float: left;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-label {
+  margin-left: 0;
+  margin-right: -30px;
+}
+.navbar-abraa .navbar_right .user_notifications_box .user_notifications_dropdown .notifications-list ul li .notification-action {
+  text-align: left !important;
+}
+.navbar-abraa .navbar_right .user_notifications_box.with-notifications .glyphicon-bell {
+  color: #4da1ff;
+}
+.navbar-abraa .navbar_right .user_notifications_box.with-notifications .notifications-count {
+  margin-left: 0;
+  margin-right: 14px;
+}
+.navbar-abraa .visitor_buttons {
+  right: auto;
+  left: 65px;
+}
+@media screen and (min-width: 1200px) {
+  .navbar-abraa .visitor_buttons {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-abraa .visitor_buttons {
+    right: auto;
+    left: 0;
+  }
 }
 .selectBox .selectBox-label {
   float: right;
