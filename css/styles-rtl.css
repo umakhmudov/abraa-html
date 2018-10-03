@@ -31,6 +31,12 @@
 .glyphicon-block-triangle-down:before {
   content: "\e252";
 }
+[dir=rtl] .text-right {
+  text-align: left !important;
+}
+[dir=rtl] .pull-right {
+  float: left !important;
+}
 .navbar-abraa .navbar-header .navbar-toggle {
   float: right;
 }

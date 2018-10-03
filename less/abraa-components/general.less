@@ -4,6 +4,146 @@ body{
   background-color: @body_bg;
   padding: @body_padding;
 }
+label{
+  font-weight: normal;
+  color: @medium-gray;
+}
+
+//background sections
+.white_bg_section{
+  background-color: @white;
+}
+.light_blue_bg_section{
+  background-color: @bg_light_blue;
+}
+.dark_blue_bg_section{
+  background-color: @bg_dark_blue;
+  h3{
+    color: @white !important;
+  }
+}
+.bright_blue_bg_section{
+  background-color: @bg_bright_blue;
+  h3{
+    color: @white;
+  }
+}
+
+//categories slider
+#categories_slider {
+  position: relative;
+
+  @media (max-width: 767px) { border-color: transparent; }
+
+  .MS-content {
+    margin: 15px 5%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @media (max-width: 767px) { margin: 0; }
+
+    .item {
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      vertical-align: top;
+      padding: 10px;
+      img{
+        width: 100%;
+      }
+
+      width: 20%;
+      @media (max-width: 1200px) { width: 25%; }
+      @media (max-width: 992px) { width: 33.3333%; }
+      @media (max-width: 767px) { width: 50%; }
+
+      p {
+        color: @medium-gray;
+        text-align: center;
+        line-height: 1;
+        vertical-align: middle;
+        margin: 0;
+        padding: 10px 0;
+      }
+    }
+  }
+  .MS-controls {
+    button {
+      position: absolute;
+      border: none;
+      background: transparent;
+      font-size: 30px;
+      outline: 0;
+      top: 60px;
+
+      @media (max-width: 767px) { display: none; }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+    .MS-left {
+      left: 10px;
+      @media (max-width: 992px) { left: -2px; }
+    }
+    .MS-right {
+      right: 10px;
+      @media (max-width: 992px) { right: -2px; }
+    }
+  }
+}
+
+.item-box{
+  .box-shadow(0px 0px 5px 0px @light-gray);
+  background-color: @white;
+  padding: 10px;
+  .mt25;
+  .item-discount{
+    position: absolute;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 10px;
+    color: @white;
+    background-color: @discount-red;
+    margin-top: 10px;
+    .box-shadow(0px 3px 3px 0px @dark-gray);
+  }
+  img{
+    width: 100%;
+  }
+  .item-info{
+    .item-name{
+      color: @abraa-blue;
+    }
+    .item-price, .item-min-order{
+      color: @dark-gray;
+      small{
+        color: @medium-gray;
+      }
+    }
+  }
+  .supplier-info{
+    .supplier-ranking{
+      i{
+        color: @ranking-yellow;
+      }
+      .ranking_count{
+        color: @medium-gray;
+      }
+    }
+    .supplier-origin{
+      img{
+        width: 30px;
+        display: inline-block;
+      }
+    }
+    .supplier-action{
+      height: 60px;
+      padding-top: 20px
+    }
+  }
+}
 
 //General Hyperlinks For Website
 .plain_blue_link{
@@ -16,6 +156,93 @@ body{
 
 hr.dark{
   border-color: @hr-gray;
+}
+.white-header{
+  color: @white;
+  text-shadow: 0px 2px 5px @dark-gray;
+}
+.item-sm-block{
+  color: @dark-gray;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 14px;
+  small{
+    color: @medium-gray;
+  }
+}
+
+.brands-discover-list{
+  a{
+    float: none;
+    display: inline-block;
+    margin: 10px;
+    .no-underline-on-hover;
+    color: @white;
+  }
+}
+
+.brands-discover-list, .brands-list, .suppliers-list{
+  img{
+    height: 100px;
+  }
+}
+.suppliers-list{
+  a{
+    float: none;
+    display: inline-block;
+    margin: 10px;
+    color: @medium-gray;
+    .no-underline-on-hover;
+  }
+  img{
+    .border-radius;
+    border: 2px solid @bg_light_blue;
+  }
+}
+
+
+.full-width-banner{
+  width: 100%;
+}
+
+//page banners
+.page-banner{
+  background-size: cover;
+  &.home-page{
+    h2{
+      font-size: 52px;
+      padding-top: 60px;
+    }
+    .rfq-create-wrapper{
+      padding: 30px 20px;
+      background-color: @white;
+      margin: 30px 0;
+      .box-shadow(0px 0px 5px 0px @dark-gray);
+      .border-radius;
+    }
+  }
+}
+
+.usp_block{
+  display: inline-block;
+  width: 300px;
+  padding: 20px 0 20px 60px;
+  text-align: left;
+  img{
+    float: left;
+    width: 46px;
+    margin-left: -53px;
+  }
+  h4{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: @dark-gray;
+  }
+  p{
+    .no-margin;
+    color: @medium-gray;
+    font-size: 12px;
+  }
 }
 
 //footer styles
@@ -75,6 +302,9 @@ hr.dark{
 }
 .mt25{
   margin-top: 25px;
+}
+.pad30{
+  padding: 30px;
 }
 
 // BUTTON STYLES
