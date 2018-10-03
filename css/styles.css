@@ -502,6 +502,9 @@ hr.dark {
 .filters-bar .link_filters li a:hover {
   color: #4da1ff;
 }
+.border-bottom-section {
+  border-bottom: 2px solid #efefef;
+}
 .supplier-page-header {
   position: absolute;
   width: 100%;
