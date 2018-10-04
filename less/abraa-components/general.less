@@ -34,7 +34,7 @@ label{
   position: relative;
 
   @media (max-width: 767px) { border-color: transparent; }
-
+  //MS classes are from the vendor for the slider
   .MS-content {
     margin: 15px 5%;
     overflow: hidden;
@@ -137,13 +137,17 @@ label{
   }
 }
 
+//horizontal line was used on index page
 hr.dark{
   border-color: @hr-gray;
 }
+
+//??? can we put name which is more explanatory
 .white-header{
   color: @white;
   text-shadow: 0px 2px 5px @dark-gray;
 }
+//is a general box cotainer
 .item-sm-block{
   color: @dark-gray;
   margin-bottom: 20px;
@@ -153,6 +157,7 @@ hr.dark{
     color: @medium-gray;
   }
 }
+
 
 .brands-discover-list{
   a{
@@ -187,7 +192,7 @@ hr.dark{
   width: 100%;
 }
 
-//page banners
+//general class for banners used on supplier and home page
 .page-banner{
   background-size: cover;
   &.home-page{
@@ -385,6 +390,7 @@ hr.dark{
       img{
         width: 100%;
       }
+      //???n mobile the logo moves
       @media screen and (max-width: @screen-xs-max){
         position: relative;
         display: block;
