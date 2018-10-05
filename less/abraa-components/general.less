@@ -1,9 +1,11 @@
-//General less for the website.
+//General styles shared across the website
 
+//set default background and padding for the body
 body{
   background-color: @body_bg;
   padding: @body_padding;
 }
+//overwrite default form label styles
 label{
   font-weight: normal;
   color: @medium-gray;
@@ -29,8 +31,9 @@ label{
       img{
         width: 100%;
       }
-
       width: 20%;
+
+      //update width for smaller sizes
       @media (max-width: @screen-md-max) { width: 25%; }
       @media (max-width: @screen-sm-max) { width: 33.3333%; }
       @media (max-width: @screen-xs-max) { width: 50%; }
@@ -53,20 +56,18 @@ label{
       font-size: 30px;
       outline: 0;
       top: 60px;
-
-      @media (max-width: @screen-xs-max) { display: none; }
-
       &:hover {
         cursor: pointer;
       }
-
     }
     .MS-left {
       left: 10px;
+      //adjust the position of the arrows on smaller screen
       @media (max-width: @screen-sm-max) { left: -2px; }
     }
     .MS-right {
       right: 10px;
+      //adjust the position of the arrows on smaller screen
       @media (max-width: @screen-sm-max) { right: -2px; }
     }
   }
@@ -135,6 +136,7 @@ label{
   color: @dark-gray;
   background-color: @footer-bg;
   padding: 30px 0;
+  //adjust the text to be centered on mobile for easier readability
   @media screen and (max-width: @screen-xs-max){
     text-align: center;
   }
@@ -164,6 +166,7 @@ label{
     display: block;
     img{
       width: 100%;
+      //make the google play link fixed width on mobile so it's not pixelated
       @media screen and (max-width: @screen-xs-max){
         max-width: 150px;
         margin-top: 10px;

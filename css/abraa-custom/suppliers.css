@@ -18,20 +18,6 @@
 .no-underline-on-hover:hover {
   text-decoration: none;
 }
-.glyphicon-block {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.glyphicon-block-triangle-down:before {
-  content: "\e252";
-}
 .supplier-page-header {
   position: absolute;
   width: 100%;

@@ -1,13 +1,13 @@
+//shortcut mixins and classes used
+
 .text-shadow (@string: 0 1px 1px @dark-gray) {
   text-shadow: @string;
 }
-
 .box-shadow (@string) {
   -webkit-box-shadow: @string;
   -moz-box-shadow:    @string;
   box-shadow:         @string;
 }
-
 .border-radius (@radius: 5px) {
   -webkit-border-radius: @radius;
   -moz-border-radius:    @radius;
@@ -17,7 +17,6 @@
   -webkit-background-clip: padding-box;
   background-clip:         padding-box;
 }
-
 .border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
   -webkit-border-top-right-radius:    @topright;
   -webkit-border-bottom-right-radius: @bottomright;
@@ -38,7 +37,6 @@
   -webkit-background-clip: padding-box;
   background-clip:         padding-box;
 }
-
 .no-border{
   border: none;
 }
@@ -56,28 +54,11 @@
 .no-padding{
   padding: 0;
 }
-
 .no-underline-on-hover{
   &:hover{
     text-decoration: none;
   }
 }
-.glyphicon-block{
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.glyphicon-block-triangle-down{
-  &:before { content: "\e252"; }
-}
-
 .transition (@speed: 0.5s) {
   -webkit-transition: all @speed;
   -moz-transition: all @speed;

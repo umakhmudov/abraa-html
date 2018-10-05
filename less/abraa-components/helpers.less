@@ -9,6 +9,7 @@
   margin-top: 25px;
 }
 .mmt25{
+  //set top margin for mobile screens only, useful when they're side by side on desktop
   @media screen and (max-width: @screen-xs-max){
     margin-top: 25px;
   }
@@ -47,6 +48,7 @@
   height: 100%;
 }
 .mw100{
+  //width 100% on mobile screen only
   @media screen and (max-width: @screen-xs-max){
     width: 100%;
   }
@@ -58,6 +60,7 @@
 }
 .border-right{
   border-right: 1px solid @light-gray;
+  //for lists where on desktop they're side by side, on mobile we want the border to be on the bottom as a separator
   @media screen and (max-width: @screen-xs-max){
     border: none;
     border-bottom: 1px solid @light-gray;

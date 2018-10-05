@@ -3,6 +3,7 @@
 //mixins
 @import 'abraa-mixins/utilities.less';
 
+//some specific classes that need to be reversed (left-right)
 [dir=rtl]{
   .text-right{
     text-align: left !important;
@@ -17,7 +18,7 @@
   }
 }
 
-///navbar
+///navbar specific for RTL
 .navbar-abraa{
   .navbar-header{
     .navbar-toggle{
@@ -198,13 +199,12 @@
   }
 }
 
+//overwrite right border to left border for RTL
 .border-right{
   border: none;
   border-left: 1px solid @light-gray;
   @media screen and (max-width: @screen-xs-max){
     border: none;
     border-bottom: 1px solid @light-gray;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
   }
 }

@@ -18,20 +18,6 @@
 .no-underline-on-hover:hover {
   text-decoration: none;
 }
-.glyphicon-block {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.glyphicon-block-triangle-down:before {
-  content: "\e252";
-}
 /* Dropdown control */
 .selectBox-dropdown {
   min-width: 150px;
@@ -320,11 +306,6 @@ label {
   outline: 0;
   top: 60px;
 }
-@media (max-width: 767px) {
-  .horizontal-slider .MS-controls button {
-    display: none;
-  }
-}
 .horizontal-slider .MS-controls button:hover {
   cursor: pointer;
 }
@@ -464,6 +445,20 @@ label {
 }
 .filters-bar .link_filters li a:hover {
   color: #4da1ff;
+}
+.glyphicon-block-selectbox {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-block-selectbox:before {
+  content: "\e252";
 }
 .selectBox {
   border: none;
@@ -1093,7 +1088,6 @@ label {
   background-color: #4da1ff;
   color: #ffffff;
 }
-/* The container */
 .checkbox-container {
   display: block;
   position: relative;
@@ -1105,15 +1099,23 @@ label {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
 }
-/* Hide the browser's default checkbox */
 .checkbox-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-/* Create a custom checkbox */
-.checkmark {
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #4da1ff;
+  border-color: #4da1ff;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.checkbox-container .checkmark {
   position: absolute;
   top: 2px;
   left: 0;
@@ -1127,28 +1129,12 @@ label {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 2px solid #efefef;
+  /* Create the checkmark/indicator (hidden when not checked) */
 }
-/* On mouse-over, add a grey background color */
-.checkbox-container:hover input ~ .checkmark {
-  border-color: #4da1ff;
-}
-/* When the checkbox is checked, add a blue background */
-.checkbox-container input:checked ~ .checkmark {
-  background-color: #4da1ff;
-  border-color: #4da1ff;
-}
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.checkbox-container .checkmark:after {
   content: "";
   position: absolute;
   display: none;
-}
-/* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
-  display: block;
-}
-/* Style the checkmark/indicator */
-.checkbox-container .checkmark:after {
   left: 5px;
   top: 2px;
   width: 5px;
@@ -1158,6 +1144,9 @@ label {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.checkbox-container:hover input ~ .checkmark {
+  border-color: #4da1ff;
 }
 .collapse-filter-btn {
   color: #9c9c9c;

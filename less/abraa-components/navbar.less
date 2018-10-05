@@ -1,3 +1,5 @@
+//Styling for the top header navigation bar on the website
+
 .navbar-abraa{
   background-color: @navbar_bg;
   box-shadow: @navbar_box_shadow_size @navbar_box_shadow_color;
@@ -16,17 +18,19 @@
       img{
         height: @navbar_logo_height;
       }
+      //adjust the padding for smaller screens to fit
       @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
         padding-left: 0;
         padding-right: 0;
       }
+      //adjust alignment so it can be on the left
       @media screen and (max-width: @screen-xs-max) {
         display: inline-block;
       }
     }
   }
-
   .header-search-section{
+    //hide the search section on mobile, unless it's toggled (active class is added)
     @media screen and (max-width: @screen-xs-max) {
       display: none;
       &.active{
@@ -40,11 +44,11 @@
       top: 56px;
     }
   }
-
   .navbar-search{
     margin: 0;
     padding: 14px 0 14px 0;
     width: 80%;
+    //full width navbar search on mobile screen
     @media screen and (max-width: @screen-xs-max) {
       width: 100%;
     }
@@ -67,6 +71,7 @@
       .text{
         display: none;
       }
+      //inverse the search button for mobile, set blue background and white text
       @media screen and (max-width: @screen-xs-max) {
         color: @white;
         background-color: @abraa-blue;
@@ -88,11 +93,13 @@
     img{
       margin-right: 5px;
     }
+    //hide the new rfq text (but not the icon) on tablet screen (to fit)
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
       span{
         display: none;
       }
     }
+    //hide the new rfq text and the icon on mobile
     @media screen and (max-width: @screen-xs-max) {
       display: none;
     }
@@ -100,9 +107,11 @@
   .navbar_right{
     text-align: right;
     padding: 12px 0;
+    //adjust padding for smaller screens
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
       padding: 16px 0;
     }
+    //adjust padding for smaller screens
     @media screen and (max-width: @screen-xs-max) {
       padding: 0;
     }
@@ -113,9 +122,11 @@
       display: inline-block;
       color: @dark-gray;
       margin-left: 10px;
+      //remove the left margin on smaller screen to fit
       @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
         margin-left: 0;
       }
+      //adjust the margins for mobile
       @media screen and (max-width: @screen-xs-max) {
         margin-top: 4px;
         margin-right: 10px;
@@ -125,12 +136,14 @@
       .glyphicon{
         font-size: 10px;
         margin-left: 6px;
+        //move the icon closer on smaller screens to fit
         @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
           margin-left: 3px;
         }
       }
     }
     .user_profile_box{
+      //user profile dropdown to move to the right on mobile
       @media screen and (max-width: @screen-xs-max) {
         position: absolute;
         right: 0;
@@ -142,6 +155,7 @@
             width: 40px;
             border-radius: 50%;
             border: 1px solid @light-gray;
+            //smaller profile btn on tablets
             @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
               width: 30px;
             }
@@ -153,10 +167,12 @@
             padding: 10px;
             margin-top: -51px;
             margin-left: -1px;
+            //adjust profile dropdown to align on smaller screens
             @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
               margin-top: -41px;
               margin-left: -11px;
             }
+            //adjust profile dropdown to align on smaller screens
             @media screen and (max-width: @screen-xs-max){
               margin-left: -101px;
               margin-top: -45px;
@@ -172,6 +188,7 @@
                 width: 40px;
                 border-radius: 50%;
                 border: 1px solid @light-gray;
+                //adjust size to fit on smaller screens
                 @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
                   width: 30px;
                 }
@@ -258,6 +275,7 @@
         width: 200px;
         margin-top: -34px;
         margin-left: 6px;
+        //adjust margins to fit on smaller screens
         @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
           margin-top: -33px;
           margin-left: -8px;
@@ -343,14 +361,15 @@
       }
     }
   }
-
   .visitor_buttons{
     position: absolute;
     width: 200px;
     right: 65px;
+    //add a margin for bigger screens
     @media screen and (min-width: @screen-lg-min){
       margin-top: 5px;
     }
+    //align the visitor buttons on the right for mobile
     @media screen and (max-width: @screen-xs-max){
       right: 0;
     }

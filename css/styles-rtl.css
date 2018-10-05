@@ -17,20 +17,6 @@
 .no-underline-on-hover:hover {
   text-decoration: none;
 }
-.glyphicon-block {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.glyphicon-block-triangle-down:before {
-  content: "\e252";
-}
 [dir=rtl] .text-right {
   text-align: left !important;
 }
@@ -245,7 +231,5 @@
   .border-right {
     border: none;
     border-bottom: 1px solid #efefef;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
   }
 }

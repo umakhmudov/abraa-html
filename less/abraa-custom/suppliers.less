@@ -7,17 +7,20 @@
   position: absolute;
   width: 100%;
   margin-top: -260px;
+  //on mobile re-align the header to be on top
   @media screen and (max-width: @screen-xs-max){
     position: relative;
     margin-top: 0;
   }
   .supplier-header-action{
     padding: 40px 0;
+    //on smaller screens make the buttons smaller
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
       a{
         width: 100%;
       }
     }
+    //on mobile adjust the buttons
     @media screen and (max-width: @screen-xs-max){
       padding: 20px 0;
       padding-top: 0;
@@ -32,9 +35,11 @@
   .supplier-header-info{
     color: @white;
     .text-shadow;
+    //on desktop the image is on the left, so leave space for that
     @media screen and (min-width: @screen-sm-max){
       padding-left: 200px;
     }
+    //on mobile, align text centrally
     @media screen and (max-width: @screen-xs-max){
       text-align: center;
       color: @dark-gray;
@@ -42,12 +47,14 @@
     }
     .supplier-membership{
       color: @light-gray;
+      //color change on mobile, since it doesn't have the background image
       @media screen and (max-width: @screen-xs-max){
         color: @dark-gray;
       }
     }
     .ranking_count{
       color: @white;
+      //color change on mobile, since it doesn't have the background image
       @media screen and (max-width: @screen-xs-max){
         color: @dark-gray;
       }
@@ -60,17 +67,20 @@
       background-color: @white;
       img{
         width: 100%;
+        //adjust to fit on smaller screens
         @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
           height: 100%;
           width: auto !important;
         }
       }
+      //adjust to fit on smaller screens
       @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
         margin: 0 !important;
         margin-top: -180px !important;
         width: auto;
         height: 160px;
       }
+      //adjust to fit on smaller screens
       @media screen and (max-width: @screen-xs-max){
         position: relative;
         display: block;
@@ -113,9 +123,11 @@
     .stat-number{
       font-size: 44px;
       .no-margin;
+      //adjust to fit on smaller screens
       @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
         font-size: 32px;
       }
+      //adjust to fit on smaller screens
       @media screen and (max-width: @screen-xs-max){
         font-size: 24px;
       }
@@ -123,9 +135,11 @@
     .stat-title{
       font-size: 18px;
       .no-margin;
+      //adjust to fit on smaller screens
       @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
         font-size: 14px;
       }
+      //adjust to fit on smaller screens
       @media screen and (max-width: @screen-xs-max){
         font-size: 12px;
       }
@@ -139,6 +153,7 @@
   padding-bottom: 0;
   display: block;
   width: 100%;
+  //adjust to fit on smaller screens
   @media screen and (max-width: @screen-xs-max){
     padding-top: 10px;
   }
@@ -152,6 +167,7 @@
     display: inline-block;
     padding: 0 20px 16px 20px;
     border-bottom: 4px solid @white;
+    //adjust to fit on smaller screens
     @media screen and (max-width: @screen-xs-max){
       font-size: 12px;
       display: inline-block;
@@ -181,6 +197,7 @@
     }
   }
   .about-info-right{
+    //left border only on desktops
     @media screen and (min-width: @screen-md-min){
       border-left: 1px solid @medium-gray;
     }
@@ -235,6 +252,7 @@
 .page-banner{
   &.supplier-page{
     height: 520px;
+    //adjust to fit on smaller screens
     @media screen and (max-width: @screen-xs-max){
       height: 200px;
     }

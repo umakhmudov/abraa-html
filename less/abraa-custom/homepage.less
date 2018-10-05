@@ -48,10 +48,12 @@
   width: 300px;
   padding: 20px 0 20px 60px;
   text-align: left;
+  //adjust width to fit on smaller screens
   @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
     width: 230px;
     padding-left: 30px;
   }
+  //full width on mobile
   @media screen and (max-width: @screen-xs-max){
     width: 100%;
   }
@@ -59,6 +61,7 @@
     float: left;
     width: 46px;
     margin-left: -53px;
+    //adjust width to fit on smaller screens
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
       width: 26px;
       margin-left: -33px;
@@ -69,6 +72,7 @@
     margin-top: 5px;
     margin-bottom: 0;
     color: @dark-gray;
+    //adjust font size for smaller screens
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
       font-size: 14px
     }
@@ -77,6 +81,7 @@
     .no-margin;
     color: @medium-gray;
     font-size: 12px;
+    //adjust font size for smaller screens
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
       font-size: 10px;
     }
@@ -90,12 +95,15 @@
   }
   img{
     width: 240px;
+    //adjust width for smaller screens
     @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max){
       width: 200px;
     }
+    //adjust width for smaller screens
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
       width: 160px;
     }
+    //adjust width for smaller screens
     @media screen and (max-width: @screen-xs-max){
       width: 100%
     }
