@@ -836,11 +836,16 @@ label {
   padding-top: 20px;
 }
 .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-info-section p {
+  font-size: 12px;
   margin: 0;
   color: #9c9c9c;
 }
 .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-info-section p.profile-email {
   color: #4da1ff;
+  font-style: italic;
+}
+.navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-info-section p.profile-company {
+  font-weight: bold;
 }
 .navbar-abraa .navbar_right .user_profile_box .dropdown.open .user_profile_dropdown .profile-links-section hr {
   margin-top: 10px;
