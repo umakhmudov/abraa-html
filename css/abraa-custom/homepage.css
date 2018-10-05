@@ -33,6 +33,7 @@
   content: "\e252";
 }
 .brands-discover-list a {
+  text-align: center;
   float: none;
   display: inline-block;
   margin: 10px;
@@ -47,6 +48,7 @@
   height: 100px;
 }
 .suppliers-list a {
+  text-align: center;
   float: none;
   display: inline-block;
   margin: 10px;
@@ -54,15 +56,6 @@
 }
 .suppliers-list a:hover {
   text-decoration: none;
-}
-.suppliers-list img {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 2px solid #f3f5f8;
 }
 .page-banner.home-page h2 {
   font-size: 52px;
@@ -88,18 +81,92 @@
   padding: 20px 0 20px 60px;
   text-align: left;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .usp_block {
+    width: 230px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .usp_block {
+    width: 100%;
+  }
+}
 .usp_block img {
   float: left;
   width: 46px;
   margin-left: -53px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .usp_block img {
+    width: 26px;
+    margin-left: -33px;
+    margin-top: 5px;
+  }
 }
 .usp_block h4 {
   margin-top: 5px;
   margin-bottom: 0;
   color: #6c6c6c;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .usp_block h4 {
+    font-size: 14px;
+  }
+}
 .usp_block p {
   margin: 0;
   color: #9c9c9c;
   font-size: 12px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .usp_block p {
+    font-size: 10px;
+  }
+}
+.product-categories-grid {
+  text-align: center;
+  margin-bottom: 0;
+}
+.product-categories-grid td {
+  background-color: #ffffff;
+}
+.product-categories-grid img {
+  width: 240px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .product-categories-grid img {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .product-categories-grid img {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product-categories-grid img {
+    width: 100%;
+  }
+}
+[dir=rtl] .usp_block {
+  padding: 20px 60px 20px 0;
+  text-align: right;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  [dir=rtl] .usp_block {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+[dir=rtl] .usp_block img {
+  float: right;
+  margin-left: 0;
+  margin-right: -53px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  [dir=rtl] .usp_block img {
+    margin-left: 0;
+    margin-right: -33px;
+  }
 }

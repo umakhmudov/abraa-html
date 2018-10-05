@@ -37,6 +37,9 @@
 [dir=rtl] .pull-right {
   float: left !important;
 }
+[dir=rtl] .glyphicon-arrow-right:before {
+  content: "\e091";
+}
 .navbar-abraa .navbar-header .navbar-toggle {
   float: right;
 }
@@ -233,4 +236,16 @@
 }
 .selectBox .selectBox-arrow:before {
   margin-left: 6px !important;
+}
+.border-right {
+  border: none;
+  border-left: 1px solid #efefef;
+}
+@media screen and (max-width: 767px) {
+  .border-right {
+    border: none;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
 }

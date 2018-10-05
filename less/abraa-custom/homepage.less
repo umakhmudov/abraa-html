@@ -5,6 +5,7 @@
 
 .brands-discover-list{
   a{
+    text-align: center;
     float: none;
     display: inline-block;
     margin: 10px;
@@ -19,15 +20,12 @@
 }
 .suppliers-list{
   a{
+    text-align: center;
     float: none;
     display: inline-block;
     margin: 10px;
     color: @medium-gray;
     .no-underline-on-hover;
-  }
-  img{
-    .border-radius;
-    border: 2px solid @bg_light_blue;
   }
 }
 .page-banner{
@@ -50,19 +48,77 @@
   width: 300px;
   padding: 20px 0 20px 60px;
   text-align: left;
+  @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    width: 230px;
+    padding-left: 30px;
+  }
+  @media screen and (max-width: @screen-xs-max){
+    width: 100%;
+  }
   img{
     float: left;
     width: 46px;
     margin-left: -53px;
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      width: 26px;
+      margin-left: -33px;
+      margin-top: 5px;
+    }
   }
   h4{
     margin-top: 5px;
     margin-bottom: 0;
     color: @dark-gray;
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      font-size: 14px
+    }
   }
   p{
     .no-margin;
     color: @medium-gray;
     font-size: 12px;
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      font-size: 10px;
+    }
+  }
+}
+.product-categories-grid{
+  text-align: center;
+  margin-bottom: 0;
+  td{
+    background-color: @white;
+  }
+  img{
+    width: 240px;
+    @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max){
+      width: 200px;
+    }
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      width: 160px;
+    }
+    @media screen and (max-width: @screen-xs-max){
+      width: 100%
+    }
+  }
+}
+
+//RTL layout - left/right alignments and positioning for some elements
+[dir=rtl]{
+  .usp_block{
+    padding: 20px 60px 20px 0;
+    text-align: right;
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      padding-left: 0;
+      padding-right: 30px;
+    }
+    img{
+      float: right;
+      margin-left: 0;
+      margin-right: -53px;
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+        margin-left: 0;
+        margin-right: -33px;
+      }
+    }
   }
 }

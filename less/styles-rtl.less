@@ -10,8 +10,14 @@
   .pull-right{
     float: left !important;
   }
+  .glyphicon-arrow-right{
+    &:before{
+      content: "\e091";
+    }
+  }
 }
 
+///navbar
 .navbar-abraa{
   .navbar-header{
     .navbar-toggle{
@@ -189,5 +195,16 @@
     &:before{
       margin-left: 6px !important;
     }
+  }
+}
+
+.border-right{
+  border: none;
+  border-left: 1px solid @light-gray;
+  @media screen and (max-width: @screen-xs-max){
+    border: none;
+    border-bottom: 1px solid @light-gray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }

@@ -2,8 +2,19 @@
 //(e.g. extra paddings, margins, spacings, backgrounds, colors, etc.)
 
 //------------ margins and paddings ----------
+.mt0{
+  margin-top: 0 !important;
+}
+.mt25{
+  margin-top: 25px;
+}
+.mmt25{
+  @media screen and (max-width: @screen-xs-max){
+    margin-top: 25px;
+  }
+}
 .mb0{
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .mb5{
   margin-bottom: 5px !important;
@@ -17,11 +28,15 @@
 .mb25{
   margin-bottom: 25px;
 }
-.mt25{
-  margin-top: 25px;
-}
 .pad30{
   padding: 30px;
+}
+.pl10{
+  padding-left: 10px;
+}
+.ptb20{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 //------------ width and height ----------
@@ -31,10 +46,30 @@
 .full-height{
   height: 100%;
 }
+.mw100{
+  @media screen and (max-width: @screen-xs-max){
+    width: 100%;
+  }
+}
 
 //------------ borders ----------
 .border-bottom-section{
   border-bottom: 2px solid @light-gray;
+}
+.border-right{
+  border-right: 1px solid @light-gray;
+  @media screen and (max-width: @screen-xs-max){
+    border: none;
+    border-bottom: 1px solid @light-gray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.light_blue_border{
+  border: 1px solid @abraa-light-blue-border;
+}
+.border-radius-5{
+  border-radius: 5px;
 }
 
 //------------ backgrounds ----------
@@ -51,10 +86,8 @@
   }
 }
 .bright_blue_bg_section{
-  background-color: @bg_bright_blue;
-  h3{
-    color: @white;
-  }
+  background-color: @abraa-blue;
+  color: @white;
 }
 
 //------------ colors ----------
