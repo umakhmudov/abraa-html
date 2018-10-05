@@ -293,6 +293,14 @@
 .supplier-products-tab {
   padding-bottom: 40px;
 }
+.page-banner.supplier-page {
+  height: 520px;
+}
+@media screen and (max-width: 767px) {
+  .page-banner.supplier-page {
+    height: 200px;
+  }
+}
 @media screen and (min-width: 991px) {
   [dir=rtl] .supplier-page-header .supplier-header-info {
     padding-left: 0;

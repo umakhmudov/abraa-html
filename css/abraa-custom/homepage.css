@@ -1,0 +1,105 @@
+.no-border {
+  border: none;
+}
+.no-outline {
+  outline: none;
+}
+.no-box-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.no-underline-on-hover:hover {
+  text-decoration: none;
+}
+.glyphicon-block {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-block-triangle-down:before {
+  content: "\e252";
+}
+.brands-discover-list a {
+  float: none;
+  display: inline-block;
+  margin: 10px;
+  color: #ffffff;
+}
+.brands-discover-list a:hover {
+  text-decoration: none;
+}
+.brands-discover-list img,
+.brands-list img,
+.suppliers-list img {
+  height: 100px;
+}
+.suppliers-list a {
+  float: none;
+  display: inline-block;
+  margin: 10px;
+  color: #9c9c9c;
+}
+.suppliers-list a:hover {
+  text-decoration: none;
+}
+.suppliers-list img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid #f3f5f8;
+}
+.page-banner.home-page h2 {
+  font-size: 52px;
+  padding-top: 60px;
+}
+.page-banner.home-page .rfq-create-wrapper {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  margin: 30px 0;
+  -webkit-box-shadow: 0px 0px 5px 0px #6c6c6c;
+  -moz-box-shadow: 0px 0px 5px 0px #6c6c6c;
+  box-shadow: 0px 0px 5px 0px #6c6c6c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.usp_block {
+  display: inline-block;
+  width: 300px;
+  padding: 20px 0 20px 60px;
+  text-align: left;
+}
+.usp_block img {
+  float: left;
+  width: 46px;
+  margin-left: -53px;
+}
+.usp_block h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #6c6c6c;
+}
+.usp_block p {
+  margin: 0;
+  color: #9c9c9c;
+  font-size: 12px;
+}
