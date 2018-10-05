@@ -9,38 +9,16 @@ label{
   color: @medium-gray;
 }
 
-//background sections
-.white_bg_section{
-  background-color: @white;
-}
-.light_blue_bg_section{
-  background-color: @bg_light_blue;
-}
-.dark_blue_bg_section{
-  background-color: @bg_dark_blue;
-  h3{
-    color: @white !important;
-  }
-}
-.bright_blue_bg_section{
-  background-color: @bg_bright_blue;
-  h3{
-    color: @white;
-  }
-}
-
-//categories slider
-#categories_slider {
+//horizontal slider styles
+.horizontal-slider {
   position: relative;
-
-  @media (max-width: 767px) { border-color: transparent; }
-  //MS classes are from the vendor for the slider
+  @media (max-width: @screen-xs-max) { border-color: transparent; }
   .MS-content {
     margin: 15px 5%;
     overflow: hidden;
     white-space: nowrap;
 
-    @media (max-width: 767px) { margin: 0; }
+    @media (max-width: @screen-xs-max) { margin: 0; }
 
     .item {
       display: inline-block;
@@ -53,9 +31,9 @@ label{
       }
 
       width: 20%;
-      @media (max-width: 1200px) { width: 25%; }
-      @media (max-width: 992px) { width: 33.3333%; }
-      @media (max-width: 767px) { width: 50%; }
+      @media (max-width: @screen-md-max) { width: 25%; }
+      @media (max-width: @screen-sm-max) { width: 33.3333%; }
+      @media (max-width: @screen-xs-max) { width: 50%; }
 
       p {
         color: @medium-gray;
@@ -76,7 +54,7 @@ label{
       outline: 0;
       top: 60px;
 
-      @media (max-width: 767px) { display: none; }
+      @media (max-width: @screen-xs-max) { display: none; }
 
       &:hover {
         cursor: pointer;
@@ -85,21 +63,22 @@ label{
     }
     .MS-left {
       left: 10px;
-      @media (max-width: 992px) { left: -2px; }
+      @media (max-width: @screen-sm-max) { left: -2px; }
     }
     .MS-right {
       right: 10px;
-      @media (max-width: 992px) { right: -2px; }
+      @media (max-width: @screen-sm-max) { right: -2px; }
     }
   }
 }
 
-.item-box{
+//product box used on grid view when listing products (index, supplier, category pages)
+.product-box{
   .box-shadow(0px 0px 5px 0px @light-gray);
   background-color: @white;
   padding: 10px;
   .mt25;
-  .item-discount{
+  .product-discount{
     position: absolute;
     border-radius: 50px;
     padding: 5px 10px;
@@ -109,14 +88,14 @@ label{
     margin-top: 10px;
     .box-shadow(0px 3px 3px 0px @dark-gray);
   }
-  img{
+  .product-img{
     width: 100%;
   }
-  .item-info{
-    .item-name{
+  .product-info{
+    .product-name{
       color: @abraa-blue;
     }
-    .item-price, .item-min-order{
+    .product-price, .product-min-order{
       color: @dark-gray;
       small{
         color: @medium-gray;
@@ -137,17 +116,7 @@ label{
   }
 }
 
-//horizontal line was used on index page
-hr.dark{
-  border-color: @hr-gray;
-}
-
-//??? can we put name which is more explanatory
-.white-header{
-  color: @white;
-  text-shadow: 0px 2px 5px @dark-gray;
-}
-//is a general box cotainer
+//general small block (with text inside) used for item listings without an image (index)
 .item-sm-block{
   color: @dark-gray;
   margin-bottom: 20px;
@@ -158,84 +127,9 @@ hr.dark{
   }
 }
 
-
-.brands-discover-list{
-  a{
-    float: none;
-    display: inline-block;
-    margin: 10px;
-    .no-underline-on-hover;
-    color: @white;
-  }
-}
-
-.brands-discover-list, .brands-list, .suppliers-list{
-  img{
-    height: 100px;
-  }
-}
-.suppliers-list{
-  a{
-    float: none;
-    display: inline-block;
-    margin: 10px;
-    color: @medium-gray;
-    .no-underline-on-hover;
-  }
-  img{
-    .border-radius;
-    border: 2px solid @bg_light_blue;
-  }
-}
-
-.full-width-banner{
-  width: 100%;
-}
-
 //general class for banners used on supplier and home page
 .page-banner{
   background-size: cover;
-  &.home-page{
-    h2{
-      font-size: 52px;
-      padding-top: 60px;
-    }
-    .rfq-create-wrapper{
-      padding: 30px 20px;
-      background-color: @white;
-      margin: 30px 0;
-      .box-shadow(0px 0px 5px 0px @dark-gray);
-      .border-radius;
-    }
-  }
-  &.supplier-page{
-    height: 520px;
-    @media screen and (max-width: @screen-xs-max){
-      height: 200px;
-    }
-  }
-}
-
-.usp_block{
-  display: inline-block;
-  width: 300px;
-  padding: 20px 0 20px 60px;
-  text-align: left;
-  img{
-    float: left;
-    width: 46px;
-    margin-left: -53px;
-  }
-  h4{
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: @dark-gray;
-  }
-  p{
-    .no-margin;
-    color: @medium-gray;
-    font-size: 12px;
-  }
 }
 
 //footer styles
@@ -280,26 +174,7 @@ hr.dark{
   }
 }
 
-//margins and paddings
-.mb5{
-  margin-bottom: 5px !important;
-}
-.mb10{
-  margin-bottom: 10px;
-}
-.mb20{
-  margin-bottom: 20px;
-}
-.mb25{
-  margin-bottom: 25px;
-}
-.mt25{
-  margin-top: 25px;
-}
-.pad30{
-  padding: 30px;
-}
-
+//star rankings section (used for reviews and item/supplier rankings)
 .supplier-ranking{
   i{
     color: @ranking-yellow;
@@ -309,6 +184,7 @@ hr.dark{
   }
 }
 
+//sidebar with filters (used on categories/supplier pages)
 .filters-bar{
   margin: 25px 0;
   background-color: @white;
@@ -330,8 +206,4 @@ hr.dark{
       }
     }
   }
-}
-
-.border-bottom-section{
-  border-bottom: 2px solid @light-gray;
 }

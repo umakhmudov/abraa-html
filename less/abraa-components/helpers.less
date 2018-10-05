@@ -1,0 +1,72 @@
+//Styles for helper classes used throughout the website
+//(e.g. extra paddings, margins, spacings, backgrounds, colors, etc.)
+
+//------------ margins and paddings ----------
+.mb0{
+  margin-bottom: 0;
+}
+.mb5{
+  margin-bottom: 5px !important;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
+.mb25{
+  margin-bottom: 25px;
+}
+.mt25{
+  margin-top: 25px;
+}
+.pad30{
+  padding: 30px;
+}
+
+//------------ width and height ----------
+.full-width{
+  width: 100%;
+}
+.full-height{
+  height: 100%;
+}
+
+//------------ borders ----------
+.border-bottom-section{
+  border-bottom: 2px solid @light-gray;
+}
+
+//------------ backgrounds ----------
+.white_bg_section{
+  background-color: @white;
+}
+.light_blue_bg_section{
+  background-color: @bg_light_blue;
+}
+.dark_blue_bg_section{
+  background-color: @bg_dark_blue;
+  h3{
+    color: @white !important;
+  }
+}
+.bright_blue_bg_section{
+  background-color: @bg_bright_blue;
+  h3{
+    color: @white;
+  }
+}
+
+//------------ colors ----------
+
+//header that is white in color with box shadow
+//used in few cases where text needs to be laid on top of an image
+.heading-white{
+  color: @white;
+  text-shadow: 0px 2px 5px @dark-gray;
+}
+
+//horizontal line (darker color) used on sections with light backgrounds
+hr.dark{
+  border-color: @hr-gray;
+}

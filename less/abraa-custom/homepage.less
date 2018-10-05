@@ -1,0 +1,68 @@
+//General styles for the Home page - LTR and RTL
+
+@import '../abraa-variables/main.less';
+@import '../abraa-mixins/utilities.less';
+
+.brands-discover-list{
+  a{
+    float: none;
+    display: inline-block;
+    margin: 10px;
+    .no-underline-on-hover;
+    color: @white;
+  }
+}
+.brands-discover-list, .brands-list, .suppliers-list{
+  img{
+    height: 100px;
+  }
+}
+.suppliers-list{
+  a{
+    float: none;
+    display: inline-block;
+    margin: 10px;
+    color: @medium-gray;
+    .no-underline-on-hover;
+  }
+  img{
+    .border-radius;
+    border: 2px solid @bg_light_blue;
+  }
+}
+.page-banner{
+  &.home-page{
+    h2{
+      font-size: 52px;
+      padding-top: 60px;
+    }
+    .rfq-create-wrapper{
+      padding: 30px 20px;
+      background-color: @white;
+      margin: 30px 0;
+      .box-shadow(0px 0px 5px 0px @dark-gray);
+      .border-radius;
+    }
+  }
+}
+.usp_block{
+  display: inline-block;
+  width: 300px;
+  padding: 20px 0 20px 60px;
+  text-align: left;
+  img{
+    float: left;
+    width: 46px;
+    margin-left: -53px;
+  }
+  h4{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: @dark-gray;
+  }
+  p{
+    .no-margin;
+    color: @medium-gray;
+    font-size: 12px;
+  }
+}
