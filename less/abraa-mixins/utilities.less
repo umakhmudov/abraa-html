@@ -1,14 +1,17 @@
 //shortcut mixins and classes used
 
-.text-shadow (@string: 0 1px 1px @dark-gray) {
+.text-shadow (@string: 0 1px 1px @dark-gray)
+{
   text-shadow: @string;
 }
-.box-shadow (@string) {
+.box-shadow (@string)
+{
   -webkit-box-shadow: @string;
   -moz-box-shadow:    @string;
   box-shadow:         @string;
 }
-.border-radius (@radius: 5px) {
+.border-radius (@radius: 5px)
+{
   -webkit-border-radius: @radius;
   -moz-border-radius:    @radius;
   border-radius:         @radius;
@@ -17,7 +20,8 @@
   -webkit-background-clip: padding-box;
   background-clip:         padding-box;
 }
-.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0)
+{
   -webkit-border-top-right-radius:    @topright;
   -webkit-border-bottom-right-radius: @bottomright;
   -webkit-border-bottom-left-radius:  @bottomleft;
@@ -37,29 +41,37 @@
   -webkit-background-clip: padding-box;
   background-clip:         padding-box;
 }
-.no-border{
+.no-border
+{
   border: none;
 }
-.no-outline{
+.no-outline
+{
   outline: none;
 }
-.no-box-shadow{
+.no-box-shadow
+{
   -webkit-box-shadow: none;
   -moz-box-shadow:    none;
   box-shadow:         none;
 }
-.no-margin{
+.no-margin
+{
   margin: 0;
 }
-.no-padding{
+.no-padding
+{
   padding: 0;
 }
-.no-underline-on-hover{
-  &:hover{
+.no-underline-on-hover
+{
+  &:hover
+  {
     text-decoration: none;
   }
 }
-.transition (@speed: 0.5s) {
+.transition (@speed: 0.5s)
+{
   -webkit-transition: all @speed;
   -moz-transition: all @speed;
   -ms-transition: all @speed;
