@@ -1154,3 +1154,165 @@ label {
 .collapse-filter-btn:hover {
   color: #4da1ff;
 }
+.slideout-menu {
+  position: fixed;
+  width: 280px;
+  padding: 70px 15px 15px 15px;
+  top: 0;
+  bottom: 0;
+  left: -285px;
+  z-index: 1020;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid #dcdfe3;
+  -webkit-box-shadow: 0px 0px 3px #9c9c9c;
+  -moz-box-shadow: 0px 0px 3px #9c9c9c;
+  box-shadow: 0px 0px 3px #9c9c9c;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .slideout-menu {
+    overflow-y: scroll;
+  }
+}
+.slideout-menu.open {
+  left: 0;
+}
+.slideout-menu .slideout-mainmenu {
+  list-style: none;
+  padding: 0;
+}
+.slideout-menu .slideout-mainmenu li {
+  padding: 0;
+}
+.slideout-menu .slideout-mainmenu .slideout-mainmenu-item {
+  width: 100%;
+  display: block;
+  padding: 10px 8px;
+  padding-left: 35px;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.slideout-menu .slideout-mainmenu .slideout-mainmenu-item:hover {
+  text-decoration: none;
+}
+.slideout-menu .slideout-mainmenu .slideout-mainmenu-item:hover,
+.slideout-menu .slideout-mainmenu .slideout-mainmenu-item:focus,
+.slideout-menu .slideout-mainmenu .slideout-mainmenu-item:active {
+  color: #4da1ff;
+  text-decoration: none;
+}
+.slideout-menu .slideout-mainmenu .slideout-mainmenu-item img {
+  width: 30px;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -4px;
+}
+.slideout-menu .slideout-mainmenu .slideout-submenu-toggle:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e252";
+  position: absolute;
+  right: 20px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.slideout-menu .slideout-mainmenu .slideout-submenu-toggle.active:after {
+  transform: rotate(180deg);
+}
+.slideout-menu .slideout-submenu {
+  list-style: none;
+  padding-left: 40px;
+  overflow: hidden;
+  height: 0;
+  margin-bottom: 0;
+}
+.slideout-menu .slideout-submenu.open {
+  margin-bottom: 20px;
+  height: auto;
+}
+.slideout-menu .slideout-submenu .slideout-submenu-item {
+  width: 100%;
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+.slideout-menu .slideout-submenu .slideout-submenu-item:hover {
+  text-decoration: none;
+}
+.slideout-menu .slideout-submenu .slideout-submenu-item:hover,
+.slideout-menu .slideout-submenu .slideout-submenu-item:focus,
+.slideout-menu .slideout-submenu .slideout-submenu-item:active {
+  color: #4da1ff;
+  text-decoration: none;
+}
+.slideout-menu .slideout-submenu .slideout-submenu-item.plain_blue_link {
+  color: #4da1ff;
+}
+.slideout-menu .separator {
+  border-bottom: 1px solid #efefef;
+  height: 10px;
+  margin-bottom: 10px;
+}
+.slideout-menu .lang_selection_box {
+  display: inline-block;
+}
+.slideout-menu .slideout-footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.slideout-menu .slideout-footer-links li {
+  display: inline-block;
+}
+.slideout-menu .slideout-footer-links li:before {
+  content: "\00b7";
+}
+.slideout-menu .slideout-footer-links li:first-child:before {
+  display: none;
+}
+.slideout-menu .slideout-footer-links li a {
+  padding: 5px 2px;
+  color: #6c6c6c;
+}
+.slideout-menu .slideout-footer-links li a:hover {
+  text-decoration: none;
+}
+.slideout-menu .slideout-footer-links li a:hover,
+.slideout-menu .slideout-footer-links li a:focus,
+.slideout-menu .slideout-footer-links li a:active {
+  color: #4da1ff;
+}
+[dir=rtl] .slideout-menu {
+  left: auto;
+  right: -285px;
+  border-right: none;
+  border-left: 1px solid #dcdfe3;
+}
+[dir=rtl] .slideout-menu.open {
+  left: auto;
+  right: 0;
+}
+[dir=rtl] .slideout-menu .slideout-mainmenu .slideout-mainmenu-item {
+  padding-left: 0;
+  padding-right: 35px;
+}
+[dir=rtl] .slideout-menu .slideout-mainmenu .slideout-mainmenu-item img {
+  margin-left: 0;
+  margin-right: -40px;
+}
+[dir=rtl] .slideout-menu .slideout-mainmenu .slideout-submenu-toggle:after {
+  right: auto;
+  left: 20px;
+}
+[dir=rtl] .slideout-menu .slideout-submenu {
+  padding-left: 0;
+  padding-right: 40px;
+}
