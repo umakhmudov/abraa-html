@@ -362,6 +362,9 @@ label {
 .product-box .product-info .product-min-order small {
   color: #9c9c9c;
 }
+.product-box .supplier-info .supplier-link {
+  text-decoration: underline !important;
+}
 .product-box .supplier-info .supplier-origin img {
   width: 30px;
   display: inline-block;
@@ -507,7 +510,7 @@ label {
   color: #9c9c9c;
 }
 .breadcrumbs {
-  color: #4da1ff;
+  color: #6c6c6c;
 }
 .breadcrumbs a {
   color: #4da1ff;
@@ -520,7 +523,14 @@ label {
 .breadcrumbs a:active {
   color: #3d79c5;
 }
+.breadcrumbs .glyphicon {
+  color: #4da1ff;
+  font-size: 12px;
+}
 .breadcrumbs.breadcrumbs-white {
+  color: #ffffff;
+}
+.breadcrumbs.breadcrumbs-white .glyphicon {
   color: #ffffff;
 }
 .breadcrumbs.breadcrumbs-white a {
@@ -536,6 +546,75 @@ label {
   position: absolute;
   width: 100%;
   padding-top: 20px;
+}
+.filter-tag {
+  border-radius: 50px;
+  background-color: #e2e5e9;
+  color: #949ba9;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.filter-tag .remove-filter-tag {
+  display: inline-block;
+  background-color: #949ba9;
+  color: #e2e5e9;
+  border-radius: 50%;
+  padding: 3px;
+  padding-top: 2px;
+  margin-left: 5px;
+}
+.filter-tag.filter-tag-inverse {
+  background-color: #949ba9;
+  color: #e2e5e9;
+}
+.filter-tag.filter-tag-inverse .remove-filter-tag {
+  display: inline-block;
+  background-color: #e2e5e9;
+  color: #949ba9;
+  border-radius: 50%;
+  padding: 3px;
+  padding-top: 2px;
+  margin-left: 5px;
+}
+.popover {
+  max-width: 300px !important;
+}
+.supplier-popover {
+  width: 300px;
+}
+.supplier-popover .popover-content {
+  padding: 15px;
+}
+.supplier-popover .supplier-header {
+  padding-left: 100px;
+  padding-right: 30px;
+}
+.supplier-popover .supplier-header .supplier-logo {
+  width: 80px;
+  position: absolute;
+  margin-left: -90px;
+}
+.supplier-popover .supplier-header .supplier-membership {
+  font-size: 12px;
+  color: #9c9c9c;
+}
+.supplier-popover .supplier-header .supplier-type {
+  color: #6c6c6c;
+  font-size: 12px;
+}
+.supplier-popover .supplier-header .supplier-type img {
+  width: 20px;
+}
+.supplier-popover .supplier-info-wrapper .supplier-info {
+  color: #000000;
+}
+.supplier-popover .supplier-info-wrapper .supplier-info small {
+  color: #9c9c9c;
+}
+.supplier-popover .supplier-info-wrapper .supplier-payment-option {
+  height: 30px;
+  display: inline-block;
 }
 .page-banner.category-page {
   padding: 90px 0;
@@ -1224,7 +1303,7 @@ label {
   border-radius: 0;
   box-shadow: none;
   background-color: #ffffff;
-  border-color: #e9ecf0;
+  border-color: #eaedf1;
   color: #9c9c9c;
 }
 .abraa-btn-group .btn.active {

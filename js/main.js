@@ -42,7 +42,21 @@ $(document).ready(function(){
             collapse_area.removeClass('hidden');
             $(this).find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
         }
-    })
+    });
+
+    //customer popovers for suppliers in products listing
+    $("[rel=popover]").each(function(i, obj) {
+
+        $(this).popover({
+            html: true,
+            trigger: 'hover click',
+            content: function() {
+                var id = $(this).attr('data-popover-id');
+                return $('#' + id).html();
+            }
+        });
+
+    });
 
     //init the slider plugin
     $('#categories_slider').multislider();

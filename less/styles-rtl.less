@@ -302,3 +302,54 @@
     }
   }
 }
+
+//filter tags, used on the header of products view, when filters are applied
+.filter-tag
+{
+  .remove-filter-tag
+  {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  &.filter-tag-inverse
+  {
+    .remove-filter-tag
+    {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+}
+
+//supplier info popover
+.supplier-popover
+{
+  .supplier-header
+  {
+    padding-left: 30px;
+    padding-right: 100px;
+    .supplier-logo
+    {
+      margin-left: 0;
+      margin-right: -90px;
+    }
+  }
+}
+
+//breadcrumbs
+.breadcrumbs
+{
+  text-align: right;
+  a
+  {
+    display: inline-block;
+  }
+  .glyphicon-chevron-right
+  {
+    &:before
+    {
+      content: "\e079";
+    }
+  }
+}

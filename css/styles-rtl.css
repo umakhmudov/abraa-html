@@ -251,3 +251,28 @@
   left: auto;
   right: 5px;
 }
+.filter-tag .remove-filter-tag {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.filter-tag.filter-tag-inverse .remove-filter-tag {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.supplier-popover .supplier-header {
+  padding-left: 30px;
+  padding-right: 100px;
+}
+.supplier-popover .supplier-header .supplier-logo {
+  margin-left: 0;
+  margin-right: -90px;
+}
+.breadcrumbs {
+  text-align: right;
+}
+.breadcrumbs a {
+  display: inline-block;
+}
+.breadcrumbs .glyphicon-chevron-right:before {
+  content: "\e079";
+}
