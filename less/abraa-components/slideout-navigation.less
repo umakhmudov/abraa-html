@@ -1,0 +1,232 @@
+// Styles for the slide-out navigation on the left (LTR) or right (RTL)
+
+.slideout-menu
+{
+    position: fixed;
+    width: 280px;
+    padding: 70px 15px 15px 15px;
+    top: 0;
+    bottom: 0;
+    left: -285px;
+    z-index: 1020;
+    height: 100%;
+    background-color: @white;
+    border-right: 1px solid @abraa-light-blue-border;
+    .box-shadow(0px 0px 3px @medium-gray);
+    .transition;
+
+    // on mobile, allow to scroll, in case the menu items don't fit vertically
+    @media screen and (max-width: @screen-xs-max)
+    {
+      overflow-y: scroll;
+    }
+
+    // when opened, slide out by using css transformation
+    &.open
+    {
+        left: 0;
+    }
+
+    //the main menu wrapper
+    .slideout-mainmenu
+    {
+        list-style: none;
+        .no-padding;
+
+        li
+        {
+            .no-padding;
+        }
+
+        .slideout-mainmenu-item
+        {
+            width: 100%;
+            display: block;
+            padding: 10px 8px;
+            padding-left: 35px;
+            font-size: 16px;
+            color: @dark-gray;
+            .no-underline-on-hover;
+
+            &:hover,
+            &:focus,
+            &:active
+            {
+                color: @abraa-blue;
+                text-decoration: none;
+            }
+
+            img
+            {
+                width: 30px;
+                position: absolute;
+                margin-left: -40px;
+                margin-top: -4px;
+            }
+        }
+
+        //add arrow on the right side for the toggle buttons
+        .slideout-submenu-toggle
+        {
+            &:after
+            {
+                font-family: 'Glyphicons Halflings';
+                content: "\e252";
+                position: absolute;
+                right: 20px;
+                font-size: 12px;
+                margin-top: 4px;
+            }
+
+            &.active
+            {
+                &:after
+                {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    //the dropdown sub-menu that expands/collapses within the main menu
+    .slideout-submenu
+    {
+        list-style: none;
+        padding-left: 40px;
+        overflow: hidden;
+        height: 0;
+        margin-bottom: 0;
+
+        &.open
+        {
+            margin-bottom: 20px;
+            height: auto;
+        }
+
+        .slideout-submenu-item
+        {
+            width: 100%;
+            display: block;
+            padding: 5px 0;
+            font-size: 14px;
+            color: @medium-gray;
+            .no-underline-on-hover;
+
+            &:hover,
+            &:focus,
+            &:active
+            {
+                color: @abraa-blue;
+                text-decoration: none;
+            }
+
+            &.plain_blue_link
+            {
+                color: @abraa-blue;
+            }
+        }
+    }
+
+    .separator
+    {
+        border-bottom: 1px solid @light-gray;
+        height: 10px;
+        margin-bottom: 10px;
+    }
+    .lang_selection_box
+    {
+      display: inline-block;
+    }
+  .slideout-footer-links
+  {
+    list-style: none;
+    .no-margin;
+    .no-padding;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    li
+    {
+      display: inline-block;
+      //display middle dot before each link, except the first one
+      &:before
+      {
+        content:"\00b7";
+      }
+      //display middle dot before each link, except the first one
+      &:first-child
+      {
+        &:before
+        {
+          display: none;
+        }
+      }
+      a
+      {
+        padding: 5px 2px;
+        color: @dark-gray;
+        .no-underline-on-hover;
+        &:hover,
+        &:focus,
+        &:active
+        {
+          color: @abraa-blue;
+        }
+      }
+    }
+  }
+}
+
+//RTL styles for the slideout menu (flipped left/right)
+[dir=rtl]{
+  .slideout-menu
+  {
+    left: auto;
+    right: -285px;
+    border-right: none;
+    border-left: 1px solid @abraa-light-blue-border;
+
+    // when opened, slide out by using css transformation
+    &.open
+    {
+      left: auto;
+      right: 0;
+    }
+
+    //the main menu wrapper
+    .slideout-mainmenu
+    {
+      .slideout-mainmenu-item
+      {
+        padding-left: 0;
+        padding-right: 35px;
+
+        img
+        {
+          margin-left: 0;
+          margin-right: -40px;
+        }
+      }
+
+      //add arrow on the right side for the toggle buttons
+      .slideout-submenu-toggle
+      {
+        &:after
+        {
+          right: auto;
+          left: 20px;
+        }
+
+      }
+    }
+
+    //the dropdown sub-menu that expands/collapses within the main menu
+    .slideout-submenu
+    {
+      padding-left: 0;
+      padding-right: 40px;
+    }
+
+  }
+}
+
