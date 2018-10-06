@@ -2,7 +2,8 @@
 //refactored the selectBox styles to work for different dropdowns (same plugin, different styles, based on dropdown class)
 
 //overwriting the dropdown arrow
-.glyphicon-block-selectbox{
+.glyphicon-block-selectbox
+{
   position: relative;
   top: 1px;
   display: inline-block;
@@ -16,16 +17,19 @@
 }
 
 //overwriting the selectBox wrapper
-.selectBox{
+.selectBox
+{
   .no-border;
   .no-outline;
 
   //styles specific to the search dropdown in the header
-  &.headerSearchType{
+  &.headerSearchType
+  {
     position: absolute;
     min-width: 100px;
     //overwriting vendor drop down style
-    .selectBox-label, .selectBox-arrow{
+    .selectBox-label, .selectBox-arrow
+    {
       .no-border;
       color: @white;
       background-color: @abraa-blue;
@@ -33,34 +37,41 @@
       padding: 7px 14px;
       .border-radiuses (0, 0, 5px, 5px);
     }
-    .selectBox-label{
+    .selectBox-label
+    {
       width: auto !important;
     }
-    .selectBox-arrow{
+    .selectBox-arrow
+    {
       padding: 0;
       .glyphicon-block-selectbox;
       position: absolute;
       margin-top: -1px;
-      &:before{
+      &:before
+      {
         margin-top: 12px;
         display: inline-block;
         font-size: 10px;
         margin-left: 2px;
       }
     }
-    &.selectBox-menuShowing{
-      .selectBox-label{
+    &.selectBox-menuShowing
+    {
+      .selectBox-label
+      {
         .border-radiuses (0, 0, 0, 5px);
       }
     }
   }
 
   //styles specific to the language dropdown on the header
-  &.headerLang{
+  &.headerLang
+  {
     .no-padding;
     min-width: 60px;
     //overwriting vendor drop down style
-    .selectBox-label, .selectBox-arrow{
+    .selectBox-label, .selectBox-arrow
+    {
       .no-border;
       color: @dark-gray;
       background-color: @white;
@@ -68,20 +79,24 @@
       padding: 7px 14px;
       .border-radius;
     }
-    .selectBox-arrow{
+    .selectBox-arrow
+    {
       padding: 0;
       .glyphicon-block-selectbox;
       position: absolute;
       margin-top: -1px;
-      &:before{
+      &:before
+      {
         margin-top: 12px;
         display: inline-block;
         font-size: 10px;
         margin-left: 2px;
       }
     }
-    &.selectBox-menuShowing{
-      .selectBox-label{
+    &.selectBox-menuShowing
+    {
+      .selectBox-label
+      {
         .border-radiuses (0, 0, 0, 5px);
       }
     }
@@ -89,19 +104,25 @@
 }
 
 //overwriting the selectBox options dropdown
-.selectBox-options{
+.selectBox-options
+{
   .no-border;
 
   //styles specific to the search dropdown in the header
-  &.headerSearchType-selectBox-dropdown-menu{
+  &.headerSearchType-selectBox-dropdown-menu
+  {
     background-color: @abraa-blue;
-    li{
-      a{
+    li
+    {
+      a
+      {
         color: @white;
         padding: 7px 14px;
       }
-      &.selectBox-hover, &.selectBox-selected{
-        a{
+      &.selectBox-hover, &.selectBox-selected
+      {
+        a
+        {
           .no-underline-on-hover;
           background-color: @abraa-dark-blue;
         }
@@ -110,15 +131,20 @@
   }
 
   //styles specific to the language dropdown on the header
-  &.headerLang-selectBox-dropdown-menu{
+  &.headerLang-selectBox-dropdown-menu
+  {
     background-color: @white;
-    li{
-      a{
+    li
+    {
+      a
+      {
         color: @dark-gray;
         padding: 7px 14px;
       }
-      &.selectBox-hover, &.selectBox-selected{
-        a{
+      &.selectBox-hover, &.selectBox-selected
+      {
+        a
+        {
           .no-underline-on-hover;
           background-color: @light-gray;
         }

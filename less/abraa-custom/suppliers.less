@@ -3,85 +3,103 @@
 @import '../abraa-variables/main.less';
 @import '../abraa-mixins/utilities.less';
 
-.supplier-page-header{
+.supplier-page-header
+{
   position: absolute;
   width: 100%;
   margin-top: -260px;
   //on mobile re-align the header to be on top
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     position: relative;
     margin-top: 0;
   }
-  .supplier-header-action{
+  .supplier-header-action
+  {
     padding: 40px 0;
     //on smaller screens make the buttons smaller
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+    {
       a{
         width: 100%;
       }
     }
     //on mobile adjust the buttons
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       padding: 20px 0;
       padding-top: 0;
       text-align: center !important;
-      a{
+      a
+      {
         display: block;
         width: 100%;
         background-color: @abraa-blue;
       }
     }
   }
-  .supplier-header-info{
+  .supplier-header-info
+  {
     color: @white;
     .text-shadow;
     //on desktop the image is on the left, so leave space for that
-    @media screen and (min-width: @screen-sm-max){
+    @media screen and (min-width: @screen-sm-max)
+    {
       padding-left: 200px;
     }
     //on mobile, align text centrally
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       text-align: center;
       color: @dark-gray;
       .text-shadow(none)
     }
-    .supplier-membership{
+    .supplier-membership
+    {
       color: @light-gray;
       //color change on mobile, since it doesn't have the background image
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         color: @dark-gray;
       }
     }
-    .ranking_count{
+    .ranking_count
+    {
       color: @white;
       //color change on mobile, since it doesn't have the background image
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         color: @dark-gray;
       }
     }
-    .supplier-logo{
+    .supplier-logo
+    {
       position: absolute;
       margin-left: -200px;
       width: 180px;
       .border-radius;
       background-color: @white;
-      img{
+      img
+      {
         width: 100%;
         //adjust to fit on smaller screens
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+        {
           height: 100%;
           width: auto !important;
         }
       }
       //adjust to fit on smaller screens
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+      {
         margin: 0 !important;
         margin-top: -180px !important;
         width: auto;
         height: 160px;
       }
       //adjust to fit on smaller screens
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         position: relative;
         display: block;
         margin: 0 auto !important;
@@ -89,64 +107,79 @@
         .box-shadow(0px 0px 2px @dark-gray)
       }
     }
-    .supplier-categories{
+    .supplier-categories
+    {
       padding: 10px 0;
-      .badge{
+      .badge
+      {
         color: @light-gray;
         font-weight: normal;
         padding: 5px 10px;
       }
     }
-    .supplier-verification{
+    .supplier-verification
+    {
       padding: 15px 0;
       font-size: 18px;
     }
   }
 }
-.supplier-stats{
+.supplier-stats
+{
   width: 100%;
   padding: 30px 0;
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     padding: 20px 0;
   }
   text-align: center;
-  .supplier-stat-block{
+  .supplier-stat-block
+  {
     display: inline-block;
     padding: 0 60px;
     border-left: 1px solid @medium-gray;
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       padding: 0 15px;
     }
-    &:first-child{
+    &:first-child
+    {
       .no-border;
     }
-    .stat-number{
+    .stat-number
+    {
       font-size: 44px;
       .no-margin;
       //adjust to fit on smaller screens
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+      {
         font-size: 32px;
       }
       //adjust to fit on smaller screens
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         font-size: 24px;
       }
     }
-    .stat-title{
+    .stat-title
+    {
       font-size: 18px;
       .no-margin;
       //adjust to fit on smaller screens
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+      {
         font-size: 14px;
       }
       //adjust to fit on smaller screens
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         font-size: 12px;
       }
     }
   }
 }
-.supplier-tabs{
+.supplier-tabs
+{
   border-top: 1px solid @light-gray;
   border-bottom: 1px solid @light-gray;
   padding-top: 20px;
@@ -154,10 +187,12 @@
   display: block;
   width: 100%;
   //adjust to fit on smaller screens
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     padding-top: 10px;
   }
-  .supplier-tab-link{
+  .supplier-tab-link
+  {
     img{
       margin-right: 5px;
     }
@@ -168,92 +203,112 @@
     padding: 0 20px 16px 20px;
     border-bottom: 4px solid @white;
     //adjust to fit on smaller screens
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       font-size: 12px;
       display: inline-block;
       padding: 0 10px 6px 10px;
       border-bottom: 4px solid @white;
     }
     .no-underline-on-hover;
-    &:hover{
+    &:hover
+    {
       color: @abraa-blue;
     }
-    &.active{
+    &.active
+    {
       color: @abraa-blue;
       border-color: @abraa-blue;
     }
   }
 }
-.supplier-about-tab{
+.supplier-about-tab
+{
   padding: 30px 0;
-  .brands-list{
+  .brands-list
+  {
     a{
       display: inline-block;
       text-align: center;
     }
-    img{
+    img
+    {
       width: 100px;
 
     }
   }
-  .about-info-right{
+  .about-info-right
+  {
     //left border only on desktops
-    @media screen and (min-width: @screen-md-min){
+    @media screen and (min-width: @screen-md-min)
+    {
       border-left: 1px solid @medium-gray;
     }
 
   }
 }
-.supplier-reviews-tab{
+.supplier-reviews-tab
+{
   .reviews-summary{
-    .reviews-total-score{
+    .reviews-total-score
+    {
       font-size: 32px;
     }
-    .supplier-ranking{
+    .supplier-ranking
+    {
       display: inline-block;
     }
-    .reviews-stats{
+    .reviews-stats
+    {
       .reviews-score{
         display: inline-block;
         font-size: 10px;
       }
-      .count_bar{
+      .count_bar
+      {
         display: inline-block;
         width: 70%;
         margin: 0 5px;
         height: 6px;
         border-radius: 30px;
         background-color: @light-gray;
-        .count_bar_filled{
+        .count_bar_filled
+        {
           display: block;
           height: 6px;
           border-radius: 30px;
           background-color: @ranking-yellow;
         }
       }
-      .count_num{
+      .count_num
+      {
         font-size: 10px;
         display: inline-block;
       }
     }
   }
 
-  .reviews-list{
+  .reviews-list
+  {
     padding: 20px 0;
-    .review-item{
+    .review-item
+    {
       padding: 10px 0;
       border-bottom: 1px solid @medium-gray;
     }
   }
 }
-.supplier-products-tab{
+.supplier-products-tab
+{
   padding-bottom: 40px;
 }
-.page-banner{
+.page-banner
+{
   &.supplier-page{
     height: 520px;
     //adjust to fit on smaller screens
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       height: 200px;
     }
   }
@@ -261,85 +316,103 @@
 
 
 //RTL layout - left/right alignments and positioning for some elements
-[dir=rtl]{
+[dir=rtl]
+{
   .supplier-page-header{
-    .supplier-header-info{
+    .supplier-header-info
+    {
       @media screen and (min-width: @screen-sm-max){
         padding-left: 0;
         padding-right: 200px;
       }
-      .supplier-logo{
+      .supplier-logo
+      {
         margin-left: 0;
         margin-right: -200px;
       }
     }
   }
-  .supplier-stats{
+  .supplier-stats
+  {
     .supplier-stat-block{
       border-left: none;
       border-right: 1px solid @medium-gray;
     }
   }
-  .supplier-tabs{
+  .supplier-tabs
+  {
     .supplier-tab-link{
-      img{
+      img
+      {
         margin-right: 0;
         margin-left: 5px;
       }
     }
   }
-  .supplier-about-tab{
+  .supplier-about-tab
+  {
     .about-info-right{
-      @media screen and (min-width: @screen-md-min){
+      @media screen and (min-width: @screen-md-min)
+      {
         border-left: none;
         border-right: 1px solid @medium-gray;
       }
 
     }
   }
-  .supplier-reviews-tab{
+  .supplier-reviews-tab
+  {
     .reviews-summary{
-      .reviews-total-score{
+      .reviews-total-score
+      {
         font-size: 32px;
       }
-      .supplier-ranking{
+      .supplier-ranking
+      {
         display: inline-block;
       }
-      .reviews-stats{
+      .reviews-stats
+      {
         .reviews-score{
           display: inline-block;
           font-size: 10px;
         }
-        .count_bar{
+        .count_bar
+        {
           display: inline-block;
           width: 70%;
           margin: 0 5px;
           height: 6px;
           border-radius: 30px;
           background-color: @light-gray;
-          .count_bar_filled{
+          .count_bar_filled
+          {
             display: block;
             height: 6px;
             border-radius: 30px;
             background-color: @ranking-yellow;
           }
         }
-        .count_num{
+        .count_num
+        {
           font-size: 10px;
           display: inline-block;
         }
       }
     }
 
-    .reviews-list{
+    .reviews-list
+    {
       padding: 20px 0;
-      .review-item{
+      .review-item
+      {
         padding: 10px 0;
         border-bottom: 1px solid @medium-gray;
       }
     }
   }
-  .supplier-products-tab{
+  .supplier-products-tab
+  {
     padding-bottom: 40px;
   }
 }

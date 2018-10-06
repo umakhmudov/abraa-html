@@ -1,46 +1,55 @@
 //Styles for different buttons and links across the website
 
 //plain blue hyperlink for website
-.plain_blue_link{
+.plain_blue_link
+{
   color: @abraa-blue !important;
-  &:hover{
+  &:hover
+  {
     text-decoration: none;
     color: @abraa-dark-blue !important;
   }
 }
 
 //custom btn style
-.abraa-btn{
+.abraa-btn
+{
   border-color: @abraa-blue !important;
   .transition;
 }
 
 //blue btn, white on hover
-.abraa-blue-btn{
+.abraa-blue-btn
+{
   background-color: @abraa-blue;
   color: @white !important;
-  &:hover, &:active, &:focus{
+  &:hover, &:active, &:focus
+  {
     background-color: @white;
     color: @abraa-blue !important;
   }
 }
 
 //white btn, blue on hover
-.abraa-white-btn{
+.abraa-white-btn
+{
   background-color: @white;
   color: @abraa-blue !important;
-  &:hover, &:active, &:focus{
+  &:hover, &:active, &:focus
+  {
     background-color: @abraa-blue;
     color: @white !important;
   }
 }
 
 //transparent btn, blue on hover
-.abraa-transparent-btn{
+.abraa-transparent-btn
+{
   background-color: @transparent;
   border-color: @light-gray !important;
   color: @light-gray;
-  &:hover, &:active, &:focus{
+  &:hover, &:active, &:focus
+  {
     background-color: @abraa-blue;
     color: @white !important;
     border-color: @abraa-blue !important;
@@ -48,20 +57,24 @@
 }
 
 //fixed width btn, for buttons vertically aligned
-.abraa-fixed-width-btn{
+.abraa-fixed-width-btn
+{
   width: 180px;
   text-align: center;
 }
 
 //button group, white as default, blue for an active button
-.abraa-btn-group{
-  .btn{
+.abraa-btn-group
+{
+  .btn
+  {
     border-radius: 0;
     box-shadow: none;
     background-color: @white;
     border-color: @abraa-light-blue;
     color: @medium-gray;
-    &.active{
+    &.active
+    {
       background-color: @abraa-blue;
       color: @white;
     }
@@ -69,7 +82,8 @@
 }
 
 //custom checkbox styling
-.checkbox-container {
+.checkbox-container
+{
   display: block;
   position: relative;
   padding-left: 25px;
@@ -82,21 +96,25 @@
   user-select: none;
 
   /* Hide the browser's default checkbox */
-  input {
+  input
+  {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    &:checked ~ .checkmark {
+    &:checked ~ .checkmark
+    {
       background-color: @abraa-blue;
       border-color: @abraa-blue;
-      &:after {
+      &:after
+      {
         display: block;
       }
     }
   }
 
   /* Create a custom checkbox */
-  .checkmark {
+  .checkmark
+  {
     position: absolute;
     top: 2px;
     left: 0;
@@ -107,7 +125,8 @@
     border: 2px solid @light-gray;
 
     /* Create the checkmark/indicator (hidden when not checked) */
-    &:after {
+    &:after
+    {
       content: "";
       position: absolute;
       display: none;
@@ -124,17 +143,21 @@
   }
 
   /* On mouse-over, add a grey background color */
-  &:hover{
-    input ~ .checkmark {
+  &:hover
+  {
+    input ~ .checkmark
+    {
       border-color: @abraa-blue;
     }
   }
 }
 
 //collapse/expand button in filters
-.collapse-filter-btn{
+.collapse-filter-btn
+{
   color: @medium-gray;
-  &:hover{
+  &:hover
+  {
     color: @abraa-blue;
   }
 }

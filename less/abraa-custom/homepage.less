@@ -3,8 +3,10 @@
 @import '../abraa-variables/main.less';
 @import '../abraa-mixins/utilities.less';
 
-.brands-discover-list{
-  a{
+.brands-discover-list
+{
+  a
+  {
     text-align: center;
     float: none;
     display: inline-block;
@@ -13,13 +15,17 @@
     color: @white;
   }
 }
-.brands-discover-list, .brands-list, .suppliers-list{
-  img{
+.brands-discover-list, .brands-list, .suppliers-list
+{
+  img
+  {
     height: 100px;
   }
 }
-.suppliers-list{
-  a{
+.suppliers-list
+{
+  a
+  {
     text-align: center;
     float: none;
     display: inline-block;
@@ -28,13 +34,17 @@
     .no-underline-on-hover;
   }
 }
-.page-banner{
-  &.home-page{
-    h2{
+.page-banner
+{
+  &.home-page
+  {
+    h2
+    {
       font-size: 52px;
       padding-top: 60px;
     }
-    .rfq-create-wrapper{
+    .rfq-create-wrapper
+    {
       padding: 30px 20px;
       background-color: @white;
       margin: 30px 0;
@@ -43,87 +53,107 @@
     }
   }
 }
-.usp_block{
+.usp_block
+{
   display: inline-block;
   width: 300px;
   padding: 20px 0 20px 60px;
   text-align: left;
   //adjust width to fit on smaller screens
-  @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+  @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+  {
     width: 230px;
     padding-left: 30px;
   }
   //full width on mobile
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     width: 100%;
   }
-  img{
+  img
+  {
     float: left;
     width: 46px;
     margin-left: -53px;
     //adjust width to fit on smaller screens
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+    {
       width: 26px;
       margin-left: -33px;
       margin-top: 5px;
     }
   }
-  h4{
+  h4
+  {
     margin-top: 5px;
     margin-bottom: 0;
     color: @dark-gray;
     //adjust font size for smaller screens
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+    {
       font-size: 14px
     }
   }
-  p{
+  p
+  {
     .no-margin;
     color: @medium-gray;
     font-size: 12px;
     //adjust font size for smaller screens
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+    {
       font-size: 10px;
     }
   }
 }
-.product-categories-grid{
+.product-categories-grid
+{
   text-align: center;
   margin-bottom: 0;
-  td{
+  td
+  {
     background-color: @white;
   }
-  img{
+  img
+  {
     width: 240px;
     //adjust width for smaller screens
-    @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max){
+    @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max)
+    {
       width: 200px;
     }
     //adjust width for smaller screens
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+    {
       width: 160px;
     }
     //adjust width for smaller screens
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       width: 100%
     }
   }
 }
 
 //RTL layout - left/right alignments and positioning for some elements
-[dir=rtl]{
-  .usp_block{
+[dir=rtl]
+{
+  .usp_block
+  {
     padding: 20px 60px 20px 0;
     text-align: right;
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+    {
       padding-left: 0;
       padding-right: 30px;
     }
-    img{
+    img
+    {
       float: right;
       margin-left: 0;
       margin-right: -53px;
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+      {
         margin-left: 0;
         margin-right: -33px;
       }

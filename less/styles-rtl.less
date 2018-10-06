@@ -4,59 +4,79 @@
 @import 'abraa-mixins/utilities.less';
 
 //some specific classes that need to be reversed (left-right)
-[dir=rtl]{
-  .text-right{
+[dir=rtl]
+{
+  .text-right
+  {
     text-align: left !important;
   }
-  .pull-right{
+  .pull-right
+  {
     float: left !important;
   }
-  .glyphicon-arrow-right{
-    &:before{
+  .glyphicon-arrow-right
+  {
+    &:before
+    {
       content: "\e091";
     }
   }
 }
 
 ///navbar specific for RTL
-.navbar-abraa{
-  .navbar-header{
-    .navbar-toggle{
+.navbar-abraa
+{
+  .navbar-header
+  {
+    .navbar-toggle
+    {
       float: right;
     }
-    .navbar-logo{
-      @media screen and (max-width: @screen-xs-max) {
+    .navbar-logo
+    {
+      @media screen and (max-width: @screen-xs-max)
+      {
         float: right;
       }
     }
   }
 
-  .navbar-search{
-    .selectBox{
-      .selectBox-label, .selectBox-arrow{
+  .navbar-search
+  {
+    .selectBox
+    {
+      .selectBox-label, .selectBox-arrow
+      {
         .border-radiuses (5px, 5px, 0, 0);
       }
-      .selectBox-arrow{
+      .selectBox-arrow
+      {
 
-        &:after{
+        &:after
+        {
           margin-right: 2px;
         }
       }
-      &.selectBox-menuShowing{
-        .selectBox-label{
+      &.selectBox-menuShowing
+      {
+        .selectBox-label
+        {
           .border-radiuses (0, 0, 0, 5px);
         }
       }
     }
-    .navbar_search_input{
+    .navbar_search_input
+    {
       padding-right: 110px;
       padding-left: 60px;
     }
-    .navbar-search-btn{
+    .navbar-search-btn
+    {
       right: auto;
       left: 20%;
       margin-left: 20px;
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         left: 0;
         margin-left: 14px;
         padding: 8px 15px;
@@ -66,56 +86,73 @@
     }
 
   }
-  .new_rfq_btn{
+  .new_rfq_btn
+  {
     right: auto;
     left: 0;
     margin-left: 20px;
-    img{
+    img
+    {
       margin-left: 5px;
     }
   }
-  .navbar_right{
+  .navbar_right
+  {
     text-align: left;
-    a{
+    a
+    {
       margin-left: 0;
       margin-right: 10px;
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+      {
         margin-right: 0;
       }
-      @media screen and (max-width: @screen-xs-max) {
+      @media screen and (max-width: @screen-xs-max)
+      {
         margin-right: 0;
         margin-left: 10px;
       }
       .no-underline-on-hover;
-      .glyphicon{
+      .glyphicon
+      {
         font-size: 10px;
         margin-left: 0;
         margin-right: 6px;
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+        {
           margin-right: 3px;
         }
       }
     }
-    .user_profile_box{
-      @media screen and (max-width: @screen-xs-max) {
+    .user_profile_box
+    {
+      @media screen and (max-width: @screen-xs-max)
+      {
         right: auto;
         left: 0;
       }
-      .dropdown{
-        &.open{
-          .user_profile_dropdown{
+      .dropdown
+      {
+        &.open
+        {
+          .user_profile_dropdown
+          {
             margin-left: 0;
             margin-right: -1px;
-            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+            {
               margin-right: -11px;
               margin-left: 0;
             }
-            @media screen and (max-width: @screen-xs-max){
+            @media screen and (max-width: @screen-xs-max)
+            {
               margin-right: -111px;
               margin-left: 0;
             }
-            .profile-img-section{
-              .glyphicon{
+            .profile-img-section
+            {
+              .glyphicon
+              {
                 float: left;
               }
             }
@@ -124,45 +161,59 @@
       }
     }
 
-    .mobile_search_box{
+    .mobile_search_box
+    {
       right: auto;
       left: 85px;
     }
 
-    .user_notifications_box{
-      .user_notifications_dropdown{
+    .user_notifications_box
+    {
+      .user_notifications_dropdown
+      {
         margin-left: 0px;
         margin-right: 6px;
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+        {
           margin-right: -8px;
           margin-left: 0;
         }
-        .notifications-header-section{
-          .glyphicon-triangle-bottom{
+        .notifications-header-section
+        {
+          .glyphicon-triangle-bottom
+          {
             float: left;
           }
         }
-        .notifications-list{
-          ul{
-            li{
+        .notifications-list
+        {
+          ul
+          {
+            li
+            {
               padding-left: 0;
               padding-right: 30px;
-              .notification-label{
+              .notification-label
+              {
                 margin-left: 0;
                 margin-right: -30px;
               }
-              .notification-action{
+              .notification-action
+              {
                 text-align: left !important;
               }
             }
           }
         }
       }
-      &.with-notifications{
-        .glyphicon-bell {
+      &.with-notifications
+      {
+        .glyphicon-bell
+        {
           color: @abraa-blue;
         }
-        .notifications-count{
+        .notifications-count
+        {
           margin-left: 0;
           margin-right: 14px;
         }
@@ -171,13 +222,16 @@
 
   }
 
-  .visitor_buttons{
+  .visitor_buttons
+  {
     right: auto;
     left: 65px;
-    @media screen and (min-width: @screen-lg-min){
+    @media screen and (min-width: @screen-lg-min)
+    {
       margin-top: 5px;
     }
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       right: auto;
       left: 0;
     }
@@ -185,25 +239,31 @@
 }
 
 //selectbox flipping the arrow for RTL
-.selectBox{
-  .selectBox-label{
+.selectBox
+{
+  .selectBox-label
+  {
     float: right;
   }
-  .selectBox-arrow{
+  .selectBox-arrow
+  {
     position: absolute;
     right: auto;
     left: 0;
-    &:before{
+    &:before
+    {
       margin-left: 6px !important;
     }
   }
 }
 
 //overwrite right border to left border for RTL
-.border-right{
+.border-right
+{
   border: none;
   border-left: 1px solid @light-gray;
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     border: none;
     border-bottom: 1px solid @light-gray;
   }

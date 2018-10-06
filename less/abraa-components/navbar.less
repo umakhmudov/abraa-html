@@ -1,39 +1,49 @@
 //Styling for the top header navigation bar on the website
 
-.navbar-abraa{
+.navbar-abraa
+{
   background-color: @navbar_bg;
   box-shadow: @navbar_box_shadow_size @navbar_box_shadow_color;
-  .navbar-header{
-    .navbar-toggle{
+  .navbar-header
+  {
+    .navbar-toggle
+    {
       float: left;
       display: block;
       margin-top: 15px;
       .no-border;
     }
-    .navbar-logo{
+    .navbar-logo
+    {
       height: auto;
       margin-top: 15px;
       float: left;
       display: inline-block;
-      img{
+      img
+      {
         height: @navbar_logo_height;
       }
       //adjust the padding for smaller screens to fit
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+      {
         padding-left: 0;
         padding-right: 0;
       }
       //adjust alignment so it can be on the left
-      @media screen and (max-width: @screen-xs-max) {
+      @media screen and (max-width: @screen-xs-max)
+      {
         display: inline-block;
       }
     }
   }
-  .header-search-section{
+  .header-search-section
+  {
     //hide the search section on mobile, unless it's toggled (active class is added)
-    @media screen and (max-width: @screen-xs-max) {
+    @media screen and (max-width: @screen-xs-max)
+    {
       display: none;
-      &.active{
+      &.active
+      {
         display: block;
       }
       background-color: @white;
@@ -44,22 +54,26 @@
       top: 56px;
     }
   }
-  .navbar-search{
+  .navbar-search
+  {
     margin: 0;
     padding: 14px 0 14px 0;
     width: 80%;
     //full width navbar search on mobile screen
-    @media screen and (max-width: @screen-xs-max) {
+    @media screen and (max-width: @screen-xs-max)
+    {
       width: 100%;
     }
-    .navbar_search_input{
+    .navbar_search_input
+    {
       padding-left: 110px;
       padding-right: 60px;
       border: 2px solid @abraa-blue;
       height: @navbar_search_height;
       .border-radius;
     }
-    .navbar-search-btn{
+    .navbar-search-btn
+    {
       .no-border;
       .no-box-shadow;
       color: @abraa-blue;
@@ -68,11 +82,13 @@
       right: 20%;
       margin-top: -30px;
       margin-right: 20px;
-      .text{
+      .text
+      {
         display: none;
       }
       //inverse the search button for mobile, set blue background and white text
-      @media screen and (max-width: @screen-xs-max) {
+      @media screen and (max-width: @screen-xs-max)
+      {
         color: @white;
         background-color: @abraa-blue;
         right: 0;
@@ -84,155 +100,195 @@
     }
 
   }
-  .new_rfq_btn{
+  .new_rfq_btn
+  {
     right: 0;
     position: absolute;
     padding: 14px 0;
     margin-top: -58px;
     margin-right: 20px;
-    img{
+    img
+    {
       margin-right: 5px;
     }
     //hide the new rfq text (but not the icon) on tablet screen (to fit)
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-      span{
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+    {
+      span
+      {
         display: none;
       }
     }
     //hide the new rfq text and the icon on mobile
-    @media screen and (max-width: @screen-xs-max) {
+    @media screen and (max-width: @screen-xs-max)
+    {
       display: none;
     }
   }
-  .navbar_right{
+  .navbar_right
+  {
     text-align: right;
     padding: 12px 0;
     //adjust padding for smaller screens
-    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+    {
       padding: 16px 0;
     }
     //adjust padding for smaller screens
-    @media screen and (max-width: @screen-xs-max) {
+    @media screen and (max-width: @screen-xs-max)
+    {
       padding: 0;
     }
-    .navbar_dropdown{
+    .navbar_dropdown
+    {
       display: inline-block;
     }
-    a{
+    a
+    {
       display: inline-block;
       color: @dark-gray;
       margin-left: 10px;
       //remove the left margin on smaller screen to fit
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+      {
         margin-left: 0;
       }
       //adjust the margins for mobile
-      @media screen and (max-width: @screen-xs-max) {
+      @media screen and (max-width: @screen-xs-max)
+      {
         margin-top: 4px;
         margin-right: 10px;
       }
 
       .no-underline-on-hover;
-      .glyphicon{
+      .glyphicon
+      {
         font-size: 10px;
         margin-left: 6px;
         //move the icon closer on smaller screens to fit
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+        {
           margin-left: 3px;
         }
       }
     }
-    .user_profile_box{
+    .user_profile_box
+    {
       //user profile dropdown to move to the right on mobile
-      @media screen and (max-width: @screen-xs-max) {
+      @media screen and (max-width: @screen-xs-max)
+      {
         position: absolute;
         right: 0;
         margin-top: -50px;
       }
-      .dropdown{
-        .user_profile_btn{
-          img{
+      .dropdown
+      {
+        .user_profile_btn
+        {
+          img
+          {
             width: 40px;
             border-radius: 50%;
             border: 1px solid @light-gray;
             //smaller profile btn on tablets
-            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+            {
               width: 30px;
             }
           }
         }
-        &.open{
-          .user_profile_dropdown{
+        &.open
+        {
+          .user_profile_dropdown
+          {
             width: 180px;
             padding: 10px;
             margin-top: -51px;
             margin-left: -1px;
             //adjust profile dropdown to align on smaller screens
-            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+            {
               margin-top: -41px;
               margin-left: -11px;
             }
             //adjust profile dropdown to align on smaller screens
-            @media screen and (max-width: @screen-xs-max){
+            @media screen and (max-width: @screen-xs-max)
+            {
               margin-left: -101px;
               margin-top: -45px;
             }
-            &.visitors_dropdown{
+            &.visitors_dropdown
+            {
               margin-top: 5px;
             }
             .no-box-shadow;
             border: 1px solid @abraa-blue;
             .border-radius;
-            .profile-img-section{
-              img{
+            .profile-img-section
+            {
+              img
+              {
                 width: 40px;
                 border-radius: 50%;
                 border: 1px solid @light-gray;
                 //adjust size to fit on smaller screens
-                @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+                @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+                {
                   width: 30px;
                 }
               }
-              .glyphicon{
+              .glyphicon
+              {
                 float: right;
                 margin-top: 10px;
                 font-size: 12px;
                 color: @dark-gray;
               }
             }
-            .profile-info-section{
+            .profile-info-section
+            {
               padding-top: 20px;
-              p{
+              p
+              {
                 font-size: 12px;
                 .no-margin;
                 color: @medium-gray;
-                &.profile-email{
+                &.profile-email
+                {
                   color: @abraa-blue;
                   font-style: italic;
                 }
-                &.profile-company{
+                &.profile-company
+                {
                   font-weight: bold;
                 }
               }
             }
-            .profile-links-section{
-              hr{
+            .profile-links-section
+            {
+              hr
+              {
                 margin-top: 10px;
                 margin-bottom: 10px;
               }
-              a {
+              a
+              {
                 .no-margin;
               }
-              ul{
+              ul
+              {
                 list-style-type: none;
                 .no-padding;
-                li{
+                li
+                {
                   .no-padding;
-                  a{
+                  a
+                  {
                     display: block;
                     width: 100%;
                     padding: 5px 0px;
-                    &:hover, &:active{
+                    &:hover, &:active
+                    {
                       color: @abraa-blue;
                     }
                   }
@@ -243,49 +299,62 @@
         }
       }
     }
-    .navbar-lang-form{
+    .navbar-lang-form
+    {
       .no-margin;
     }
-    .mobile_search_box{
+    .mobile_search_box
+    {
       position: absolute;
       right: 85px;
       margin-top: -42px;
-      .glyphicon{
+      .glyphicon
+      {
         font-size: 22px;
         color: @abraa-blue;
       }
     }
-    .user_notifications_box{
-      .notifications-count{
+    .user_notifications_box
+    {
+      .notifications-count
+      {
         display: none;
       }
-      .user_notifications_btn{
-        .glyphicon-bell{
+      .user_notifications_btn
+      {
+        .glyphicon-bell
+        {
           margin-top: 10px;
           vertical-align: bottom;
           font-size: 22px;
           color: @light-gray;
-          &:hover{
+          &:hover
+          {
             color: @dark-gray;
           }
         }
       }
-      .user_notifications_dropdown{
+      .user_notifications_dropdown
+      {
         padding: 10px;
         width: 200px;
         margin-top: -34px;
         margin-left: 6px;
         //adjust margins to fit on smaller screens
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
+        {
           margin-top: -33px;
           margin-left: -8px;
         }
-        .glyphicon-bell{
+        .glyphicon-bell
+        {
           font-size: 22px;
           color: @light-gray;
         }
-        .notifications-header-section{
-          .glyphicon-triangle-bottom{
+        .notifications-header-section
+        {
+          .glyphicon-triangle-bottom
+          {
             float: right;
             margin-top: 5px;
             font-size: 12px;
@@ -293,41 +362,52 @@
           }
           padding-bottom: 10px;
         }
-        .notifications-list{
-          ul{
+        .notifications-list
+        {
+          ul
+          {
             list-style-type: none;
             .no-padding;
-            li{
+            li
+            {
               padding-left: 30px;
               border-bottom: 1px solid @light-gray;
               padding-top: 10px;
               padding-bottom: 10px;
-              .notification-label{
+              .notification-label
+              {
                 position: absolute;
                 display: block;
                 height: 20px;
                 width: 20px;
                 margin-left: -30px;
                 .border-radius;
-                &.label-yellow{
+                &.label-yellow
+                {
                   background-color: @yellow;
                 }
-                &.label-green{
+                &.label-green
+                {
                   background-color: @green;
                 }
-                &.label-red{
+                &.label-red
+                {
                   background-color: @red;
                 }
-                &.label-black{
+                &.label-black
+                {
                   background-color: @black;
                 }
               }
-              .notification-text{
+              .notification-text
+              {
                 color: @medium-gray;
                 font-size: 10px;
               }
-              .notification-action{
-                a{
+              .notification-action
+              {
+                a
+                {
                   font-size: 10px;
                 }
               }
@@ -335,14 +415,18 @@
           }
         }
       }
-      &.with-notifications{
-          .glyphicon-bell {
+      &.with-notifications
+      {
+          .glyphicon-bell
+          {
             color: @abraa-blue;
-            &:hover {
+            &:hover
+            {
               color: @abraa-dark-blue;
             }
           }
-          .notifications-count{
+          .notifications-count
+          {
             display: block;
             background-color: @red;
             color: @white;
@@ -361,16 +445,19 @@
       }
     }
   }
-  .visitor_buttons{
+  .visitor_buttons
+  {
     position: absolute;
     width: 200px;
     right: 65px;
     //add a margin for bigger screens
-    @media screen and (min-width: @screen-lg-min){
+    @media screen and (min-width: @screen-lg-min)
+    {
       margin-top: 5px;
     }
     //align the visitor buttons on the right for mobile
-    @media screen and (max-width: @screen-xs-max){
+    @media screen and (max-width: @screen-xs-max)
+    {
       right: 0;
     }
   }

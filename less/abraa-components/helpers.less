@@ -2,93 +2,119 @@
 //(e.g. extra paddings, margins, spacings, backgrounds, colors, etc.)
 
 //------------ margins and paddings ----------
-.mt0{
+.mt0
+{
   margin-top: 0 !important;
 }
-.mt25{
+.mt25
+{
   margin-top: 25px;
 }
-.mmt25{
+.mmt25
+{
   //set top margin for mobile screens only, useful when they're side by side on desktop
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     margin-top: 25px;
   }
 }
-.mb0{
+.mb0
+{
   margin-bottom: 0 !important;
 }
-.mb5{
+.mb5
+{
   margin-bottom: 5px !important;
 }
-.mb10{
+.mb10
+{
   margin-bottom: 10px;
 }
-.mb20{
+.mb20
+{
   margin-bottom: 20px;
 }
-.mb25{
+.mb25
+{
   margin-bottom: 25px;
 }
-.pad30{
+.pad30
+{
   padding: 30px;
 }
-.pl10{
+.pl10
+{
   padding-left: 10px;
 }
-.ptb20{
+.ptb20
+{
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 //------------ width and height ----------
-.full-width{
+.full-width
+{
   width: 100%;
 }
-.full-height{
+.full-height
+{
   height: 100%;
 }
-.mw100{
+.mw100
+{
   //width 100% on mobile screen only
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     width: 100%;
   }
 }
 
 //------------ borders ----------
-.border-bottom-section{
+.border-bottom-section
+{
   border-bottom: 2px solid @light-gray;
 }
-.border-right{
+.border-right
+{
   border-right: 1px solid @light-gray;
   //for lists where on desktop they're side by side, on mobile we want the border to be on the bottom as a separator
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     border: none;
     border-bottom: 1px solid @light-gray;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 }
-.light_blue_border{
+.light_blue_border
+{
   border: 1px solid @abraa-light-blue-border;
 }
-.border-radius-5{
+.border-radius-5
+{
   border-radius: 5px;
 }
 
 //------------ backgrounds ----------
-.white_bg_section{
+.white_bg_section
+{
   background-color: @white;
 }
-.light_blue_bg_section{
+.light_blue_bg_section
+{
   background-color: @bg_light_blue;
 }
-.dark_blue_bg_section{
+.dark_blue_bg_section
+{
   background-color: @bg_dark_blue;
-  h3{
+  h3
+  {
     color: @white !important;
   }
 }
-.bright_blue_bg_section{
+.bright_blue_bg_section
+{
   background-color: @abraa-blue;
   color: @white;
 }
@@ -97,12 +123,14 @@
 
 //header that is white in color with box shadow
 //used in few cases where text needs to be laid on top of an image
-.heading-white{
+.heading-white
+{
   color: @white;
   text-shadow: 0px 2px 5px @dark-gray;
 }
 
 //horizontal line (darker color) used on sections with light backgrounds
-hr.dark{
+hr.dark
+{
   border-color: @hr-gray;
 }

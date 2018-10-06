@@ -1,34 +1,40 @@
 //General styles shared across the website
 
 //set default background and padding for the body
-body{
+body
+{
   background-color: @body_bg;
   padding: @body_padding;
 }
 //overwrite default form label styles
-label{
+label
+{
   font-weight: normal;
   color: @medium-gray;
 }
 
 //horizontal slider styles
-.horizontal-slider {
+.horizontal-slider
+{
   position: relative;
   @media (max-width: @screen-xs-max) { border-color: transparent; }
-  .MS-content {
+  .MS-content
+  {
     margin: 15px 5%;
     overflow: hidden;
     white-space: nowrap;
 
     @media (max-width: @screen-xs-max) { margin: 0; }
 
-    .item {
+    .item
+    {
       display: inline-block;
       overflow: hidden;
       position: relative;
       vertical-align: top;
       padding: 10px;
-      img{
+      img
+      {
         width: 100%;
       }
       width: 20%;
@@ -38,7 +44,8 @@ label{
       @media (max-width: @screen-sm-max) { width: 33.3333%; }
       @media (max-width: @screen-xs-max) { width: 50%; }
 
-      p {
+      p
+      {
         color: @medium-gray;
         text-align: center;
         line-height: 1;
@@ -48,24 +55,29 @@ label{
       }
     }
   }
-  .MS-controls {
-    button {
+  .MS-controls
+  {
+    button
+    {
       position: absolute;
       border: none;
       background: transparent;
       font-size: 30px;
       outline: 0;
       top: 60px;
-      &:hover {
+      &:hover
+      {
         cursor: pointer;
       }
     }
-    .MS-left {
+    .MS-left
+    {
       left: 10px;
       //adjust the position of the arrows on smaller screen
       @media (max-width: @screen-sm-max) { left: -2px; }
     }
-    .MS-right {
+    .MS-right
+    {
       right: 10px;
       //adjust the position of the arrows on smaller screen
       @media (max-width: @screen-sm-max) { right: -2px; }
@@ -74,12 +86,14 @@ label{
 }
 
 //product box used on grid view when listing products (index, supplier, category pages)
-.product-box{
+.product-box
+{
   .box-shadow(0px 0px 5px 0px @light-gray);
   background-color: @white;
   padding: 10px;
   .mt25;
-  .product-discount{
+  .product-discount
+  {
     position: absolute;
     border-radius: 50px;
     padding: 5px 10px;
@@ -89,28 +103,37 @@ label{
     margin-top: 10px;
     .box-shadow(0px 3px 3px 0px @dark-gray);
   }
-  .product-img{
+  .product-img
+  {
     width: 100%;
   }
-  .product-info{
-    .product-name{
+  .product-info
+  {
+    .product-name
+    {
       color: @abraa-blue;
     }
-    .product-price, .product-min-order{
+    .product-price, .product-min-order
+    {
       color: @dark-gray;
-      small{
+      small
+      {
         color: @medium-gray;
       }
     }
   }
-  .supplier-info{
-    .supplier-origin{
-      img{
+  .supplier-info
+  {
+    .supplier-origin
+    {
+      img
+      {
         width: 30px;
         display: inline-block;
       }
     }
-    .supplier-action{
+    .supplier-action
+    {
       height: 60px;
       padding-top: 20px
     }
@@ -118,56 +141,70 @@ label{
 }
 
 //general small block (with text inside) used for item listings without an image (index)
-.item-sm-block{
+.item-sm-block
+{
   color: @black;
   font-size: 14px;
-  small{
+  small
+  {
     color: @medium-gray;
   }
 }
 
 //general class for banners used on supplier and home page
-.page-banner{
+.page-banner
+{
   background-size: cover;
 }
 
 //footer styles
-.abraa-footer{
+.abraa-footer
+{
   color: @dark-gray;
   background-color: @footer-bg;
   padding: 30px 0;
   //adjust the text to be centered on mobile for easier readability
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     text-align: center;
   }
-  .footer-logo{
+  .footer-logo
+  {
     width: 140px;
   }
-  h4{
+  h4
+  {
     color: @dark-gray;
     margin-bottom: 20px;
   }
-  .dlist-footer-ul{
+  .dlist-footer-ul
+  {
     list-style-type: none;
     .no-padding;
-    li{
-      a{
+    li
+    {
+      a
+      {
         color: @dark-gray;
         display: block;
         margin-bottom: 5px;
-        &:hover{
+        &:hover
+        {
           text-decoration: none;
           color: @abraa-dark-blue !important;
         }
       }
     }
   }
-  .google-play-link{
+  .google-play-link
+  {
     display: block;
-    img{
+    img
+    {
       width: 100%;
       //make the google play link fixed width on mobile so it's not pixelated
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         max-width: 150px;
         margin-top: 10px;
       }
@@ -176,32 +213,40 @@ label{
 }
 
 //star rankings section (used for reviews and item/supplier rankings)
-.supplier-ranking{
-  i{
+.supplier-ranking
+{
+  i
+  {
     color: @ranking-yellow;
   }
-  .ranking_count{
+  .ranking_count
+  {
     color: @medium-gray;
   }
 }
 
 //sidebar with filters (used on categories/supplier pages)
-.filters-bar{
+.filters-bar
+{
   margin: 25px 0;
   background-color: @white;
   padding: 20px 10px;
 
-  .link_filters{
+  .link_filters
+  {
     list-style-type: none;
     .no-padding;
-    li{
-      a{
+    li
+    {
+      a
+      {
         display: block;
         margin-bottom: 5px;
         font-size: 14px;
         color: @dark-gray;
         .no-underline-on-hover;
-        &:hover{
+        &:hover
+        {
           color: @abraa-blue;
         }
       }
