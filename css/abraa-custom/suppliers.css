@@ -150,7 +150,7 @@
 }
 @media screen and (max-width: 767px) {
   .supplier-stats .supplier-stat-block {
-    padding: 0 15px;
+    padding: 0 5px;
   }
 }
 .supplier-stats .supplier-stat-block:first-child {
@@ -167,11 +167,11 @@
 }
 @media screen and (max-width: 767px) {
   .supplier-stats .supplier-stat-block .stat-number {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 .supplier-stats .supplier-stat-block .stat-title {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -181,7 +181,7 @@
 }
 @media screen and (max-width: 767px) {
   .supplier-stats .supplier-stat-block .stat-title {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .supplier-tabs {
@@ -209,10 +209,15 @@
   margin-right: 5px;
 }
 @media screen and (max-width: 767px) {
+  .supplier-tabs .supplier-tab-link img {
+    width: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
   .supplier-tabs .supplier-tab-link {
-    font-size: 12px;
+    font-size: 10px;
     display: inline-block;
-    padding: 0 10px 6px 10px;
+    padding: 0 10px 4px 10px;
     border-bottom: 4px solid #ffffff;
   }
 }
@@ -284,7 +289,7 @@
 }
 @media screen and (max-width: 767px) {
   .page-banner.supplier-page {
-    height: 200px;
+    height: 120px;
   }
 }
 @media screen and (min-width: 991px) {
