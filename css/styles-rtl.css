@@ -233,3 +233,21 @@
     border-bottom: 1px solid #efefef;
   }
 }
+.product-box.product-box-rfq-btn .new-rfq-content {
+  padding-right: auto;
+  padding-left: 25px;
+}
+.checkbox-container {
+  padding-left: 0;
+  padding-right: 25px;
+  /* Create a custom checkbox */
+}
+.checkbox-container .checkmark {
+  left: auto;
+  right: 0;
+  /* Create the checkmark/indicator (hidden when not checked) */
+}
+.checkbox-container .checkmark:after {
+  left: auto;
+  right: 5px;
+}
