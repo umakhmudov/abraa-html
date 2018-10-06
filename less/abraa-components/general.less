@@ -134,10 +134,45 @@ label
     }
     .supplier-action
     {
-      height: 60px;
       padding-top: 20px
     }
   }
+  &.product-box-rfq-btn
+  {
+    position: relative;
+    .new-rfq-content
+    {
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+      padding-right: 25px;
+      color: @white;
+    }
+  }
+}
+
+.pagination
+{
+ .page-link{
+   .transition;
+   color: @abraa-blue;
+   background-color: @transparent;
+   border-color: @abraa-blue !important;
+   border-radius: 5px;
+   margin: 0 2px;
+   &:hover, &:focus, &:active{
+     color: @white;
+     background-color: @abraa-blue;
+   }
+   &.no-bg{
+    border-color: @transparent !important;
+    margin: 0 5px;
+    &:hover, &:focus, &:active{
+     color: @abraa-dark-blue;
+     background-color: @transparent;
+    }
+   }
+ }
 }
 
 //general small block (with text inside) used for item listings without an image (index)
@@ -230,9 +265,10 @@ label
 {
   margin: 25px 0;
   background-color: @white;
-  padding: 20px 10px;
+  padding: 20px 15px;
 
-  .link_filters
+  .link_filters,
+  .breadcrumbs-filter
   {
     list-style-type: none;
     .no-padding;
@@ -249,6 +285,123 @@ label
         {
           color: @abraa-blue;
         }
+        .count
+        {
+          font-size: 10px;
+        }
+      }
+      ul{
+        padding-left: 15px;
+        list-style-type: none;
+      }
+    }
+  }
+  .price-range-filter
+  {
+    .form-control
+    {
+      display: inline-block;
+      width: 60px;
+    }
+    .currency
+    {
+      color: @medium-gray;
+    }
+  }
+}
+
+
+//breadcrumbs
+.breadcrumbs
+{
+  color: @abraa-blue;
+  a
+  {
+    color: @abraa-blue;
+    .no-underline-on-hover;
+    &:hover,
+    &:focus,
+    &:active
+    {
+      color: @abraa-dark-blue;
+    }
+  }
+  &.breadcrumbs-white
+  {
+    color: @white;
+    a
+    {
+      color: @white;
+      &:hover,
+      &:focus,
+      &:active
+      {
+        color: @white;
+        text-decoration: underline;
+      }
+    }
+  }
+  &.breadcrumbs-banner
+  {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+
+  }
+}
+
+//category page
+.page-banner
+{
+  &.category-page
+  {
+    padding: 90px 0;
+    @media screen and (max-width: @screen-xs-max)
+    {
+      padding: 30px 0;
+    }
+  }
+}
+
+.sub-category-links
+{
+  a
+  {
+    display: inline-block;
+    padding: 20px;
+    .no-underline-on-hover;
+    .sub-category-icon
+    {
+      padding: 20px;
+      border-radius: 50%;
+      background-color: @abraa-light-green;
+      border: 2px solid @abraa-light-green;
+      .transition;
+      img
+      {
+        width: 100px;
+        @media screen and (max-width: @screen-xs-max)
+        {
+          width: 50px;
+        }
+      }
+    }
+    .sub-category-info
+    {
+      color: @light-gray;
+    }
+    &:hover,
+    &:active,
+    &:focus
+    {
+      .sub-category-icon
+      {
+        border-color: @white;
+      }
+      .sub-category-info
+      {
+        color: @white;
+        text-decoration: none !important;
       }
     }
   }

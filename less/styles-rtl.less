@@ -268,3 +268,37 @@
     border-bottom: 1px solid @light-gray;
   }
 }
+
+//product-box
+.product-box
+{
+  &.product-box-rfq-btn
+  {
+    .new-rfq-content
+    {
+      padding-right: auto;
+      padding-left: 25px;
+    }
+  }
+}
+
+//custom checkbox styling
+.checkbox-container
+{
+  padding-left: 0;
+  padding-right: 25px;
+
+  /* Create a custom checkbox */
+  .checkmark
+  {
+    left: auto;
+    right: 0;
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    &:after
+    {
+      left: auto;
+      right: 5px;
+    }
+  }
+}
