@@ -6,7 +6,6 @@
 }
 .no-box-shadow {
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 .no-margin {
@@ -85,11 +84,7 @@
   position: absolute;
   margin-left: -200px;
   width: 180px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: #ffffff;
 }
@@ -117,7 +112,6 @@
     margin: 0 auto !important;
     margin-top: -40px !important;
     -webkit-box-shadow: 0px 0px 2px #6c6c6c;
-    -moz-box-shadow: 0px 0px 2px #6c6c6c;
     box-shadow: 0px 0px 2px #6c6c6c;
   }
 }
@@ -246,41 +240,6 @@
     border-left: 1px solid #9c9c9c;
   }
 }
-.supplier-reviews-tab .reviews-summary .reviews-total-score {
-  font-size: 32px;
-}
-.supplier-reviews-tab .reviews-summary .supplier-ranking {
-  display: inline-block;
-}
-.supplier-reviews-tab .reviews-summary .reviews-stats .reviews-score {
-  display: inline-block;
-  font-size: 10px;
-}
-.supplier-reviews-tab .reviews-summary .reviews-stats .count_bar {
-  display: inline-block;
-  width: 70%;
-  margin: 0 5px;
-  height: 6px;
-  border-radius: 30px;
-  background-color: #efefef;
-}
-.supplier-reviews-tab .reviews-summary .reviews-stats .count_bar .count_bar_filled {
-  display: block;
-  height: 6px;
-  border-radius: 30px;
-  background-color: #f5c444;
-}
-.supplier-reviews-tab .reviews-summary .reviews-stats .count_num {
-  font-size: 10px;
-  display: inline-block;
-}
-.supplier-reviews-tab .reviews-list {
-  padding: 20px 0;
-}
-.supplier-reviews-tab .reviews-list .review-item {
-  padding: 10px 0;
-  border-bottom: 1px solid #9c9c9c;
-}
 .supplier-products-tab {
   padding-bottom: 40px;
 }
@@ -315,41 +274,6 @@
     border-left: none;
     border-right: 1px solid #9c9c9c;
   }
-}
-[dir=rtl] .supplier-reviews-tab .reviews-summary .reviews-total-score {
-  font-size: 32px;
-}
-[dir=rtl] .supplier-reviews-tab .reviews-summary .supplier-ranking {
-  display: inline-block;
-}
-[dir=rtl] .supplier-reviews-tab .reviews-summary .reviews-stats .reviews-score {
-  display: inline-block;
-  font-size: 10px;
-}
-[dir=rtl] .supplier-reviews-tab .reviews-summary .reviews-stats .count_bar {
-  display: inline-block;
-  width: 70%;
-  margin: 0 5px;
-  height: 6px;
-  border-radius: 30px;
-  background-color: #efefef;
-}
-[dir=rtl] .supplier-reviews-tab .reviews-summary .reviews-stats .count_bar .count_bar_filled {
-  display: block;
-  height: 6px;
-  border-radius: 30px;
-  background-color: #f5c444;
-}
-[dir=rtl] .supplier-reviews-tab .reviews-summary .reviews-stats .count_num {
-  font-size: 10px;
-  display: inline-block;
-}
-[dir=rtl] .supplier-reviews-tab .reviews-list {
-  padding: 20px 0;
-}
-[dir=rtl] .supplier-reviews-tab .reviews-list .review-item {
-  padding: 10px 0;
-  border-bottom: 1px solid #9c9c9c;
 }
 [dir=rtl] .supplier-products-tab {
   padding-bottom: 40px;

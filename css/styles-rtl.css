@@ -276,3 +276,38 @@
 .breadcrumbs .glyphicon-chevron-right:before {
   content: "\e079";
 }
+.reviews-section .reviews-summary .reviews-total-score {
+  font-size: 32px;
+}
+.reviews-section .reviews-summary .supplier-ranking {
+  display: inline-block;
+}
+.reviews-section .reviews-summary .reviews-stats .reviews-score {
+  display: inline-block;
+  font-size: 10px;
+}
+.reviews-section .reviews-summary .reviews-stats .count_bar {
+  display: inline-block;
+  width: 70%;
+  margin: 0 5px;
+  height: 6px;
+  border-radius: 30px;
+  background-color: #efefef;
+}
+.reviews-section .reviews-summary .reviews-stats .count_bar .count_bar_filled {
+  display: block;
+  height: 6px;
+  border-radius: 30px;
+  background-color: #f5c444;
+}
+.reviews-section .reviews-summary .reviews-stats .count_num {
+  font-size: 10px;
+  display: inline-block;
+}
+.reviews-section .reviews-list {
+  padding: 20px 0;
+}
+.reviews-section .reviews-list .review-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #9c9c9c;
+}
