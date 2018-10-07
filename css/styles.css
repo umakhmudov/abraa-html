@@ -580,7 +580,8 @@ label {
   color: #949ba9;
   font-weight: normal;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
+  padding: 10px;
 }
 .filter-tag .remove-filter-tag {
   display: inline-block;
