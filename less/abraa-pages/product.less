@@ -4,44 +4,55 @@
 @import '../abraa-mixins/utilities.less';
 
 //product info page
-.product-price{
+.product-price
+{
   padding: 20px 0;
   font-size: 24px;
   .no-margin;
-  &.unknown{
+  &.unknown
+  {
     font-size: 14px;
     color: @medium-gray;
   }
-  small{
+  small
+  {
     color: @medium-gray;
   }
 }
 
-.product-shortcut-links{
+.product-shortcut-links
+{
   padding: 20px 0;
   font-size: 12px;
-  a{
+  a
+  {
     color: @medium-gray;
     .no-underline-on-hover;
     padding: 0 5px;
-    &:hover, &:focus, &:active{
+    &:hover, &:focus, &:active
+    {
       color: @abraa-blue;
     }
   }
 }
-.product-cta-section{
-  .abraa-btn{
+.product-cta-section
+{
+  .abraa-btn
+  {
     font-size: 14px;
     margin: 10px 0;
     padding: 15px 10px;
-    @media screen and (max-width: @screen-md-max){
+    @media screen and (max-width: @screen-md-max)
+    {
       font-size: 12px;
     }
   }
 }
-.product-page-supplier-info{
+.product-page-supplier-info
+{
   padding: 10px;
-  .supplier-type{
+  .supplier-type
+  {
     padding-top: 20px;
     font-size: 12px;
     color: @medium-gray
@@ -60,38 +71,48 @@
     color: @medium-gray;
     margin-top: 10px;
   }
-  .supplier-stats{
+  .supplier-stats
+  {
     font-size: 10px;
-    p{
+    p
+    {
       margin: 20px 0;
       display: inline-block;
       padding: 0 10px;
-      &:first-child{
+      &:first-child
+      {
         border-right: 1px solid @light-gray;
       }
     }
   }
-  .need-help-section{
+  .need-help-section
+  {
     color: @medium-gray;
     text-align: center;
     padding-top: 20px;
-    ul{
+    ul
+    {
       list-style-type: none;
       .no-padding;
-      li{
+      li
+      {
         display: inline-block;
         border-left: 1px solid @medium-gray;
-        &:first-child{
+        &:first-child
+        {
           border: none;
         }
-        a{
+        a
+        {
           font-size: 10px;
           padding: 0 5px;
           color: @medium-gray;
-          &:hover, &:focus, &:active{
+          &:hover, &:focus, &:active
+          {
             color: @abraa-blue;
           }
-          img{
+          img
+          {
             width: 15px;
           }
         }
@@ -102,14 +123,20 @@
 
 
 //RTL specific overwrites
-[dir=rtl]{
-  .product-page-supplier-info{
-    .need-help-section{
-      ul{
-        li{
+[dir=rtl]
+{
+  .product-page-supplier-info
+  {
+    .need-help-section
+    {
+      ul
+      {
+        li
+        {
           border-left: none;
           border-right: 1px solid @medium-gray;
-          &:first-child{
+          &:first-child
+          {
             border: none;
           }
         }

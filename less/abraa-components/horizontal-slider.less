@@ -1,0 +1,132 @@
+// horizontal slider styles
+//horizontal slider styles
+.horizontal-slider
+{
+  position: relative;
+  @media (max-width: @screen-xs-max) { border-color: transparent; }
+  .MS-content
+  {
+    margin: 15px 5%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @media (max-width: @screen-xs-max) { margin: 0; }
+
+    .item
+    {
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      vertical-align: top;
+      padding: 10px;
+      img
+      {
+        width: 100%;
+      }
+      width: 20%;
+
+      //update width for smaller sizes
+      @media (max-width: @screen-md-max) { width: 25%; }
+      @media (max-width: @screen-sm-max) { width: 33.3333%; }
+      @media (max-width: @screen-xs-max) { width: 50%; }
+
+      p
+      {
+        color: @medium-gray;
+        text-align: center;
+        line-height: 1;
+        vertical-align: middle;
+        margin: 0;
+        padding: 10px 0;
+      }
+    }
+  }
+  .MS-controls
+  {
+    button
+    {
+      position: absolute;
+      border: none;
+      background: transparent;
+      font-size: 30px;
+      outline: 0;
+      top: 60px;
+      &:hover
+      {
+        cursor: pointer;
+      }
+    }
+    .MS-left
+    {
+      left: 10px;
+      //adjust the position of the arrows on smaller screen
+      @media (max-width: @screen-sm-max) { left: -2px; }
+    }
+    .MS-right
+    {
+      right: 10px;
+      //adjust the position of the arrows on smaller screen
+      @media (max-width: @screen-sm-max) { right: -2px; }
+    }
+  }
+  //slider with 4 columns on desktop
+  &.col4
+  {
+    .item
+    {
+      width: 25%;
+      //update width for smaller sizes
+      @media (max-width: @screen-md-max) { width: 33.3333%; }
+      @media (max-width: @screen-sm-max) { width: 50%; }
+    }
+  }
+  &.products-slider
+  {
+    p
+    {
+      font-size: 12px;
+      text-align: left !important;
+    }
+    .product-info
+    {
+      .product-name
+      {
+        font-size: 12px;
+      }
+      .product-price, .product-min-order
+      {
+        color: @dark-gray;
+        small
+        {
+          color: @medium-gray;
+        }
+      }
+    }
+    .supplier-info
+    {
+      .supplier-link
+      {
+        text-decoration: underline !important;
+      }
+      .supplier-origin
+      {
+        img
+        {
+          width: 30px;
+          display: inline-block;
+        }
+      }
+      .supplier-action
+      {
+        padding-top: 20px
+      }
+    }
+    .MS-controls
+    {
+      button
+      {
+        top: 50%;
+      }
+    }
+  }
+}
