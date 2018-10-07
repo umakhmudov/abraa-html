@@ -231,6 +231,9 @@
   color: #ffffff;
   text-shadow: 0px 2px 5px #6c6c6c;
 }
+.heading-gray {
+  color: #9c9c9c;
+}
 hr.dark {
   border-color: #d3d6da;
 }
@@ -320,6 +323,47 @@ label {
   .horizontal-slider .MS-controls .MS-right {
     right: -2px;
   }
+}
+.horizontal-slider.col4 .item {
+  width: 25%;
+}
+@media (max-width: 1199px) {
+  .horizontal-slider.col4 .item {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 991px) {
+  .horizontal-slider.col4 .item {
+    width: 50%;
+  }
+}
+.horizontal-slider.products-slider p {
+  font-size: 12px;
+  text-align: left !important;
+}
+.horizontal-slider.products-slider .product-info .product-name {
+  font-size: 12px;
+}
+.horizontal-slider.products-slider .product-info .product-price,
+.horizontal-slider.products-slider .product-info .product-min-order {
+  color: #6c6c6c;
+}
+.horizontal-slider.products-slider .product-info .product-price small,
+.horizontal-slider.products-slider .product-info .product-min-order small {
+  color: #9c9c9c;
+}
+.horizontal-slider.products-slider .supplier-info .supplier-link {
+  text-decoration: underline !important;
+}
+.horizontal-slider.products-slider .supplier-info .supplier-origin img {
+  width: 30px;
+  display: inline-block;
+}
+.horizontal-slider.products-slider .supplier-info .supplier-action {
+  padding-top: 20px;
+}
+.horizontal-slider.products-slider .MS-controls button {
+  top: 50%;
 }
 .product-box {
   -webkit-box-shadow: 0px 0px 5px 0px #efefef;
@@ -710,7 +754,7 @@ label {
 }
 .reviews-section .reviews-list .review-item {
   padding: 10px 0;
-  border-bottom: 1px solid #9c9c9c;
+  border-bottom: 1px solid #efefef;
 }
 .glyphicon-block-selectbox {
   position: relative;
@@ -1298,6 +1342,14 @@ label {
 .abraa-white-btn:focus {
   background-color: #4da1ff;
   color: #ffffff !important;
+}
+.abraa-white-btn.transparent-bg {
+  background-color: transparent;
+}
+.abraa-white-btn.transparent-bg:hover,
+.abraa-white-btn.transparent-bg:active,
+.abraa-white-btn.transparent-bg:focus {
+  background-color: #4da1ff;
 }
 .abraa-transparent-btn {
   background-color: transparent;
