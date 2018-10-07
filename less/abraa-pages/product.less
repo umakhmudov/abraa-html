@@ -1,0 +1,119 @@
+//General styles for Products page - LTR and RTL
+
+@import '../abraa-variables/main.less';
+@import '../abraa-mixins/utilities.less';
+
+//product info page
+.product-price{
+  padding: 20px 0;
+  font-size: 24px;
+  .no-margin;
+  &.unknown{
+    font-size: 14px;
+    color: @medium-gray;
+  }
+  small{
+    color: @medium-gray;
+  }
+}
+
+.product-shortcut-links{
+  padding: 20px 0;
+  font-size: 12px;
+  a{
+    color: @medium-gray;
+    .no-underline-on-hover;
+    padding: 0 5px;
+    &:hover, &:focus, &:active{
+      color: @abraa-blue;
+    }
+  }
+}
+.product-cta-section{
+  .abraa-btn{
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 15px 10px;
+    @media screen and (max-width: @screen-md-max){
+      font-size: 12px;
+    }
+  }
+}
+.product-page-supplier-info{
+  padding: 10px;
+  .supplier-type{
+    padding-top: 20px;
+    font-size: 12px;
+    color: @medium-gray
+  }
+  .supplier-origin
+  {
+    img
+    {
+      width: 30px;
+      display: inline-block;
+    }
+  }
+  .supplier-membership
+  {
+    font-size: 12px;
+    color: @medium-gray;
+    margin-top: 10px;
+  }
+  .supplier-stats{
+    font-size: 10px;
+    p{
+      margin: 20px 0;
+      display: inline-block;
+      padding: 0 10px;
+      &:first-child{
+        border-right: 1px solid @light-gray;
+      }
+    }
+  }
+  .need-help-section{
+    color: @medium-gray;
+    text-align: center;
+    padding-top: 20px;
+    ul{
+      list-style-type: none;
+      .no-padding;
+      li{
+        display: inline-block;
+        border-left: 1px solid @medium-gray;
+        &:first-child{
+          border: none;
+        }
+        a{
+          font-size: 10px;
+          padding: 0 5px;
+          color: @medium-gray;
+          &:hover, &:focus, &:active{
+            color: @abraa-blue;
+          }
+          img{
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//RTL specific overwrites
+[dir=rtl]{
+  .product-page-supplier-info{
+    .need-help-section{
+      ul{
+        li{
+          border-left: none;
+          border-right: 1px solid @medium-gray;
+          &:first-child{
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
