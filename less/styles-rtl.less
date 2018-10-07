@@ -353,3 +353,58 @@
     }
   }
 }
+
+//reviews section
+.reviews-section
+{
+  .reviews-summary
+  {
+    .reviews-total-score
+    {
+      font-size: 32px;
+    }
+    .supplier-ranking
+    {
+      display: inline-block;
+    }
+    .reviews-stats
+    {
+      .reviews-score
+      {
+        display: inline-block;
+        font-size: 10px;
+      }
+      .count_bar
+      {
+        display: inline-block;
+        width: 70%;
+        margin: 0 5px;
+        height: 6px;
+        border-radius: 30px;
+        background-color: @light-gray;
+        .count_bar_filled
+        {
+          display: block;
+          height: 6px;
+          border-radius: 30px;
+          background-color: @ranking-yellow;
+        }
+      }
+      .count_num
+      {
+        font-size: 10px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .reviews-list
+  {
+    padding: 20px 0;
+    .review-item
+    {
+      padding: 10px 0;
+      border-bottom: 1px solid @medium-gray;
+    }
+  }
+}
