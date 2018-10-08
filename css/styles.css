@@ -250,6 +250,11 @@
 hr.dark {
   border-color: #d3d6da;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .text-left-sm {
+    text-align: left;
+  }
+}
 body {
   background-color: #f3f5f8;
   padding: 56px 0 0 0;
@@ -319,6 +324,11 @@ label {
   border-radius: 5px;
   margin: 0 2px;
 }
+@media screen and (max-width: 767px) {
+  .pagination .page-link {
+    display: none;
+  }
+}
 .pagination .page-link:hover,
 .pagination .page-link:focus,
 .pagination .page-link:active {
@@ -328,6 +338,12 @@ label {
 .pagination .page-link.no-bg {
   border-color: transparent !important;
   margin: 0 5px;
+}
+@media screen and (max-width: 767px) {
+  .pagination .page-link.no-bg {
+    display: block;
+    border-color: #4da1ff !important;
+  }
 }
 .pagination .page-link.no-bg:hover,
 .pagination .page-link.no-bg:focus,
@@ -454,6 +470,10 @@ label {
   padding-left: 15px;
   list-style-type: none;
 }
+.filters-bar .breadcrumbs-filter li ul {
+  list-style-type: circle;
+  padding-left: 30px;
+}
 .filters-bar .price-range-filter .form-control {
   display: inline-block;
   width: 60px;
@@ -507,6 +527,7 @@ label {
   display: inline-block;
   vertical-align: middle;
   padding: 10px;
+  margin-top: 10px;
 }
 .filter-tag .remove-filter-tag {
   display: inline-block;
@@ -658,6 +679,14 @@ label {
 }
 .white-modal-box.small-box {
   margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .no-padding-col-xs .product-box {
+    margin: 0 !important;
+  }
+  .no-padding-col-xs .col-xs-6 {
+    padding: 2px !important;
+  }
 }
 .glyphicon-block-selectbox {
   position: relative;

@@ -94,6 +94,10 @@ label
    border-color: @abraa-blue !important;
    border-radius: 5px;
    margin: 0 2px;
+   @media screen and (max-width: @screen-xs-max)
+   {
+     display: none;
+   }
    &:hover, &:focus, &:active
    {
      color: @white;
@@ -103,6 +107,11 @@ label
    {
     border-color: @transparent !important;
     margin: 0 5px;
+     @media screen and (max-width: @screen-xs-max)
+     {
+       display: block;
+       border-color: @abraa-blue !important;
+     }
     &:hover, &:focus, &:active
     {
      color: @abraa-dark-blue;
@@ -270,6 +279,18 @@ label
       }
     }
   }
+  .breadcrumbs-filter
+  {
+    li
+    {
+      ul
+      {
+        list-style-type: circle;
+        padding-left: 30px;
+      }
+    }
+  }
+
   .price-range-filter
   {
     .form-control
@@ -342,6 +363,7 @@ label
   display: inline-block;
   vertical-align: middle;
   padding: 10px;
+  margin-top: 10px;
   .remove-filter-tag
   {
     display: inline-block;
@@ -550,5 +572,20 @@ label
   &.small-box
   {
     margin-top: 20px;
+  }
+}
+
+//for column layouts where we need to reduce the padding on mobile, so they are tight together, add this class to the parent .row element
+.no-padding-col-xs
+{
+  @media screen and (max-width: @screen-xs-max){
+    .product-box
+    {
+      margin: 0 !important;
+    }
+    .col-xs-6
+    {
+      padding: 2px !important;
+    }
   }
 }

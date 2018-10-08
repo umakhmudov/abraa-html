@@ -162,3 +162,11 @@ hr.dark
 {
   border-color: @hr-gray;
 }
+
+//align text to the left on specific screen sizes, useful for right/left aligned items that don't fit into columns for smaller screens
+.text-left-sm
+{
+  @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    text-align: left;
+  }
+}

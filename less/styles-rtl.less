@@ -3,424 +3,339 @@
 //mixins
 @import 'abraa-mixins/utilities.less';
 
-//some specific classes that need to be reversed (left-right)
-[dir=rtl]
-{
-  .text-right
-  {
+[dir=rtl] {
+  //some specific classes that need to be reversed (left-right)
+  .text-right {
     text-align: left !important;
   }
-  .pull-right
-  {
+  .pull-right {
     float: left !important;
   }
-  .glyphicon-arrow-right
-  {
-    &:before
-    {
+  .glyphicon-arrow-right {
+    &:before {
       content: "\e091";
     }
   }
-}
 
-///navbar specific for RTL
-.navbar-abraa
-{
-  .navbar-header
-  {
-    .navbar-toggle
-    {
-      float: right;
-    }
-    .navbar-logo
-    {
-      @media screen and (max-width: @screen-xs-max)
-      {
+  ///navbar specific for RTL
+  .navbar-abraa {
+    .navbar-header {
+      .navbar-toggle {
         float: right;
       }
-    }
-  }
-
-  .navbar-search
-  {
-    .selectBox
-    {
-      .selectBox-label, .selectBox-arrow
-      {
-        .border-radiuses (5px, 5px, 0, 0);
-      }
-      .selectBox-arrow
-      {
-
-        &:after
-        {
-          margin-right: 2px;
-        }
-      }
-      &.selectBox-menuShowing
-      {
-        .selectBox-label
-        {
-          .border-radiuses (0, 0, 0, 5px);
+      .navbar-logo {
+        @media screen and (max-width: @screen-xs-max) {
+          float: right;
         }
       }
     }
-    .navbar_search_input
-    {
-      padding-right: 110px;
-      padding-left: 60px;
+
+    .navbar-search {
+      .selectBox {
+        .selectBox-label, .selectBox-arrow {
+          .border-radiuses (5px, 5px, 0, 0);
+        }
+        .selectBox-arrow {
+
+          &:after {
+            margin-right: 2px;
+          }
+        }
+        &.selectBox-menuShowing {
+          .selectBox-label {
+            .border-radiuses (0, 0, 0, 5px);
+          }
+        }
+      }
+      .navbar_search_input {
+        padding-right: 110px;
+        padding-left: 60px;
+      }
+      .navbar-search-btn {
+        right: auto;
+        left: 20%;
+        margin-left: 20px;
+        @media screen and (max-width: @screen-xs-max) {
+          left: 0;
+          margin-left: 14px;
+          padding: 8px 15px;
+          margin-right: 0;
+          .border-radiuses (0, 0, 5px, 5px);
+        }
+      }
+
     }
-    .navbar-search-btn
-    {
+    .new_rfq_btn {
       right: auto;
-      left: 20%;
+      left: 0;
       margin-left: 20px;
-      @media screen and (max-width: @screen-xs-max)
-      {
-        left: 0;
-        margin-left: 14px;
-        padding: 8px 15px;
-        margin-right: 0;
-        .border-radiuses (0, 0, 5px, 5px);
+      img {
+        margin-left: 5px;
       }
     }
-
-  }
-  .new_rfq_btn
-  {
-    right: auto;
-    left: 0;
-    margin-left: 20px;
-    img
-    {
-      margin-left: 5px;
-    }
-  }
-  .navbar_right
-  {
-    text-align: left;
-    a
-    {
-      margin-left: 0;
-      margin-right: 10px;
-      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
-      {
-        margin-right: 0;
-      }
-      @media screen and (max-width: @screen-xs-max)
-      {
-        margin-right: 0;
-        margin-left: 10px;
-      }
-      .no-underline-on-hover;
-      .glyphicon
-      {
-        font-size: 10px;
+    .navbar_right {
+      text-align: left;
+      a {
         margin-left: 0;
-        margin-right: 6px;
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
-        {
-          margin-right: 3px;
+        margin-right: 10px;
+        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+          margin-right: 0;
+        }
+        @media screen and (max-width: @screen-xs-max) {
+          margin-right: 0;
+          margin-left: 10px;
+        }
+        .no-underline-on-hover;
+        .glyphicon {
+          font-size: 10px;
+          margin-left: 0;
+          margin-right: 6px;
+          @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+            margin-right: 3px;
+          }
         }
       }
+      .user_profile_box {
+        @media screen and (max-width: @screen-xs-max) {
+          right: auto;
+          left: 0;
+        }
+        .dropdown {
+          &.open {
+            .user_profile_dropdown {
+              margin-left: 0;
+              margin-right: -1px;
+              @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+                margin-right: -11px;
+                margin-left: 0;
+              }
+              @media screen and (max-width: @screen-xs-max) {
+                margin-right: -111px;
+                margin-left: 0;
+              }
+              .profile-img-section {
+                .glyphicon {
+                  float: left;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .mobile_search_box {
+        right: auto;
+        left: 85px;
+      }
+
+      .user_notifications_box {
+        .user_notifications_dropdown {
+          margin-left: 0px;
+          margin-right: 6px;
+          @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+            margin-right: -8px;
+            margin-left: 0;
+          }
+          .notifications-header-section {
+            .glyphicon-triangle-bottom {
+              float: left;
+            }
+          }
+          .notifications-list {
+            ul {
+              li {
+                padding-left: 0;
+                padding-right: 30px;
+                .notification-label {
+                  margin-left: 0;
+                  margin-right: -30px;
+                }
+                .notification-action {
+                  text-align: left !important;
+                }
+              }
+            }
+          }
+        }
+        &.with-notifications {
+          .glyphicon-bell {
+            color: @abraa-blue;
+          }
+          .notifications-count {
+            margin-left: 0;
+            margin-right: 14px;
+          }
+        }
+      }
+
     }
-    .user_profile_box
-    {
-      @media screen and (max-width: @screen-xs-max)
-      {
+
+    .visitor_buttons {
+      right: auto;
+      left: 65px;
+      @media screen and (min-width: @screen-lg-min) {
+        margin-top: 5px;
+      }
+      @media screen and (max-width: @screen-xs-max) {
         right: auto;
         left: 0;
       }
-      .dropdown
-      {
-        &.open
-        {
-          .user_profile_dropdown
-          {
-            margin-left: 0;
-            margin-right: -1px;
-            @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
-            {
-              margin-right: -11px;
-              margin-left: 0;
-            }
-            @media screen and (max-width: @screen-xs-max)
-            {
-              margin-right: -111px;
-              margin-left: 0;
-            }
-            .profile-img-section
-            {
-              .glyphicon
-              {
-                float: left;
-              }
-            }
-          }
-        }
-      }
     }
-
-    .mobile_search_box
-    {
-      right: auto;
-      left: 85px;
-    }
-
-    .user_notifications_box
-    {
-      .user_notifications_dropdown
-      {
-        margin-left: 0px;
-        margin-right: 6px;
-        @media screen and (min-width: @screen-sm-min) and (max-width: @screen-md-max)
-        {
-          margin-right: -8px;
-          margin-left: 0;
-        }
-        .notifications-header-section
-        {
-          .glyphicon-triangle-bottom
-          {
-            float: left;
-          }
-        }
-        .notifications-list
-        {
-          ul
-          {
-            li
-            {
-              padding-left: 0;
-              padding-right: 30px;
-              .notification-label
-              {
-                margin-left: 0;
-                margin-right: -30px;
-              }
-              .notification-action
-              {
-                text-align: left !important;
-              }
-            }
-          }
-        }
-      }
-      &.with-notifications
-      {
-        .glyphicon-bell
-        {
-          color: @abraa-blue;
-        }
-        .notifications-count
-        {
-          margin-left: 0;
-          margin-right: 14px;
-        }
-      }
-    }
-
   }
 
-  .visitor_buttons
-  {
-    right: auto;
-    left: 65px;
-    @media screen and (min-width: @screen-lg-min)
-    {
-      margin-top: 5px;
+  //selectbox flipping the arrow for RTL
+  .selectBox {
+    .selectBox-label {
+      float: right;
     }
-    @media screen and (max-width: @screen-xs-max)
-    {
+    .selectBox-arrow {
+      position: absolute;
       right: auto;
       left: 0;
+      &:before {
+        margin-left: 6px !important;
+      }
     }
   }
-}
 
-//selectbox flipping the arrow for RTL
-.selectBox
-{
-  .selectBox-label
-  {
-    float: right;
-  }
-  .selectBox-arrow
-  {
-    position: absolute;
-    right: auto;
-    left: 0;
-    &:before
-    {
-      margin-left: 6px !important;
-    }
-  }
-}
-
-//overwrite right border to left border for RTL
-.border-right
-{
-  border: none;
-  border-left: 1px solid @light-gray;
-  @media screen and (max-width: @screen-xs-max)
-  {
+  //overwrite right border to left border for RTL
+  .border-right {
     border: none;
-    border-bottom: 1px solid @light-gray;
-  }
-}
-
-//product-box
-.product-box
-{
-  &.product-box-rfq-btn
-  {
-    .new-rfq-content
-    {
-      padding-right: auto;
-      padding-left: 25px;
+    border-left: 1px solid @light-gray;
+    @media screen and (max-width: @screen-xs-max) {
+      border: none;
+      border-bottom: 1px solid @light-gray;
     }
   }
-}
 
-//custom checkbox styling
-.checkbox-container
-{
-  padding-left: 0;
-  padding-right: 25px;
+  //product-box
+  .product-box {
+    &.product-box-rfq-btn {
+      .new-rfq-content {
+        padding-right: auto;
+        padding-left: 25px;
+      }
+    }
+  }
 
-  /* Create a custom checkbox */
-  .checkmark
-  {
-    left: auto;
-    right: 0;
+  //custom checkbox styling
+  .checkbox-container {
+    padding-left: 0;
+    padding-right: 25px;
 
-    /* Create the checkmark/indicator (hidden when not checked) */
-    &:after
-    {
+    /* Create a custom checkbox */
+    .checkmark {
       left: auto;
-      right: 5px;
+      right: 0;
+
+      /* Create the checkmark/indicator (hidden when not checked) */
+      &:after {
+        left: auto;
+        right: 5px;
+      }
     }
   }
-}
 
-//filter tags, used on the header of products view, when filters are applied
-.filter-tag
-{
-  .remove-filter-tag
-  {
-    margin-left: 0;
-    margin-right: 5px;
-  }
-
-  &.filter-tag-inverse
-  {
-    .remove-filter-tag
-    {
+  //filter tags, used on the header of products view, when filters are applied
+  .filter-tag {
+    .remove-filter-tag {
       margin-left: 0;
       margin-right: 5px;
     }
-  }
-}
 
-//supplier info popover
-.supplier-popover
-{
-  .supplier-header
-  {
-    padding-left: 30px;
-    padding-right: 100px;
-    .supplier-logo
-    {
-      margin-left: 0;
-      margin-right: -90px;
+    &.filter-tag-inverse {
+      .remove-filter-tag {
+        margin-left: 0;
+        margin-right: 5px;
+      }
     }
   }
-}
 
-//breadcrumbs
-.breadcrumbs
-{
-  text-align: right;
-  a
-  {
-    display: inline-block;
-  }
-  .glyphicon-chevron-right
-  {
-    &:before
-    {
-      content: "\e079";
+  //supplier info popover
+  .supplier-popover {
+    .supplier-header {
+      padding-left: 30px;
+      padding-right: 100px;
+      .supplier-logo {
+        margin-left: 0;
+        margin-right: -90px;
+      }
     }
   }
-}
 
-//reviews section
-.reviews-section
-{
-  .reviews-summary
-  {
-    .reviews-total-score
-    {
-      font-size: 32px;
-    }
-    .supplier-ranking
-    {
+  //breadcrumbs
+  .breadcrumbs {
+    text-align: right;
+    a {
       display: inline-block;
     }
-    .reviews-stats
-    {
-      .reviews-score
-      {
-        display: inline-block;
-        font-size: 10px;
+    .glyphicon-chevron-right {
+      &:before {
+        content: "\e079";
       }
-      .count_bar
-      {
+    }
+  }
+
+  //reviews section
+  .reviews-section {
+    .reviews-summary {
+      .reviews-total-score {
+        font-size: 32px;
+      }
+      .supplier-ranking {
         display: inline-block;
-        width: 70%;
-        margin: 0 5px;
-        height: 6px;
-        border-radius: 30px;
-        background-color: @light-gray;
-        .count_bar_filled
-        {
-          display: block;
+      }
+      .reviews-stats {
+        .reviews-score {
+          display: inline-block;
+          font-size: 10px;
+        }
+        .count_bar {
+          display: inline-block;
+          width: 70%;
+          margin: 0 5px;
           height: 6px;
           border-radius: 30px;
-          background-color: @ranking-yellow;
+          background-color: @light-gray;
+          .count_bar_filled {
+            display: block;
+            height: 6px;
+            border-radius: 30px;
+            background-color: @ranking-yellow;
+          }
+        }
+        .count_num {
+          font-size: 10px;
+          display: inline-block;
         }
       }
-      .count_num
-      {
-        font-size: 10px;
-        display: inline-block;
+    }
+
+    .reviews-list {
+      padding: 20px 0;
+      .review-item {
+        padding: 10px 0;
+        border-bottom: 1px solid @medium-gray;
       }
     }
   }
 
-  .reviews-list
-  {
-    padding: 20px 0;
-    .review-item
-    {
-      padding: 10px 0;
-      border-bottom: 1px solid @medium-gray;
+  //login form
+  .abraa-form {
+    .required_label {
+      float: left;
+    }
+    .social-login-links {
+      @media screen and (min-width: @screen-sm-min) {
+        text-align: left;
+      }
     }
   }
-}
 
-//login form
-.login-form
-{
-  .required_label
-  {
-    float: left;
-  }
-  .social-login-links
-  {
-    @media screen and (min-width: @screen-sm-min)
-    {
-      text-align: left;
+  //align text to the left on specific screen sizes, useful for right/left aligned items that don't fit into columns for smaller screens
+  .text-left-sm {
+    @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      text-align: right !important;
     }
   }
 }
