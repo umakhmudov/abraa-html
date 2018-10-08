@@ -659,64 +659,6 @@ label {
 .white-modal-box.small-box {
   margin-top: 20px;
 }
-.abraa-form label {
-  color: #000000;
-}
-.abraa-form .required_label {
-  float: right;
-  color: #9c9c9c;
-  font-size: 12px;
-}
-.login-form .social-login-links {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-@media screen and (min-width: 768px) {
-  .login-form .social-login-links {
-    text-align: right;
-  }
-}
-.login-form .social-login-links li {
-  display: inline-block;
-  padding: 0 5px;
-}
-.login-form .social-login-links li .social-login-link {
-  height: 40px;
-  width: 40px;
-  background-size: 40px 40px;
-  display: block;
-}
-.login-form .social-login-links li .social-login-link.fb {
-  background-image: url('../icons/fb_blue.png');
-}
-.login-form .social-login-links li .social-login-link.twitter {
-  background-image: url('../icons/twi_blue.png');
-}
-.login-form .social-login-links li .social-login-link.google-play {
-  background-image: url('../icons/gplus_blue.png');
-}
-input.form-control {
-  border-color: #dcdfe3;
-}
-input.form-control:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-color: #4da1ff;
-}
-.custom-file-upload {
-  border: 1px solid #4da1ff;
-  color: #4da1ff !important;
-  text-align: center;
-  border-radius: 5px;
-  background-clip: padding-box;
-  display: block;
-  padding: 6px 12px;
-  cursor: pointer;
-}
-.custom-file-upload input[type="file"] {
-  display: none;
-}
 .glyphicon-block-selectbox {
   position: relative;
   top: 1px;
@@ -1682,4 +1624,62 @@ input.form-control:focus {
 }
 .horizontal-slider.products-slider .MS-controls button {
   top: 50%;
+}
+.abraa-form label {
+  color: #000000;
+}
+.abraa-form .required_label {
+  float: right;
+  color: #9c9c9c;
+  font-size: 12px;
+}
+.login-form .social-login-links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .login-form .social-login-links {
+    text-align: right;
+  }
+}
+.login-form .social-login-links li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.login-form .social-login-links li .social-login-link {
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+  display: block;
+}
+.login-form .social-login-links li .social-login-link.fb {
+  background-image: url('../icons/fb_blue.png');
+}
+.login-form .social-login-links li .social-login-link.twitter {
+  background-image: url('../icons/twi_blue.png');
+}
+.login-form .social-login-links li .social-login-link.google-play {
+  background-image: url('../icons/gplus_blue.png');
+}
+input.form-control {
+  border-color: #dcdfe3;
+}
+input.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #4da1ff;
+}
+.custom-file-upload {
+  border: 1px solid #4da1ff;
+  color: #4da1ff !important;
+  text-align: center;
+  border-radius: 5px;
+  background-clip: padding-box;
+  display: block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.custom-file-upload input[type="file"] {
+  display: none;
 }
