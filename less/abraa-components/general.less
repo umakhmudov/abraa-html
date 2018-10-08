@@ -547,21 +547,30 @@ label
   .box-shadow(0px 0px 5px @medium-gray);
   padding: 30px;
   margin: 60px 0;
+  &.small-box
+  {
+    margin-top: 20px;
+  }
 }
 
-//login form
-.login-form
+
+//common styles for a form
+.abraa-form
 {
-  label
-  {
+  label {
     color: @black;
   }
-  .required_label
-  {
+  .required_label {
     float: right;
     color: @medium-gray;
     font-size: 12px;
   }
+}
+
+
+//login form
+.login-form
+{
   .social-login-links
   {
     .no-padding;
@@ -608,5 +617,22 @@ input
       .no-box-shadow;
       border-color: @abraa-blue;
     }
+  }
+}
+
+//custom file upload button
+.custom-file-upload
+{
+  border: 1px solid @abraa-blue;
+  color: @abraa-blue !important;
+  text-align: center;
+  .border-radius;
+  display: block;
+  padding: 6px 12px;
+  cursor: pointer;
+  //hide the original file upload button
+  input[type="file"]
+  {
+    display: none;
   }
 }

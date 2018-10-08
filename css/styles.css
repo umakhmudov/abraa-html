@@ -153,6 +153,9 @@
 .mt25 {
   margin-top: 25px;
 }
+.mt60 {
+  margin-top: 60px;
+}
 @media screen and (max-width: 767px) {
   .mmt25 {
     margin-top: 25px;
@@ -653,10 +656,13 @@ label {
   padding: 30px;
   margin: 60px 0;
 }
-.login-form label {
+.white-modal-box.small-box {
+  margin-top: 20px;
+}
+.abraa-form label {
   color: #000000;
 }
-.login-form .required_label {
+.abraa-form .required_label {
   float: right;
   color: #9c9c9c;
   font-size: 12px;
@@ -697,6 +703,19 @@ input.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-color: #4da1ff;
+}
+.custom-file-upload {
+  border: 1px solid #4da1ff;
+  color: #4da1ff !important;
+  text-align: center;
+  border-radius: 5px;
+  background-clip: padding-box;
+  display: block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.custom-file-upload input[type="file"] {
+  display: none;
 }
 .glyphicon-block-selectbox {
   position: relative;
