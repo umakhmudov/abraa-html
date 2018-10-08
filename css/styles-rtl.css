@@ -311,3 +311,11 @@
   padding: 10px 0;
   border-bottom: 1px solid #9c9c9c;
 }
+.login-form .required_label {
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .login-form .social-login-links {
+    text-align: left;
+  }
+}

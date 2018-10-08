@@ -144,6 +144,12 @@
 .mt0 {
   margin-top: 0 !important;
 }
+.mt5 {
+  margin-top: 5px;
+}
+.mt20 {
+  margin-top: 20px;
+}
 .mt25 {
   margin-top: 25px;
 }
@@ -172,6 +178,10 @@
 }
 .pl10 {
   padding-left: 10px;
+}
+.ptb10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .ptb20 {
   padding-top: 20px;
@@ -635,6 +645,58 @@ label {
 .reviews-section .reviews-list .review-item {
   padding: 10px 0;
   border-bottom: 1px solid #efefef;
+}
+.white-modal-box {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 5px #9c9c9c;
+  box-shadow: 0px 0px 5px #9c9c9c;
+  padding: 30px;
+  margin: 60px 0;
+}
+.login-form label {
+  color: #000000;
+}
+.login-form .required_label {
+  float: right;
+  color: #9c9c9c;
+  font-size: 12px;
+}
+.login-form .social-login-links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .login-form .social-login-links {
+    text-align: right;
+  }
+}
+.login-form .social-login-links li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.login-form .social-login-links li .social-login-link {
+  height: 40px;
+  width: 40px;
+  background-size: 40px 40px;
+  display: block;
+}
+.login-form .social-login-links li .social-login-link.fb {
+  background-image: url('../icons/fb_blue.png');
+}
+.login-form .social-login-links li .social-login-link.twitter {
+  background-image: url('../icons/twi_blue.png');
+}
+.login-form .social-login-links li .social-login-link.google-play {
+  background-image: url('../icons/gplus_blue.png');
+}
+input.form-control {
+  border-color: #dcdfe3;
+}
+input.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #4da1ff;
 }
 .glyphicon-block-selectbox {
   position: relative;

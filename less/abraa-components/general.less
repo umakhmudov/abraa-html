@@ -539,3 +539,74 @@ label
     }
   }
 }
+
+//white background box with shadow, used for signin, rfq, registration pages, etc.
+.white-modal-box
+{
+  background-color: @white;
+  .box-shadow(0px 0px 5px @medium-gray);
+  padding: 30px;
+  margin: 60px 0;
+}
+
+//login form
+.login-form
+{
+  label
+  {
+    color: @black;
+  }
+  .required_label
+  {
+    float: right;
+    color: @medium-gray;
+    font-size: 12px;
+  }
+  .social-login-links
+  {
+    .no-padding;
+    .no-margin;
+    list-style-type: none;
+    @media screen and (min-width: @screen-sm-min)
+    {
+      text-align: right;
+    }
+    li
+    {
+      display: inline-block;
+      padding: 0 5px;
+      .social-login-link
+      {
+        height: 40px;
+        width: 40px;
+        background-size: 40px 40px;
+        display: block;
+        &.fb
+        {
+          background-image: url('../icons/fb_blue.png');
+        }
+        &.twitter
+        {
+          background-image: url('../icons/twi_blue.png');
+        }
+        &.google-play
+        {
+          background-image: url('../icons/gplus_blue.png');
+        }
+      }
+    }
+  }
+}
+
+//input text styles
+input
+{
+  &.form-control
+  {
+    border-color: @abraa-light-blue-border;
+    &:focus{
+      .no-box-shadow;
+      border-color: @abraa-blue;
+    }
+  }
+}
