@@ -1,22 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>youtube</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="0.101849315 0.321232877 24.7592466 0.321232877 24.7592466 25 0.101849315 25"></polygon>
-    </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="footer-small" transform="translate(-1203.000000, -65.000000)">
-            <g id="Group-7">
-                <g id="youtube" transform="translate(1203.000000, 65.000000)">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <g id="Clip-15"></g>
-                    <path d="M4.10184932,25.0003082 L20.7593836,25.0003082 C22.9685226,25.0003082 24.7593836,23.2094472 24.7593836,21.0003082 L24.7593836,4.32119863 C24.7593836,2.11205963 22.9685226,0.32119863 20.7593836,0.32119863 L4.10184932,0.32119863 C1.89271032,0.32119863 0.101849315,2.11205963 0.101849315,4.32119863 L0.101849315,21.0003082 C0.101849315,23.2094472 1.89271032,25.0003082 4.10184932,25.0003082 Z" id="Fill-14" fill="#3E4352" mask="url(#mask-2)"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+<title>youtube</title>
+<desc>Created with Sketch.</desc>
+<g id="Symbols">
+	<g id="footer" transform="translate(-1123.000000, -663.000000)">
+		<g id="youtube">
+			<g transform="translate(1123.000000, 663.000000)">
+				<g id="Clip-15">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0.102" y="0.321" width="24.658" height="24.679">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="0.102" y="0.321" width="24.658" height="24.679" id="mask-2">
+					<g filter="url(#Adobe_OpacityMaskFilter)">
+						<polygon id="path-1" fill="#FFFFFF" points="0.102,0.321 24.76,0.321 24.76,25 0.102,25 						"/>
+					</g>
+				</mask>
+				<path id="Fill-14" mask="url(#mask-2)" fill="#3E4352" d="M4.102,25H20.76c2.209,0,4-1.791,4-4V4.321c0-2.209-1.791-4-4-4H4.102
+					c-2.209,0-4,1.791-4,4V21C0.102,23.209,1.893,25,4.102,25z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Symbols_1_">
+	<g id="footer_1_" transform="translate(-1128.000000, -671.000000)">
+		<g id="Group-3">
+			<g transform="translate(1128.000000, 671.000000)">
+				<g id="Clip-2">
+				</g>
+				<defs>
+					<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="5.04" y="8.156" width="15" height="9.999">
+						<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+					</filter>
+				</defs>
+				<mask maskUnits="userSpaceOnUse" x="5.04" y="8.156" width="15" height="9.999" id="mask-2_1_">
+					<g filter="url(#Adobe_OpacityMaskFilter_1_)">
+						<polygon id="path-1_1_" fill="#FFFFFF" points="5.04,8.156 20.04,8.156 20.04,18.155 5.04,18.155 						"/>
+					</g>
+				</mask>
+				<path id="Fill-1" mask="url(#mask-2_1_)" fill="#E9ECF0" d="M14.503,13.506l-2.918,1.934c-0.268,0.184-0.615-0.033-0.615-0.35
+					v-3.867c0-0.333,0.348-0.533,0.615-0.35l2.918,1.933C14.757,12.956,14.757,13.356,14.503,13.506 M17.675,8.156H7.405
+					c-1.309,0-2.366,1.116-2.366,2.5v5c0,1.383,1.057,2.499,2.366,2.499h10.27c1.309,0,2.365-1.116,2.365-2.499v-5
+					C20.04,9.272,18.983,8.156,17.675,8.156"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
