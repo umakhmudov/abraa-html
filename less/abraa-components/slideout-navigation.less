@@ -15,11 +15,8 @@
     .box-shadow(0px 0px 3px @medium-gray);
     .transition;
 
-    // on mobile, allow to scroll, in case the menu items don't fit vertically
-    @media screen and (max-width: @screen-xs-max)
-    {
-      overflow-y: scroll;
-    }
+    // on both mobile and desktop, allow to scroll, in case the menu items don't fit vertically
+    overflow-y: scroll;
 
     // when opened, slide out by using css transformation
     &.open
