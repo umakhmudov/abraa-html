@@ -432,4 +432,33 @@
       text-align: right !important;
     }
   }
+
+  /* Customize the label (the container) */
+  .radio-container {
+    padding-left: 0;
+    padding-right: 35px;
+
+    /* Create a custom radio button */
+    .checkmark {
+      left: auto;
+      right: 0;
+
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      &:after {
+        left: auto;
+        right: 4px;
+      }
+    }
+  }
+
+  .register-form
+  {
+    .radio-container{
+      img{
+        margin-right: 0;
+        margin-left: 6px;
+      }
+    }
+  }
+
 }
