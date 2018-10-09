@@ -1,0 +1,328 @@
+//Styles for product-related elements, including the product views, reviews, filters, pagination, etc.
+//Used in multiple pages where the products are listed
+
+//product box used on grid view when listing products (index, supplier, category pages)
+.product-box
+{
+  .box-shadow(0px 0px 5px 0px @light-gray);
+  background-color: @white;
+  padding: 10px;
+  .mt25;
+  .product-discount
+  {
+    position: absolute;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 10px;
+    color: @white;
+    background-color: @discount-red;
+    margin-top: 10px;
+    .box-shadow(0px 3px 3px 0px @dark-gray);
+  }
+  .product-img
+  {
+    width: 100%;
+  }
+  .product-info
+  {
+    .product-name
+    {
+      color: @abraa-blue;
+    }
+    .product-price, .product-min-order
+    {
+      color: @dark-gray;
+      small
+      {
+        color: @medium-gray;
+      }
+    }
+  }
+  .supplier-info
+  {
+    .supplier-link
+    {
+      text-decoration: underline !important;
+    }
+    .supplier-origin
+    {
+      img
+      {
+        width: 30px;
+        display: inline-block;
+      }
+    }
+    .supplier-action
+    {
+      padding-top: 20px
+    }
+  }
+  &.product-box-rfq-btn
+  {
+    position: relative;
+    .new-rfq-content
+    {
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+      padding-right: 25px;
+      color: @white;
+    }
+  }
+}
+
+//styling for pagination
+.pagination
+{
+  .page-link
+  {
+    .transition;
+    color: @abraa-blue;
+    background-color: @transparent;
+    border-color: @abraa-blue !important;
+    border-radius: 5px;
+    margin: 0 2px;
+    @media screen and (max-width: @screen-xs-max)
+    {
+      display: none;
+    }
+    &:hover, &:focus, &:active
+    {
+      color: @white;
+      background-color: @abraa-blue;
+    }
+    &.no-bg
+    {
+      border-color: @transparent !important;
+      margin: 0 5px;
+      @media screen and (max-width: @screen-xs-max)
+      {
+        display: block;
+        border-color: @abraa-blue !important;
+      }
+      &:hover, &:focus, &:active
+      {
+        color: @abraa-dark-blue;
+        background-color: @transparent;
+      }
+    }
+  }
+}
+
+//star rankings section (used for reviews and item/supplier rankings)
+.supplier-ranking
+{
+  i
+  {
+    color: @ranking-yellow;
+  }
+  .ranking_count
+  {
+    color: @medium-gray;
+  }
+}
+
+//sidebar with filters (used on categories/supplier pages)
+.filters-bar
+{
+  margin: 25px 0;
+  background-color: @white;
+  padding: 20px 15px;
+
+  .link_filters,
+  .breadcrumbs-filter
+  {
+    list-style-type: none;
+    .no-padding;
+    li
+    {
+      a
+      {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: @dark-gray;
+        .no-underline-on-hover;
+        &:hover
+        {
+          color: @abraa-blue;
+        }
+        .count
+        {
+          font-size: 10px;
+        }
+      }
+      ul
+      {
+        padding-left: 15px;
+        list-style-type: none;
+      }
+    }
+  }
+  .breadcrumbs-filter
+  {
+    li
+    {
+      ul
+      {
+        list-style-type: circle;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .price-range-filter
+  {
+    .form-control
+    {
+      display: inline-block;
+      width: 60px;
+    }
+    .currency
+    {
+      color: @medium-gray;
+    }
+  }
+}
+
+//breadcrumbs
+.breadcrumbs
+{
+  color: @dark-gray;
+  a
+  {
+    color: @abraa-blue;
+    .no-underline-on-hover;
+    &:hover,
+    &:focus,
+    &:active
+    {
+      color: @abraa-dark-blue;
+    }
+  }
+  .glyphicon
+  {
+    color: @abraa-blue;
+    font-size: 12px;
+  }
+  &.breadcrumbs-white
+  {
+    .glyphicon
+    {
+      color: @white;
+    }
+    color: @white;
+    a
+    {
+      color: @white;
+      &:hover,
+      &:focus,
+      &:active
+      {
+        color: @white;
+        text-decoration: underline;
+      }
+    }
+  }
+  &.breadcrumbs-banner
+  {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+
+  }
+}
+
+//filter tags, used on the header of products view, when filters are applied
+.filter-tag
+{
+  border-radius: 50px;
+  background-color: @abraa-tag-light-blue;
+  color: @abraa-tag-dark-blue;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin-top: 10px;
+  .remove-filter-tag
+  {
+    display: inline-block;
+    background-color: @abraa-tag-dark-blue;
+    color: @abraa-tag-light-blue;
+    border-radius: 50%;
+    padding: 3px;
+    padding-top: 2px;
+    margin-left: 5px;
+  }
+
+  &.filter-tag-inverse
+  {
+    background-color: @abraa-tag-dark-blue;
+    color: @abraa-tag-light-blue;
+    .remove-filter-tag
+    {
+      display: inline-block;
+      background-color: @abraa-tag-light-blue;
+      color: @abraa-tag-dark-blue;
+      border-radius: 50%;
+      padding: 3px;
+      padding-top: 2px;
+      margin-left: 5px;
+    }
+  }
+}
+
+//refactored reviews section to be common
+.reviews-section
+{
+  .reviews-summary
+  {
+    .reviews-total-score
+    {
+      font-size: 32px;
+    }
+    .supplier-ranking
+    {
+      display: inline-block;
+    }
+    .reviews-stats
+    {
+      .reviews-score
+      {
+        display: inline-block;
+        font-size: 10px;
+      }
+      .count_bar
+      {
+        display: inline-block;
+        width: 70%;
+        margin: 0 5px;
+        height: 6px;
+        border-radius: 30px;
+        background-color: @light-gray;
+        .count_bar_filled
+        {
+          display: block;
+          height: 6px;
+          border-radius: 30px;
+          background-color: @ranking-yellow;
+        }
+      }
+      .count_num
+      {
+        font-size: 10px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .reviews-list
+  {
+    padding: 20px 0;
+    .review-item
+    {
+      padding: 10px 0;
+      border-bottom: 1px solid @light-gray;
+    }
+  }
+}
