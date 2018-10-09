@@ -121,112 +121,10 @@ label
  }
 }
 
-//general small block (with text inside) used for item listings without an image (index)
-.item-sm-block
-{
-  color: @black;
-  font-size: 14px;
-  small
-  {
-    color: @medium-gray;
-  }
-}
-
 //general class for banners used on supplier and home page
 .page-banner
 {
   background-size: cover;
-}
-
-//footer styles
-.abraa-footer
-{
-  color: @dark-gray;
-  background-color: @footer-bg;
-  padding: 30px 0;
-  //adjust the text to be centered on mobile for easier readability
-  @media screen and (max-width: @screen-xs-max)
-  {
-    text-align: center;
-  }
-  .footer-logo
-  {
-    width: 140px;
-  }
-  h4
-  {
-    color: @dark-gray;
-    margin-bottom: 20px;
-  }
-  .dlist-footer-social-media
-  {
-    list-style-type: none;
-    .no-padding;
-    li
-    {
-      display: inline-block;
-    }
-    .fab
-    {
-      display: block;
-      height: 25px;
-      width: 25px;
-      margin: 0 4px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      &.fa-facebook
-      {
-        background: url('../icons/fb.svg');
-      }
-      &.fa-twitter
-      {
-        background: url('../icons/twi.svg');
-      }
-      &.fa-youtube
-      {
-        background: url('../icons/youtube.svg');
-      }
-      &.fa-instagram
-      {
-        background: url('../icons/insta.svg');
-      }
-
-    }
-  }
-
-  .dlist-footer-ul
-  {
-    list-style-type: none;
-    .no-padding;
-    li
-    {
-      a
-      {
-        color: @dark-gray;
-        display: block;
-        margin-bottom: 5px;
-        &:hover
-        {
-          text-decoration: none;
-          color: @abraa-dark-blue !important;
-        }
-      }
-    }
-  }
-  .google-play-link
-  {
-    display: block;
-    img
-    {
-      width: 100%;
-      //make the google play link fixed width on mobile so it's not pixelated
-      @media screen and (max-width: @screen-xs-max)
-      {
-        max-width: 150px;
-        margin-top: 10px;
-      }
-    }
-  }
 }
 
 //star rankings section (used for reviews and item/supplier rankings)
@@ -392,7 +290,7 @@ label
   }
 }
 
-//supplier info popover
+//overwriting default bootstrap popover width
 .popover
 {
   max-width: 300px !important;
