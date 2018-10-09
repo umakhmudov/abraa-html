@@ -23,15 +23,19 @@
   margin: 0;
 }
 .product-price.unknown {
-  font-size: 14px;
   color: #9c9c9c;
 }
 .product-price small {
   color: #9c9c9c;
 }
+@media screen and (max-width: 1199px) {
+  .product-price {
+    padding: 20px 0 10px 0;
+  }
+}
 .product-shortcut-links {
-  padding: 20px 0;
-  font-size: 12px;
+  padding: 30px 0 17px 0;
+  font-size: 13px;
 }
 .product-shortcut-links a {
   color: #9c9c9c;
@@ -44,6 +48,14 @@
 .product-shortcut-links a:focus,
 .product-shortcut-links a:active {
   color: #4da1ff;
+}
+@media screen and (max-width: 1199px) {
+  .product-shortcut-links {
+    padding: 10px 0;
+  }
+  .product-shortcut-links a {
+    float: left !important;
+  }
 }
 .product-cta-section .abraa-btn {
   font-size: 14px;
@@ -118,4 +130,9 @@
 }
 [dir=rtl] .product-page-supplier-info .need-help-section ul li:first-child {
   border: none;
+}
+@media screen and (max-width: 1199px) {
+  [dir=rtl] .product-shortcut-links a {
+    float: right !important;
+  }
 }

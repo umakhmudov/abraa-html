@@ -350,3 +350,7 @@
   padding-right: 10px;
   background-position: left 10px center;
 }
+[dir=rtl] .reviews-section .reviews-header .abraa-btn-group {
+  margin-left: 0;
+  margin-right: 5px;
+}

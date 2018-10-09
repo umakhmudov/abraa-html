@@ -11,19 +11,21 @@
   .no-margin;
   &.unknown
   {
-    font-size: 14px;
     color: @medium-gray;
   }
   small
   {
     color: @medium-gray;
   }
+  @media screen and (max-width: @screen-md-max){
+    padding: 20px 0 10px 0;
+  }
 }
 
 .product-shortcut-links
 {
-  padding: 20px 0;
-  font-size: 12px;
+  padding: 30px 0 17px 0;
+  font-size: 13px;
   a
   {
     color: @medium-gray;
@@ -32,6 +34,12 @@
     &:hover, &:focus, &:active
     {
       color: @abraa-blue;
+    }
+  }
+  @media screen and (max-width: @screen-md-max){
+    padding: 10px 0;
+    a{
+      float: left !important;
     }
   }
 }
@@ -140,6 +148,14 @@
             border: none;
           }
         }
+      }
+    }
+  }
+  .product-shortcut-links
+  {
+    @media screen and (max-width: @screen-md-max){
+      a{
+        float: right !important;
       }
     }
   }

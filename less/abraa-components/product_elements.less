@@ -275,6 +275,11 @@
 //refactored reviews section to be common
 .reviews-section
 {
+  .reviews-header{
+    .abraa-btn-group{
+      margin-left: 5px;
+    }
+  }
   .reviews-summary
   {
     .reviews-total-score
@@ -323,6 +328,14 @@
     {
       padding: 10px 0;
       border-bottom: 1px solid @light-gray;
+      .text-right{
+        p{
+          margin-bottom: 0;
+          &:first-child{
+            margin-top: 20px;
+          }
+        }
+      }
     }
   }
 }
