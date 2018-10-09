@@ -143,6 +143,13 @@
     font-size: 12px;
   }
 }
+.item-sm-block {
+  color: #000000;
+  font-size: 14px;
+}
+.item-sm-block small {
+  color: #9c9c9c;
+}
 [dir=rtl] .usp_block {
   padding: 20px 60px 20px 0;
   text-align: right;

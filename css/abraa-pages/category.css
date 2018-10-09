@@ -1,0 +1,103 @@
+.no-border {
+  border: none;
+}
+.no-outline {
+  outline: none;
+}
+.no-box-shadow {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.no-underline-on-hover:hover {
+  text-decoration: none;
+}
+.popover {
+  max-width: 300px !important;
+}
+.supplier-popover {
+  width: 300px;
+}
+.supplier-popover .popover-content {
+  padding: 15px;
+}
+.supplier-popover .supplier-header {
+  padding-left: 100px;
+  padding-right: 30px;
+}
+.supplier-popover .supplier-header .supplier-logo {
+  width: 80px;
+  position: absolute;
+  margin-left: -90px;
+}
+.supplier-popover .supplier-header .supplier-membership {
+  font-size: 12px;
+  color: #9c9c9c;
+}
+.supplier-popover .supplier-header .supplier-type {
+  color: #6c6c6c;
+  font-size: 12px;
+}
+.supplier-popover .supplier-header .supplier-type img {
+  width: 20px;
+}
+.supplier-popover .supplier-info-wrapper .supplier-info {
+  color: #000000;
+}
+.supplier-popover .supplier-info-wrapper .supplier-info small {
+  color: #9c9c9c;
+}
+.supplier-popover .supplier-info-wrapper .supplier-payment-option {
+  height: 30px;
+  display: inline-block;
+}
+.page-banner.category-page {
+  padding: 90px 0;
+}
+@media screen and (max-width: 767px) {
+  .page-banner.category-page {
+    padding: 30px 0;
+  }
+}
+.sub-category-links a {
+  display: inline-block;
+  padding: 20px;
+}
+.sub-category-links a:hover {
+  text-decoration: none;
+}
+.sub-category-links a .sub-category-icon {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #95d5aa;
+  border: 2px solid #95d5aa;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.sub-category-links a .sub-category-icon img {
+  width: 100px;
+}
+@media screen and (max-width: 767px) {
+  .sub-category-links a .sub-category-icon img {
+    width: 50px;
+  }
+}
+.sub-category-links a .sub-category-info {
+  color: #efefef;
+}
+.sub-category-links a:hover .sub-category-icon,
+.sub-category-links a:active .sub-category-icon,
+.sub-category-links a:focus .sub-category-icon {
+  border-color: #ffffff;
+}
+.sub-category-links a:hover .sub-category-info,
+.sub-category-links a:active .sub-category-info,
+.sub-category-links a:focus .sub-category-info {
+  color: #ffffff;
+  text-decoration: none !important;
+}
