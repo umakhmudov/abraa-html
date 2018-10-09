@@ -1,0 +1,119 @@
+//Styles for Category and SubCategory pages
+
+@import '../abraa-variables/main.less';
+@import '../abraa-mixins/utilities.less';
+
+//overwriting default bootstrap popover width
+.popover
+{
+  max-width: 300px !important;
+}
+
+//popover displayed when hovered over supplier links
+.supplier-popover
+{
+  width: 300px;
+  .popover-content
+  {
+    padding: 15px;
+  }
+  .supplier-header
+  {
+    padding-left: 100px;
+    padding-right: 30px;
+    .supplier-logo
+    {
+      width: 80px;
+      position: absolute;
+      margin-left: -90px;
+    }
+    .supplier-membership
+    {
+      font-size: 12px;
+      color: @medium-gray;
+    }
+    .supplier-type
+    {
+      color: @dark-gray;
+      font-size: 12px;
+      img
+      {
+        width: 20px;
+      }
+    }
+  }
+  .supplier-info-wrapper
+  {
+    .supplier-info
+    {
+      color: @black;
+      small
+      {
+        color: @medium-gray;
+      }
+    }
+    .supplier-payment-option
+    {
+      height: 30px;
+      display: inline-block;
+    }
+  }
+}
+
+//category page banner
+.page-banner
+{
+  &.category-page
+  {
+    padding: 90px 0;
+    @media screen and (max-width: @screen-xs-max)
+    {
+      padding: 30px 0;
+    }
+  }
+}
+
+//section with icons of subcategories
+.sub-category-links
+{
+  a
+  {
+    display: inline-block;
+    padding: 20px;
+    .no-underline-on-hover;
+    .sub-category-icon
+    {
+      padding: 20px;
+      border-radius: 50%;
+      background-color: @abraa-light-green;
+      border: 2px solid @abraa-light-green;
+      .transition;
+      img
+      {
+        width: 100px;
+        @media screen and (max-width: @screen-xs-max)
+        {
+          width: 50px;
+        }
+      }
+    }
+    .sub-category-info
+    {
+      color: @light-gray;
+    }
+    &:hover,
+    &:active,
+    &:focus
+    {
+      .sub-category-icon
+      {
+        border-color: @white;
+      }
+      .sub-category-info
+      {
+        color: @white;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
