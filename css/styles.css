@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .no-border {
   border: none;
 }
@@ -268,6 +269,7 @@ hr.dark {
 body {
   background-color: #f3f5f8;
   padding: 56px 0 0 0;
+  font-family: 'Open Sans', sans-serif;
 }
 label {
   font-weight: normal;
