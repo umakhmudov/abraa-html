@@ -737,7 +737,7 @@ label {
   margin-top: -42px;
 }
 .navbar-abraa .navbar_right .mobile_search_box .glyphicon {
-  font-size: 22px;
+  font-size: 22px !important;
   color: #4da1ff;
 }
 .navbar-abraa .navbar_right .user_notifications_box .notifications-count {
