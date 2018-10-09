@@ -65,7 +65,30 @@ input
       .no-box-shadow;
       border-color: @abraa-blue;
     }
+
+    //validation of input fields - add class validated to any pre-validated form. Add success or error class based on the result of the validation
+    //this will cause the green checkmark or the red error icon to display on right side of the input
+    &.validated{
+      padding-right: 40px;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+    &.success{
+      background-image: url('../icons/success_icon.png');
+    }
+    &.error{
+      background-image: url('../icons/error_icon.png');
+    }
   }
+}
+
+//error messages under the input
+.input-error-text{
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+  color: @abraa-error-red;
 }
 
 //custom file upload button
