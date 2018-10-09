@@ -17,6 +17,9 @@
 .no-underline-on-hover:hover {
   text-decoration: none;
 }
+[dir=rtl] {
+  /* Customize the label (the container) */
+}
 [dir=rtl] .text-right {
   text-align: left !important;
 }
@@ -323,4 +326,22 @@
   [dir=rtl] .text-left-sm {
     text-align: right !important;
   }
+}
+[dir=rtl] .radio-container {
+  padding-left: 0;
+  padding-right: 35px;
+  /* Create a custom radio button */
+}
+[dir=rtl] .radio-container .checkmark {
+  left: auto;
+  right: 0;
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+}
+[dir=rtl] .radio-container .checkmark:after {
+  left: auto;
+  right: 4px;
+}
+[dir=rtl] .register-form .radio-container img {
+  margin-right: 0;
+  margin-left: 6px;
 }
