@@ -171,3 +171,19 @@ hr.dark
     text-align: left;
   }
 }
+
+//align text to the center on mobile
+.text-center-xs{
+  @media screen and (max-width: @screen-xs-max)
+  {
+    text-align: center;
+  }
+}
+
+//stretch to full width on mobile
+.full-width-xs{
+  @media screen and (max-width: @screen-xs-max)
+  {
+    width: 100% !important;
+  }
+}
