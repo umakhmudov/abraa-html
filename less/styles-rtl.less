@@ -461,4 +461,19 @@
     }
   }
 
+  //input text styles
+  input
+  {
+    &.form-control
+    {
+      //validation of input fields - add class validated to any pre-validated form. Add success or error class based on the result of the validation
+      //this will cause the green checkmark or the red error icon to display on right side of the input
+      &.validated {
+        padding-left: 40px;
+        padding-right: 10px;
+        background-position: left 10px center;
+      }
+    }
+  }
+
 }

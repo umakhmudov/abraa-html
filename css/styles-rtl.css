@@ -345,3 +345,8 @@
   margin-right: 0;
   margin-left: 6px;
 }
+[dir=rtl] input.form-control.validated {
+  padding-left: 40px;
+  padding-right: 10px;
+  background-position: left 10px center;
+}
