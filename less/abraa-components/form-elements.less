@@ -68,23 +68,27 @@ input
 
     //validation of input fields - add class validated to any pre-validated form. Add success or error class based on the result of the validation
     //this will cause the green checkmark or the red error icon to display on right side of the input
-    &.validated{
+    &.validated
+    {
       padding-right: 40px;
       background-size: 20px 20px;
       background-repeat: no-repeat;
       background-position: right 10px center;
     }
-    &.success{
+    &.success
+    {
       background-image: url('../icons/success_icon.png');
     }
-    &.error{
+    &.error
+    {
       background-image: url('../icons/error_icon.png');
     }
   }
 }
 
 //error messages under the input
-.input-error-text{
+.input-error-text
+{
   display: block;
   font-size: 12px;
   margin-top: 6px;
@@ -187,7 +191,8 @@ input
 
 
 /* Customize the label (the container) */
-.radio-container {
+.radio-container
+{
   display: block;
   position: relative;
   padding-left: 35px;
@@ -201,7 +206,8 @@ input
   user-select: none;
 
   /* Hide the browser's default radio button */
-  input {
+  input
+  {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -209,17 +215,20 @@ input
     width: 0;
 
     /* When the radio button is checked, add a blue background */
-    &:checked ~ .checkmark {
+    &:checked ~ .checkmark
+    {
       border-color: @abraa-blue;
       /* Show the indicator (dot/circle) when checked */
-      &:after{
+      &:after
+      {
           display: block;
       }
     }
   }
 
   /* Create a custom radio button */
-  .checkmark {
+  .checkmark
+  {
     position: absolute;
     top: 0;
     left: 0;
@@ -230,7 +239,8 @@ input
     border-radius: 50%;
 
     /* Create the indicator (the dot/circle - hidden when not checked) */
-    &:after {
+    &:after
+    {
       content: "";
       position: absolute;
       display: none;
@@ -244,8 +254,10 @@ input
   }
 
   /* On mouse-over, add a grey background color */
-  &:hover{
-    input ~ .checkmark {
+  &:hover
+  {
+    input ~ .checkmark
+    {
       border-color: @abraa-blue;
     }
   }
@@ -253,11 +265,14 @@ input
 
 .register-form
 {
-  .radio-container{
-    .checkmark{
+  .radio-container
+  {
+    .checkmark
+    {
       margin-top: 14px;
     }
-    img{
+    img
+    {
       height: 48px;
       margin-right: 6px;
     }

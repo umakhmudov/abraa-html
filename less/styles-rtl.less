@@ -434,17 +434,20 @@
   }
 
   /* Customize the label (the container) */
-  .radio-container {
+  .radio-container
+  {
     padding-left: 0;
     padding-right: 35px;
 
     /* Create a custom radio button */
-    .checkmark {
+    .checkmark
+    {
       left: auto;
       right: 0;
 
       /* Create the indicator (the dot/circle - hidden when not checked) */
-      &:after {
+      &:after
+      {
         left: auto;
         right: 4px;
       }
@@ -453,8 +456,10 @@
 
   .register-form
   {
-    .radio-container{
-      img{
+    .radio-container
+    {
+      img
+      {
         margin-right: 0;
         margin-left: 6px;
       }
@@ -468,7 +473,8 @@
     {
       //validation of input fields - add class validated to any pre-validated form. Add success or error class based on the result of the validation
       //this will cause the green checkmark or the red error icon to display on right side of the input
-      &.validated {
+      &.validated
+      {
         padding-left: 40px;
         padding-right: 10px;
         background-position: left 10px center;
@@ -479,8 +485,10 @@
   //refactored reviews section to be common
   .reviews-section
   {
-    .reviews-header{
-      .abraa-btn-group{
+    .reviews-header
+    {
+      .abraa-btn-group
+      {
         margin-left: 0;
         margin-right: 5px;
       }
@@ -488,18 +496,23 @@
   }
 
   //box for supplier search listing
-  .supplier-box{
-    .supplier-header{
+  .supplier-box
+  {
+    .supplier-header
+    {
       padding-left: 0;
       padding-right: 70px;
-      img{
+      img
+      {
         margin-left: 0;
         margin-right: -70px;
       }
-      @media screen and (max-width: @screen-xs-max){
+      @media screen and (max-width: @screen-xs-max)
+      {
         padding-left: 0;
         padding-right: 80px;
-        img{
+        img
+        {
           margin-left: 0;
           margin-right: -80px;
         }
