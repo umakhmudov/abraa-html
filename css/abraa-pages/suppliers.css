@@ -196,23 +196,38 @@
   vertical-align: bottom;
   font-size: 16px;
   display: inline-block;
-  padding: 0 20px 16px 20px;
+  padding: 0 20px 16px 40px;
   border-bottom: 4px solid #ffffff;
+  background-size: 24px 24px;
+  background-position: left 8px top;
+  background-repeat: no-repeat;
+  font-weight: bold;
 }
-.supplier-tabs .supplier-tab-link img {
-  margin-right: 5px;
+.supplier-tabs .supplier-tab-link.products-tab-link {
+  background-image: url('../../icons/products_icon.png');
 }
-@media screen and (max-width: 767px) {
-  .supplier-tabs .supplier-tab-link img {
-    width: 15px;
-  }
+.supplier-tabs .supplier-tab-link.products-tab-link.active {
+  background-image: url('../../icons/products_icon_active.png');
+}
+.supplier-tabs .supplier-tab-link.about-tab-link {
+  background-image: url('../../icons/about_icon.png');
+}
+.supplier-tabs .supplier-tab-link.about-tab-link.active {
+  background-image: url('../../icons/about_icon_active.png');
+}
+.supplier-tabs .supplier-tab-link.reviews-tab-link {
+  background-image: url('../../icons/reviews_icon.png');
+}
+.supplier-tabs .supplier-tab-link.reviews-tab-link.active {
+  background-image: url('../../icons/reviews_icon_active.png');
 }
 @media screen and (max-width: 767px) {
   .supplier-tabs .supplier-tab-link {
     font-size: 10px;
     display: inline-block;
-    padding: 0 10px 4px 10px;
-    border-bottom: 4px solid #ffffff;
+    padding: 0 10px 4px 30px;
+    background-size: 14px 14px;
+    background-position: left 6px top;
   }
 }
 .supplier-tabs .supplier-tab-link:hover {
@@ -231,6 +246,11 @@
 .supplier-about-tab .brands-list a {
   display: inline-block;
   text-align: center;
+  color: #6c6c6c;
+  margin: 10px 0;
+}
+.supplier-about-tab .brands-list a:hover {
+  text-decoration: none;
 }
 .supplier-about-tab .brands-list img {
   width: 100px;
@@ -265,9 +285,15 @@
   border-left: none;
   border-right: 1px solid #9c9c9c;
 }
-[dir=rtl] .supplier-tabs .supplier-tab-link img {
-  margin-right: 0;
-  margin-left: 5px;
+[dir=rtl] .supplier-tabs .supplier-tab-link {
+  padding: 0 40px 16px 20px;
+  background-position: right 8px top;
+}
+@media screen and (max-width: 767px) {
+  [dir=rtl] .supplier-tabs .supplier-tab-link {
+    padding: 0 30px 4px 10px;
+    background-position: right 6px top;
+  }
 }
 @media screen and (min-width: 992px) {
   [dir=rtl] .supplier-about-tab .about-info-right {
