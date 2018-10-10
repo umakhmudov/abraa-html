@@ -183,6 +183,17 @@
       color: @medium-gray;
     }
   }
+
+  //increase the spacing and font sizes for lg filters
+  &.filters-bar-lg{
+    h5{
+      font-size: 18px;
+    }
+    .checkbox-container{
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
 }
 
 //breadcrumbs
@@ -337,5 +348,33 @@
         }
       }
     }
+  }
+}
+
+.rfq-box{
+  padding: 10px;
+  margin: 10px 0;
+  p{
+    margin-bottom: 5px;
+  }
+  .rfq-title{
+    font-size: 16px;
+  }
+  .rfq-origin{
+    color: @medium-gray;
+    font-size: 12px;
+    img{
+      height: 15px;
+    }
+  }
+  .rfq-quantity{
+    color: @dark-gray;
+  }
+  .rfq-type{
+    color: @header-gray;
+    font-size: 12px;
+  }
+  .plain_blue_link{
+    font-size: 12px;
   }
 }

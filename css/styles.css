@@ -1618,6 +1618,13 @@ input.form-control.error {
 .filters-bar .price-range-filter .currency {
   color: #9c9c9c;
 }
+.filters-bar.filters-bar-lg h5 {
+  font-size: 18px;
+}
+.filters-bar.filters-bar-lg .checkbox-container {
+  font-size: 16px;
+  margin-top: 20px;
+}
 .breadcrumbs {
   color: #6c6c6c;
 }
@@ -1731,4 +1738,31 @@ input.form-control.error {
 }
 .reviews-section .reviews-list .review-item .text-right p:first-child {
   margin-top: 20px;
+}
+.rfq-box {
+  padding: 10px;
+  margin: 10px 0;
+}
+.rfq-box p {
+  margin-bottom: 5px;
+}
+.rfq-box .rfq-title {
+  font-size: 16px;
+}
+.rfq-box .rfq-origin {
+  color: #9c9c9c;
+  font-size: 12px;
+}
+.rfq-box .rfq-origin img {
+  height: 15px;
+}
+.rfq-box .rfq-quantity {
+  color: #6c6c6c;
+}
+.rfq-box .rfq-type {
+  color: #7e7e7e;
+  font-size: 12px;
+}
+.rfq-box .plain_blue_link {
+  font-size: 12px;
 }
