@@ -320,6 +320,8 @@ label {
 .selectBox.headerSearchType {
   position: absolute;
   min-width: 100px;
+  background: none;
+  background-color: #4da1ff;
 }
 .selectBox.headerSearchType .selectBox-label,
 .selectBox.headerSearchType .selectBox-arrow {
