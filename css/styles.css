@@ -1766,3 +1766,70 @@ input.form-control.error {
 .rfq-box .plain_blue_link {
   font-size: 12px;
 }
+.supplier-box {
+  padding: 15px;
+  margin: 10px 0;
+}
+.supplier-box .supplier-col {
+  padding: 0;
+}
+.supplier-box .supplier-header {
+  padding-left: 70px;
+}
+.supplier-box .supplier-header img {
+  position: absolute;
+  width: 60px;
+  margin-left: -70px;
+  border: 1px solid #dcdfe3;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+@media screen and (max-width: 767px) {
+  .supplier-box .supplier-header {
+    padding-left: 80px;
+  }
+  .supplier-box .supplier-header img {
+    width: 70px;
+    margin-left: -80px;
+  }
+}
+.supplier-box .supplier-origin {
+  color: #6c6c6c;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.supplier-box .supplier-origin img {
+  height: 18px;
+}
+.supplier-box .product-payment-options img {
+  height: 46px;
+}
+@media screen and (max-width: 767px) {
+  .supplier-box .product-payment-options img {
+    height: 35px;
+  }
+}
+.supplier-box .supplier-type {
+  font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+  .supplier-box .supplier-type {
+    padding: 10px 15px;
+  }
+}
+.supplier-box .supplier-stats {
+  padding: 20px 0;
+}
+@media screen and (max-width: 767px) {
+  .supplier-box .supplier-stats {
+    padding: 15px;
+  }
+}
+.supplier-box .btn {
+  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .supplier-box .btn {
+    margin-top: 30px;
+  }
+}

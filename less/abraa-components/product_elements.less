@@ -351,6 +351,7 @@
   }
 }
 
+//box for listing RFQs on search page
 .rfq-box{
   padding: 10px;
   margin: 10px 0;
@@ -376,5 +377,65 @@
   }
   .plain_blue_link{
     font-size: 12px;
+  }
+}
+
+//box for supplier search listing
+.supplier-box{
+  padding: 15px;
+  margin: 10px 0;
+  .supplier-col{
+    .no-padding;
+  }
+  .supplier-header{
+    padding-left: 70px;
+    img{
+      position: absolute;
+      width: 60px;
+      margin-left: -70px;
+      border: 1px solid @abraa-light-blue-border;
+      .border-radius;
+    }
+    @media screen and (max-width: @screen-xs-max){
+      padding-left: 80px;
+      img{
+        width: 70px;
+        margin-left: -80px;
+      }
+    }
+  }
+  .supplier-origin{
+    color: @dark-gray;
+    font-size: 14px;
+    padding: 10px 0;
+    img{
+      height: 18px;
+    }
+  }
+  .product-payment-options{
+    img{
+      height: 46px;
+      @media screen and (max-width: @screen-xs-max){
+        height: 35px;
+      }
+    }
+  }
+  .supplier-type{
+    font-size: 16px;
+    @media screen and (max-width: @screen-xs-max){
+      padding: 10px 15px;
+    }
+  }
+  .supplier-stats{
+    padding: 20px 0;
+    @media screen and (max-width: @screen-xs-max){
+      padding: 15px;
+    }
+  }
+  .btn{
+    margin-top: 60px;
+    @media screen and (max-width: @screen-xs-max){
+      margin-top: 30px;
+    }
   }
 }

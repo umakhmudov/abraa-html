@@ -354,3 +354,21 @@
   margin-left: 0;
   margin-right: 5px;
 }
+[dir=rtl] .supplier-box .supplier-header {
+  padding-left: 0;
+  padding-right: 70px;
+}
+[dir=rtl] .supplier-box .supplier-header img {
+  margin-left: 0;
+  margin-right: -70px;
+}
+@media screen and (max-width: 767px) {
+  [dir=rtl] .supplier-box .supplier-header {
+    padding-left: 0;
+    padding-right: 80px;
+  }
+  [dir=rtl] .supplier-box .supplier-header img {
+    margin-left: 0;
+    margin-right: -80px;
+  }
+}
