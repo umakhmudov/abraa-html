@@ -5,12 +5,12 @@
 {
   label
   {
-    color: @black;
+    color: @label-gray;
   }
   .required_label
   {
     float: right;
-    color: @medium-gray;
+    color: @abraa-helper-gray;
     font-size: 12px;
   }
 }
@@ -86,6 +86,19 @@ input
   }
 }
 
+textarea{
+  &.form-control {
+    resize: none;
+    border-color: @abraa-light-blue-border;
+    .no-box-shadow;
+    height: 80px;
+    &:focus {
+      .no-box-shadow;
+      border-color: @abraa-blue;
+    }
+  }
+}
+
 //error messages under the input
 .input-error-text
 {
@@ -103,7 +116,7 @@ input
   text-align: center;
   .border-radius;
   display: block;
-  padding: 6px 12px;
+  padding: 10px 12px;
   cursor: pointer;
   //hide the original file upload button
   input[type="file"]
@@ -204,6 +217,7 @@ input
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: @label-gray !important;
 
   /* Hide the browser's default radio button */
   input

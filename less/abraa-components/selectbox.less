@@ -29,6 +29,7 @@
     .no-padding;
     .selectBox-label{
       padding: 5px 12px;
+      color: @label-gray;
     }
     .selectBox-arrow{
       .no-border;
@@ -49,11 +50,30 @@
   .no-box-shadow;
   border: 1px solid @input-border !important;
   .border-radiuses (0, 5px, 5px, 0);
+  padding-top: 4px;
+  margin-top: -3px;
   li{
     a{
       padding: 5px 12px;
       .no-underline-on-hover;
       color: @dark-gray;
+    }
+  }
+}
+
+.white-modal-box{
+  .selectBox-dropdown{
+    &.plain-white-dropdown
+    {
+      height: auto;
+      .selectBox-label{
+        padding: 10px 12px;
+      }
+      .selectBox-arrow{
+        &:after{
+          margin-top: 18px;
+        }
+      }
     }
   }
 }
@@ -85,6 +105,8 @@
     .selectBox-label
     {
       width: auto !important;
+      font-size: 12px;
+      padding-top: 10px;
     }
     .selectBox-arrow
     {

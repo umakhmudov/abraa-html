@@ -243,10 +243,13 @@
 }
 .heading-white {
   color: #ffffff;
-  text-shadow: 0px 3px 4px #616571;
+  text-shadow: 0px 3px 4px #757985;
 }
 .heading-gray {
   color: #7e7e7e;
+}
+.note-gray {
+  color: #d2d3d7;
 }
 hr.dark {
   border-color: #d3d6da;
@@ -273,7 +276,7 @@ body {
 }
 label {
   font-weight: normal;
-  color: #616571;
+  color: #757985;
 }
 .crossed-out {
   text-decoration: line-through;
@@ -286,10 +289,16 @@ small {
 }
 .white-modal-box {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 0px 5px #9c9c9c;
-  box-shadow: 0px 0px 5px #9c9c9c;
+  -webkit-box-shadow: 0px 0px 8px #dcdfe3;
+  box-shadow: 0px 0px 8px #dcdfe3;
   padding: 30px;
   margin: 60px 0;
+  color: #5a5a5a;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+.white-modal-box h5 {
+  color: #000000;
 }
 .white-modal-box.small-box {
   margin-top: 20px;
@@ -324,6 +333,7 @@ small {
 }
 .selectBox-dropdown.plain-white-dropdown .selectBox-label {
   padding: 5px 12px;
+  color: #757985;
 }
 .selectBox-dropdown.plain-white-dropdown .selectBox-arrow {
   border: none;
@@ -355,6 +365,8 @@ small {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 0;
   background-clip: padding-box;
+  padding-top: 4px;
+  margin-top: -3px;
 }
 .plain-white-dropdown-selectBox-dropdown-menu li a {
   padding: 5px 12px;
@@ -362,6 +374,15 @@ small {
 }
 .plain-white-dropdown-selectBox-dropdown-menu li a:hover {
   text-decoration: none;
+}
+.white-modal-box .selectBox-dropdown.plain-white-dropdown {
+  height: auto;
+}
+.white-modal-box .selectBox-dropdown.plain-white-dropdown .selectBox-label {
+  padding: 10px 12px;
+}
+.white-modal-box .selectBox-dropdown.plain-white-dropdown .selectBox-arrow:after {
+  margin-top: 18px;
 }
 .selectBox {
   border: none;
@@ -396,6 +417,8 @@ small {
 }
 .selectBox.headerSearchType .selectBox-label {
   width: auto !important;
+  font-size: 12px;
+  padding-top: 10px;
 }
 .selectBox.headerSearchType .selectBox-arrow {
   padding: 0;
@@ -924,12 +947,12 @@ small {
 }
 .abraa-blue-btn {
   background-color: #4da1ff;
-  color: #ffffff !important;
+  color: #ebf4fe !important;
 }
 .abraa-blue-btn:hover,
 .abraa-blue-btn:active,
 .abraa-blue-btn:focus {
-  background-color: #ffffff;
+  background-color: #ebf4fe;
   color: #4da1ff !important;
 }
 .abraa-blue-btn .glyphicon-arrow-right {
@@ -1267,11 +1290,11 @@ small {
   top: 50%;
 }
 .abraa-form label {
-  color: #000000;
+  color: #757985;
 }
 .abraa-form .required_label {
   float: right;
-  color: #9c9c9c;
+  color: #d2d3d7;
   font-size: 12px;
 }
 .login-form .social-login-links {
@@ -1323,6 +1346,18 @@ input.form-control.success {
 input.form-control.error {
   background-image: url('../icons/error_icon.png');
 }
+textarea.form-control {
+  resize: none;
+  border-color: #dcdfe3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 80px;
+}
+textarea.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #4da1ff;
+}
 .input-error-text {
   display: block;
   font-size: 12px;
@@ -1336,7 +1371,7 @@ input.form-control.error {
   border-radius: 5px;
   background-clip: padding-box;
   display: block;
-  padding: 6px 12px;
+  padding: 10px 12px;
   cursor: pointer;
 }
 .custom-file-upload input[type="file"] {
@@ -1413,6 +1448,7 @@ input.form-control.error {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #757985 !important;
   /* Hide the browser's default radio button */
   /* Create a custom radio button */
   /* On mouse-over, add a grey background color */
