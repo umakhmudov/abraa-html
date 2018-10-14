@@ -17,6 +17,10 @@ $(document).ready(function(){
         mobile: true
     });
 
+    $('.plain-white-dropdown').selectBox({
+        mobile: true
+    });
+
     //toggle search bar on mobile
     $('.mobile_search_toggle_btn').click(function(e){
         e.preventDefault();
