@@ -266,6 +266,9 @@
   padding-left: 0;
   padding-right: 25px;
 }
+[dir=rtl] .filter-tag {
+  padding: 7px 14px 7px 7px;
+}
 [dir=rtl] .filter-tag .remove-filter-tag {
   margin-left: 0;
   margin-right: 5px;

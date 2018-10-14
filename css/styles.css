@@ -415,7 +415,7 @@ small {
   content: "\e252";
 }
 .selectBox.headerSearchType .selectBox-arrow:before {
-  margin-top: 12px;
+  margin-top: 14px;
   display: inline-block;
   font-size: 10px;
   margin-left: 2px;
@@ -438,6 +438,7 @@ small {
 .selectBox.headerLang {
   padding: 0;
   min-width: 60px;
+  margin-top: -4px;
 }
 .selectBox.headerLang .selectBox-label,
 .selectBox.headerLang .selectBox-arrow {
@@ -1537,6 +1538,8 @@ input.form-control.error {
   box-shadow: 0px 0px 5px 0px #efefef;
   background-color: #ffffff;
   padding: 10px;
+  border-radius: 5px;
+  background-clip: padding-box;
   margin-top: 25px;
 }
 .product-box .product-discount {
@@ -1643,6 +1646,11 @@ input.form-control.error {
   margin: 25px 0;
   background-color: #ffffff;
   padding: 20px 15px;
+  border: 2px solid #dcdfe3;
+}
+.filters-bar h4 {
+  margin-top: 0;
+  font-size: 14px;
 }
 .filters-bar .link_filters,
 .filters-bar .breadcrumbs-filter {
@@ -1673,8 +1681,21 @@ input.form-control.error {
   padding-left: 15px;
   list-style-type: none;
 }
+.filters-bar .breadcrumbs-filter li a {
+  color: #9c9c9c;
+}
+.filters-bar .breadcrumbs-filter li a:before {
+  content: "< ";
+  display: inline-block;
+  margin-right: 10px;
+}
+.filters-bar .breadcrumbs-filter li a.active {
+  color: #000000;
+}
+.filters-bar .breadcrumbs-filter li a.active:before {
+  display: none;
+}
 .filters-bar .breadcrumbs-filter li ul {
-  list-style-type: circle;
   padding-left: 30px;
 }
 .filters-bar .price-range-filter .form-control {
@@ -1698,9 +1719,9 @@ input.form-control.error {
 }
 .breadcrumbs {
   color: #6c6c6c;
+  font-size: 11px;
 }
 .breadcrumbs a {
-  font-size: 11px;
   color: #4da1ff;
 }
 .breadcrumbs a:hover {
@@ -1737,35 +1758,31 @@ input.form-control.error {
 }
 .filter-tag {
   border-radius: 50px;
-  background-color: #e2e5e9;
-  color: #949ba9;
+  background-color: #e9edf2;
+  color: #a8b0be;
   font-weight: normal;
   display: inline-block;
   vertical-align: middle;
-  padding: 10px;
+  padding: 7px 7px 7px 14px;
   margin-top: 10px;
 }
 .filter-tag .remove-filter-tag {
   display: inline-block;
-  background-color: #949ba9;
-  color: #e2e5e9;
+  background-color: #a8b0be;
+  color: #e9edf2;
   border-radius: 50%;
   padding: 3px;
-  padding-top: 2px;
+  padding-top: 1px;
   margin-left: 5px;
+  font-size: 10px;
 }
 .filter-tag.filter-tag-inverse {
-  background-color: #949ba9;
-  color: #e2e5e9;
+  background-color: #a8b0be;
+  color: #e9edf2;
 }
 .filter-tag.filter-tag-inverse .remove-filter-tag {
-  display: inline-block;
-  background-color: #e2e5e9;
-  color: #949ba9;
-  border-radius: 50%;
-  padding: 3px;
-  padding-top: 2px;
-  margin-left: 5px;
+  background-color: #e9edf2;
+  color: #a8b0be;
 }
 .reviews-section .reviews-header .abraa-btn-group {
   margin-left: 5px;

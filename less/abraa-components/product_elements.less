@@ -7,6 +7,7 @@
   .box-shadow(0px 0px 5px 0px @light-gray);
   background-color: @white;
   padding: 10px;
+  .border-radius;
   .mt25;
   .product-discount
   {
@@ -139,6 +140,12 @@
   margin: 25px 0;
   background-color: @white;
   padding: 20px 15px;
+  border: 2px solid @abraa-light-blue-border;
+
+  h4{
+    margin-top: 0;
+    font-size: 14px;
+  }
 
   .link_filters,
   .breadcrumbs-filter
@@ -174,9 +181,22 @@
   {
     li
     {
+      a{
+        color: @medium-gray;
+        &:before{
+          content: "< ";
+          display: inline-block;
+          margin-right: 10px;
+        }
+        &.active{
+          color: @black;
+          &:before{
+            display: none;
+          }
+        }
+      }
       ul
       {
-        list-style-type: circle;
         padding-left: 30px;
       }
     }
@@ -219,9 +239,9 @@
 .breadcrumbs
 {
   color: @dark-gray;
+  font-size: 11px;
   a
   {
-    font-size: 11px;
     color: @abraa-blue;
     .no-underline-on-hover;
     &:hover,
@@ -273,7 +293,7 @@
   font-weight: normal;
   display: inline-block;
   vertical-align: middle;
-  padding: 10px;
+  padding: 7px 7px 7px 14px;
   margin-top: 10px;
   .remove-filter-tag
   {
@@ -282,8 +302,9 @@
     color: @abraa-tag-light-blue;
     border-radius: 50%;
     padding: 3px;
-    padding-top: 2px;
+    padding-top: 1px;
     margin-left: 5px;
+    font-size: 10px;
   }
 
   &.filter-tag-inverse
@@ -292,13 +313,8 @@
     color: @abraa-tag-light-blue;
     .remove-filter-tag
     {
-      display: inline-block;
       background-color: @abraa-tag-light-blue;
       color: @abraa-tag-dark-blue;
-      border-radius: 50%;
-      padding: 3px;
-      padding-top: 2px;
-      margin-left: 5px;
     }
   }
 }
