@@ -42,14 +42,27 @@
     {
       font-size: 52px;
       padding-top: 60px;
+
+      //adjust width to fit on smaller screens
+      @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+      {
+        font-size: 32px;
+      }
+      @media screen and (max-width: @screen-xs-max)
+      {
+        font-size: 24px;
+      }
     }
     .rfq-create-wrapper
     {
-      padding: 30px 20px;
+      padding: 20px 36px;
       background-color: @white;
       margin: 30px 0;
-      .box-shadow(0px 0px 5px 0px @dark-gray);
+      .box-shadow(0px 0px 6px 0px @medium-gray);
       .border-radius;
+      h4{
+        font-size: 14px !important;
+      }
     }
   }
 }
@@ -59,6 +72,7 @@
   width: 300px;
   padding: 20px 0 20px 60px;
   text-align: left;
+
   //adjust width to fit on smaller screens
   @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
   {
@@ -87,7 +101,7 @@
   {
     margin-top: 5px;
     margin-bottom: 0;
-    color: @dark-gray;
+    color: @black;
     //adjust font size for smaller screens
     @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
     {

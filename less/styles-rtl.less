@@ -5,6 +5,16 @@
 
 [dir=rtl]
 {
+
+  //blue btn, white on hover
+  .abraa-blue-btn
+  {
+    .glyphicon-arrow-right{
+      margin-left: 0;
+      margin-right: 12px;
+    }
+  }
+
   //some specific classes that need to be reversed (left-right)
   .text-right
   {
@@ -243,6 +253,7 @@
     .selectBox-label
     {
       float: right;
+      text-align: right;
     }
     .selectBox-arrow
     {
@@ -252,6 +263,10 @@
       &:before
       {
         margin-left: 6px !important;
+      }
+      &:after
+      {
+        margin-right: -16px;
       }
     }
   }

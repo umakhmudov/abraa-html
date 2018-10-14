@@ -46,14 +46,27 @@
   font-size: 52px;
   padding-top: 60px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .page-banner.home-page h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-banner.home-page h2 {
+    font-size: 24px;
+  }
+}
 .page-banner.home-page .rfq-create-wrapper {
-  padding: 30px 20px;
+  padding: 20px 36px;
   background-color: #ffffff;
   margin: 30px 0;
-  -webkit-box-shadow: 0px 0px 5px 0px #6c6c6c;
-  box-shadow: 0px 0px 5px 0px #6c6c6c;
+  -webkit-box-shadow: 0px 0px 6px 0px #9c9c9c;
+  box-shadow: 0px 0px 6px 0px #9c9c9c;
   border-radius: 5px;
   background-clip: padding-box;
+}
+.page-banner.home-page .rfq-create-wrapper h4 {
+  font-size: 14px !important;
 }
 .usp_block {
   display: inline-block;
@@ -87,7 +100,7 @@
 .usp_block h4 {
   margin-top: 5px;
   margin-bottom: 0;
-  color: #6c6c6c;
+  color: #000000;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .usp_block h4 {

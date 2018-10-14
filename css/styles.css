@@ -243,7 +243,7 @@
 }
 .heading-white {
   color: #ffffff;
-  text-shadow: 0px 2px 5px #6c6c6c;
+  text-shadow: 0px 3px 4px #616571;
 }
 .heading-gray {
   color: #7e7e7e;
@@ -273,7 +273,10 @@ body {
 }
 label {
   font-weight: normal;
-  color: #9c9c9c;
+  color: #616571;
+}
+.crossed-out {
+  text-decoration: line-through;
 }
 .page-banner {
   background-size: cover;
@@ -312,6 +315,58 @@ label {
 }
 .glyphicon-block-selectbox:before {
   content: "\e252";
+}
+.selectBox-dropdown.plain-white-dropdown {
+  width: 100% !important;
+  display: block !important;
+  min-width: 80px;
+  background: none;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding: 0;
+}
+.selectBox-dropdown.plain-white-dropdown .selectBox-label {
+  padding: 5px 12px;
+}
+.selectBox-dropdown.plain-white-dropdown .selectBox-arrow {
+  border: none;
+}
+.selectBox-dropdown.plain-white-dropdown .selectBox-arrow:after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #6c6c6c;
+  position: absolute;
+  margin-top: 14px;
+}
+.plain-white-dropdown-selectBox-dropdown-menu {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #cccccc !important;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 0;
+  background-clip: padding-box;
+}
+.plain-white-dropdown-selectBox-dropdown-menu li a {
+  padding: 5px 12px;
+  color: #6c6c6c;
+}
+.plain-white-dropdown-selectBox-dropdown-menu li a:hover {
+  text-decoration: none;
 }
 .selectBox {
   border: none;
@@ -880,6 +935,9 @@ label {
 .abraa-blue-btn:focus {
   background-color: #ffffff;
   color: #4da1ff !important;
+}
+.abraa-blue-btn .glyphicon-arrow-right {
+  margin-left: 12px;
 }
 .abraa-white-btn {
   background-color: #ffffff;
