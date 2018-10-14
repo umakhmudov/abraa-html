@@ -16,6 +16,49 @@
   &:before { content: "\e252"; }
 }
 
+.selectBox-dropdown{
+  &.plain-white-dropdown
+  {
+    width: 100% !important;
+    display: block !important;
+    min-width: 80px;
+    background: none;
+    background-color: @white;
+    border: 1px solid @input-border;
+    .border-radius;
+    .no-padding;
+    .selectBox-label{
+      padding: 5px 12px;
+    }
+    .selectBox-arrow{
+      .no-border;
+      &:after{
+        content: " ";
+        width: 0;
+        height: 0;
+        border-left: 4px solid @transparent;
+        border-right: 4px solid @transparent;
+        border-top: 6px solid @dark-gray;
+        position: absolute;
+        margin-top: 14px;
+      }
+    }
+  }
+}
+.plain-white-dropdown-selectBox-dropdown-menu{
+  .no-box-shadow;
+  border: 1px solid @input-border !important;
+  .border-radiuses (0, 5px, 5px, 0);
+  li{
+    a{
+      padding: 5px 12px;
+      .no-underline-on-hover;
+      color: @dark-gray;
+    }
+  }
+}
+
+
 //overwriting the selectBox wrapper
 .selectBox
 {
