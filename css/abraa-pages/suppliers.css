@@ -2,7 +2,7 @@
   border: none;
 }
 .no-outline {
-  outline: none;
+  outline: none !important;
 }
 .no-box-shadow {
   -webkit-box-shadow: none;

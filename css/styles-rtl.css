@@ -2,7 +2,7 @@
   border: none;
 }
 .no-outline {
-  outline: none;
+  outline: none !important;
 }
 .no-box-shadow {
   -webkit-box-shadow: none;
@@ -261,6 +261,10 @@
 [dir=rtl] .checkbox-container .checkmark:after {
   left: auto;
   right: 5px;
+}
+[dir=rtl] .filters-bar .plain_blue_link {
+  padding-left: 0;
+  padding-right: 25px;
 }
 [dir=rtl] .filter-tag .remove-filter-tag {
   margin-left: 0;

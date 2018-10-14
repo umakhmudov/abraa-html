@@ -43,18 +43,25 @@
     .supplier-link
     {
       text-decoration: underline !important;
+      color: @abraa-dark-blue !important;
     }
     .supplier-origin
     {
+      color: @medium-gray;
+      font-size: 12px;
       img
       {
-        width: 30px;
+        width: 24px;
         display: inline-block;
       }
     }
     .supplier-action
     {
-      padding-top: 20px
+      padding-top: 20px;
+      .btn{
+        padding: 8px 5px;
+        font-size: 12px;
+      }
     }
   }
   &.product-box-rfq-btn
@@ -67,6 +74,10 @@
       bottom: 10px;
       padding-right: 25px;
       color: @white;
+    }
+    .btn{
+      padding: 8px 5px;
+      font-size: 12px;
     }
   }
 }
@@ -197,6 +208,11 @@
       margin-top: 20px;
     }
   }
+  .plain_blue_link{
+    margin-top: 10px;
+    font-size: 12px !important;
+    padding-left: 25px;
+  }
 }
 
 //breadcrumbs
@@ -205,6 +221,7 @@
   color: @dark-gray;
   a
   {
+    font-size: 11px;
     color: @abraa-blue;
     .no-underline-on-hover;
     &:hover,
@@ -217,7 +234,7 @@
   .glyphicon
   {
     color: @abraa-blue;
-    font-size: 12px;
+    font-size: 9px;
   }
   &.breadcrumbs-white
   {
@@ -469,6 +486,22 @@
     @media screen and (max-width: @screen-xs-max)
     {
       margin-top: 30px;
+    }
+  }
+}
+
+//for column layouts where we need to reduce the padding on mobile, so they are tight together, add this class to the parent .row element
+.no-padding-col-xs
+{
+  @media screen and (max-width: @screen-xs-max)
+  {
+    .product-box
+    {
+      margin: 0 !important;
+    }
+    .col-xs-6
+    {
+      padding: 2px !important;
     }
   }
 }
