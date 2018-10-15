@@ -145,10 +145,12 @@
   border: 2px solid @abraa-light-blue-border;
 
   // on mobile, hide the filter bar, and only activate when .active class is applied (done through a toggle button)
-  @media screen and (max-width: @screen-xs-max){
+  @media screen and (max-width: @screen-xs-max)
+  {
     display: none;
 
-    &.active{
+    &.active
+    {
       display: block;
       position: fixed;
       width: 100%;
@@ -162,7 +164,8 @@
       overflow-y: scroll;
       height: 100%;
       padding-top: 20px;
-      h4{
+      h4
+      {
         position: fixed;
         top: 0;
         left: 0;
@@ -171,7 +174,8 @@
         border-bottom: 1px solid @medium-gray;
         padding: 15px 15px;
       }
-      .abraa-btn-lg{
+      .abraa-btn-lg
+      {
         position: fixed;
         top: 5px;
         right: 5px;
@@ -568,20 +572,25 @@
 }
 
 //mobile filters
-.mobile-filter-row{
+.mobile-filter-row
+{
   background-color: @abraa-light-blue;
   padding-top: 10px;
   padding-bottom: 10px;
-  .btn{
+  .btn
+  {
     border-color: @input-border !important;
     color: @label-gray !important;
-    &:hover, &:focus, &:active{
+    &:hover, &:focus, &:active
+    {
       color: @white !important;
     }
   }
-  .selectBox-label{
+  .selectBox-label
+  {
     text-align: center;
-    &:before{
+    &:before
+    {
       content: "\e150";
       font-family: 'Glyphicons Halflings';
       font-size: 12px;
