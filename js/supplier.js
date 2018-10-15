@@ -17,4 +17,14 @@ $(document).ready(function(){
         $(this).addClass('active');
     })
 
+    //show popup of supplier banner when clicked
+    $('.page-banner.supplier-page').click(function(e){
+        e.preventDefault();
+        var img_url = $(this).attr('data-lightview-img');
+        Lightview.show({
+            url: img_url,
+            type: 'image'
+        });
+    })
+
 })
