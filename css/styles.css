@@ -2231,7 +2231,7 @@ textarea.form-control:focus {
   background-color: #ffffff;
   border-radius: 5px;
   background-clip: padding-box;
-  border: 2px solid #efefef;
+  border: 2px solid #e0e0e0;
   /* Create the checkmark/indicator (hidden when not checked) */
 }
 .checkbox-container .checkmark:after {
