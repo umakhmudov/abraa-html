@@ -144,6 +144,43 @@
   padding: 20px 15px;
   border: 2px solid @abraa-light-blue-border;
 
+  // on mobile, hide the filter bar, and only activate when .active class is applied (done through a toggle button)
+  @media screen and (max-width: @screen-xs-max){
+    display: none;
+
+    &.active{
+      display: block;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .no-margin;
+      .no-border;
+      z-index: 10000;
+      overflow-y: scroll;
+      height: 100%;
+      padding-top: 20px;
+      h4{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: @white;
+        border-bottom: 1px solid @medium-gray;
+        padding: 15px 15px;
+      }
+      .abraa-btn-lg{
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        width: auto;
+        padding: 6px 10px;
+      }
+    }
+  }
+
   h4
   {
     margin-top: 0;
@@ -526,6 +563,29 @@
     .col-xs-6
     {
       padding: 2px !important;
+    }
+  }
+}
+
+//mobile filters
+.mobile-filter-row{
+  background-color: @abraa-light-blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .btn{
+    border-color: @input-border !important;
+    color: @label-gray !important;
+    &:hover, &:focus, &:active{
+      color: @white !important;
+    }
+  }
+  .selectBox-label{
+    text-align: center;
+    &:before{
+      content: "\e150";
+      font-family: 'Glyphicons Halflings';
+      font-size: 12px;
+      margin-right: 5px;
     }
   }
 }

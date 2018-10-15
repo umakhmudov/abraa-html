@@ -2013,6 +2013,10 @@ small {
   padding: 10px;
   width: 20%;
 }
+.horizontal-slider .MS-content .item .img-wrapper {
+  height: 160px;
+  overflow: hidden;
+}
 .horizontal-slider .MS-content .item img {
   width: 100%;
 }
@@ -2502,6 +2506,42 @@ textarea.form-control:focus {
   padding: 20px 15px;
   border: 2px solid #dcdfe3;
 }
+@media screen and (max-width: 767px) {
+  .filters-bar {
+    display: none;
+  }
+  .filters-bar.active {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border: none;
+    z-index: 10000;
+    overflow-y: scroll;
+    height: 100%;
+    padding-top: 20px;
+  }
+  .filters-bar.active h4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #9c9c9c;
+    padding: 15px 15px;
+  }
+  .filters-bar.active .abraa-btn-lg {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    width: auto;
+    padding: 6px 10px;
+  }
+}
 .filters-bar h4 {
   margin-top: 0;
   font-size: 14px;
@@ -2783,4 +2823,27 @@ textarea.form-control:focus {
   .no-padding-col-xs .col-xs-6 {
     padding: 2px !important;
   }
+}
+.mobile-filter-row {
+  background-color: #eaedf1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mobile-filter-row .btn {
+  border-color: #cccccc !important;
+  color: #757985 !important;
+}
+.mobile-filter-row .btn:hover,
+.mobile-filter-row .btn:focus,
+.mobile-filter-row .btn:active {
+  color: #ffffff !important;
+}
+.mobile-filter-row .selectBox-label {
+  text-align: center;
+}
+.mobile-filter-row .selectBox-label:before {
+  content: "\e150";
+  font-family: 'Glyphicons Halflings';
+  font-size: 12px;
+  margin-right: 5px;
 }

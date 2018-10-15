@@ -62,6 +62,26 @@ $(document).ready(function(){
 
     });
 
+    $('.mobile-filter-btn').click(function(e){
+        e.preventDefault();
+        $('.filters-bar').toggleClass('active');
+    });
+
+    //whenever filter is applied
+    // 1. make the filter bar inactive (on mobile, this hides the filter bar and displays the products list)
+    // 2. scroll to the top of the list (next to the filters and products list)
+    $('.apply-filter-btn').click(function(){
+        $('.filters-bar').removeClass('active');
+        scrollToElement($('.filters-bar'));
+    })
+
     //init the slider plugin
     $('#categories_slider').multislider();
+
+    //function to smoothly scroll to an element in HTML
+    function scrollToElement(el){
+        $('html, body').animate({
+            scrollTop: el.offset().top - 60
+        }, 1000);
+    }
 })
